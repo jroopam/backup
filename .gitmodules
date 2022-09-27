@@ -1,0 +1,3 @@
+[submodule "vim-airline"]
+	path = vim-airline
+	url = ./.vim/pack/dist/start/vim-airline/

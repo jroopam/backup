@@ -1,0 +1,39 @@
+TABS
+New tab: :tabnew
+Swtich tab: :tabn/tabp or :gt
+Close tab: :tabclose
+For more: :help tabpage
+-p flag for multiple files in different tabs
+
+For operations on multiple lines
+<C-v> or Ctrl+v => visual block mode
+A"<Esc> => append "
+
+Format or identing
+gg
+=G
+
+Splitting screen
+Horizontal:
+Ctrl+w then v
+Vertical
+Ctrl+w then s
+The above open the same file 
+
+For different files
+Horizontal split
+vim -o file1 file2 file3 ..... 
+:sp filename
+
+Vertical split
+vim -O file1 file2 file3 ...
+:vsp filename or :vs filename
+
+:edit filename
+
+
+Multiple cursors
+vim-multi-cursors
+vim-visual-multi
+https://www.vim.org/scripts/script.php?script_id=4467
+

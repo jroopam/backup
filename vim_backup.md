@@ -1,4 +1,4 @@
-#Extensions
+# Extensions
 - NerdTree
 - NerdCommenter
 - airline
@@ -6,6 +6,6 @@
 - vim-auto-save
 - YouCompleteMe
 
-#Installation
+# Installation
 - Planning to upload most of the extensions on github only so cloning should work
 - For ycm as it's quite big, it should be installed manually

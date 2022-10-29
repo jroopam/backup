@@ -5,12 +5,12 @@ filetype indent on
 syntax on
 set autoindent
 set number
-set cursorline
+"set cursorline
 set cursorcolumn
 set shiftwidth=4
 set tabstop=4
 "set expandtab
-" set nowrap
+"set nowrap
 set incsearch
 set ignorecase
 set showcmd
@@ -19,10 +19,11 @@ set wildmenu
 set wildmode=list:longest
 "autocmd TextChanged,TextChangedI <buffer> silent write
 "Need vim-gtk3 for the next line to work
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
 noremap t gt
 noremap T gT
 set number relativenumber
+set whichwrap=lh
 
 "Change split size using mouse
 "set mouse=n

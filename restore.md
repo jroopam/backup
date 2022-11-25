@@ -12,19 +12,28 @@ https://superuser.com/questions/1729457/google-meet-share-screen-black-after-upg
 
 # Installed gnome extensions:
 ArcMenu
+Aylur's Widgets
 Bing Wallpaper
 Blur my shell
 Coverflow Alt-Tab
 Dash to Panel or Dash to Dock
 GSConnect
+GTK Title Bar
 Media Controls
+Quick Settings Tweaker
 Rounded Window Corners
 Time++
+Unite
+Useless Gaps
 User Themes
 
-# Installed themes:
-Shell and Legacy Applications
+# Themes:
+Vimix
+Dracula
 WhiteSur-Dark-solid-red
+MonoTheme
+Flat remix
+Fluent
 Orchis
 
 # Icons:

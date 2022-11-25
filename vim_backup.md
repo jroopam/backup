@@ -16,13 +16,23 @@
 	- Will upload this to github
 3. For copy/pasting to and from clipboard(you have to install some service depending upon your display server, it was wayland earlier but due to issue with google screen sharing had to switch to x11) github.com/equalsraf/neovim-qt/issues/621
 4. # CUSTOM_NVIM_PATH=/usr/local/bin/nvim.appimage
-# Set the above with the correct path, then run the rest of the commands:
+### Set the above with the correct path, then run the rest of the commands:
 set -u
 sudo update-alternatives --install /usr/bin/ex ex "${CUSTOM_NVIM_PATH}" 110
 sudo update-alternatives --install /usr/bin/vi vi "${CUSTOM_NVIM_PATH}" 110
 sudo update-alternatives --install /usr/bin/view view "${CUSTOM_NVIM_PATH}" 110
 sudo update-alternatives --install /usr/bin/vim vim "${CUSTOM_NVIM_PATH}" 110
 sudo update-alternatives --install /usr/bin/vimdiff vimdiff "${CUSTOM_NVIM_PATH}" 110
+
+.vim/ and .vimrc live in the home folder
+
+## Plugins in neovim
+- Install packer.nvim (https://github.com/wbthomason/packer.nvim)
+- git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+- After installing packer, restart vim and run :PackerInstall. It will automatically install all the plugins listed in plugins.lua
+
+For telescope installed fd-find
 
 # Extensions
 - NerdTree

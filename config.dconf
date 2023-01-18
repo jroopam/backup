@@ -1,0 +1,838 @@
+[apps/seahorse/listing]
+keyrings-selected=['secret-service:///org/freedesktop/secrets/collection/login']
+
+[apps/seahorse/windows/key-manager]
+height=476
+width=725
+
+[apps/update-manager]
+first-run=false
+launch-count=126
+launch-time=int64 1669089907
+show-details=true
+window-height=475
+window-width=794
+
+[com/ubuntu/update-notifier]
+regular-auto-launch-interval=7
+release-check-time=uint32 1668700674
+
+[org/gnome/Mines]
+theme='bgcolors'
+use-animations=false
+window-height=422
+window-is-maximized=false
+window-width=600
+
+[org/gnome/TextEditor]
+show-line-numbers=true
+show-right-margin=false
+
+[org/gnome/Totem]
+active-plugins=['save-file', 'skipto', 'rotation', 'screenshot', 'apple-trailers', 'vimeo', 'variable-rate', 'screensaver', 'mpris', 'movie-properties', 'autoload-subtitles', 'open-directory', 'recent']
+subtitle-encoding='UTF-8'
+
+[org/gnome/calculator]
+accuracy=9
+angle-units='degrees'
+base=10
+button-mode='advanced'
+number-format='automatic'
+show-thousands=false
+show-zeroes=false
+source-currency=''
+source-units='degree'
+target-currency=''
+target-units='radian'
+window-position=(26, 23)
+word-size=64
+
+[org/gnome/calendar]
+active-view='month'
+window-maximized=true
+window-position=(0, 0)
+window-size=(1366, 740)
+
+[org/gnome/cheese]
+burst-delay=1000
+camera='Integrated_Webcam_HD'
+photo-x-resolution=1280
+photo-y-resolution=720
+video-x-resolution=1280
+video-y-resolution=720
+
+[org/gnome/control-center]
+last-panel='ubuntu'
+window-state=(980, 730, false)
+
+[org/gnome/deja-dup]
+backend='google'
+prompt-check='disabled'
+
+[org/gnome/desktop/a11y/magnifier]
+mouse-tracking='proportional'
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST']
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/roopamjain/Pictures/BingWallpaper/20221126-Cecropia_EN-IN6595144388_UHD.jpg'
+picture-uri-dark='file:///home/roopamjain/Pictures/BingWallpaper/20221126-Cecropia_EN-IN6595144388_UHD.jpg'
+primary-color='#000000'
+secondary-color='#000000'
+
+[org/gnome/desktop/calendar]
+show-weekdate=false
+
+[org/gnome/desktop/input-sources]
+per-window=false
+show-all-sources=false
+sources=[('xkb', 'us')]
+
+[org/gnome/desktop/interface]
+clock-show-weekday=true
+color-scheme='prefer-dark'
+cursor-size=24
+cursor-theme='Yaru'
+enable-hot-corners=true
+font-hinting='medium'
+font-name='Cascadia Mono 11'
+gtk-theme='Dracula-pink-accent'
+icon-theme='Papirus-Dark'
+locate-pointer=false
+monospace-font-name='Monaco 11'
+show-battery-percentage=true
+text-scaling-factor=0.71999999999999997
+toolkit-accessibility=false
+
+[org/gnome/desktop/notifications]
+application-children=['org-gnome-tweaks', 'org-gnome-shell-extensions-gsconnect', 'chrome-cinhimbnkkaeohfgghhklpknlkffjgod-default', 'google-chrome', 'gnome-network-panel', 'gnome-power-panel', 'brave-browser-beta', 'firefox-firefox', 'org-gnome-nautilus', 'libreoffice-startcenter', 'libreoffice-writer', 'gvim', 'org-gnome-chromegnomeshell', 'org-gnome-extensions-desktop', 'io-snapcraft-sessionagent', 'org-gnome-evince', 'zoom', 'org-gnome-gedit', 'org-gnome-dejadup', 'org-gnome-calendar', 'org-gnome-extensions', 'org-gnome-evolution-alarm-notify', 'org-gnome-eog', 'apport-gtk', 'org-gnome-terminal-preferences', 'org-gnome-texteditor', 'org-gnome-terminal', 'org-gnome-rhythmbox3', 'libreoffice-impress', 'org-gnome-shell-extensions-gsconnect-preferences']
+show-banners=false
+
+[org/gnome/desktop/notifications/application/apport-gtk]
+application-id='apport-gtk.desktop'
+
+[org/gnome/desktop/notifications/application/brave-browser-beta]
+application-id='brave-browser-beta.desktop'
+
+[org/gnome/desktop/notifications/application/chrome-cinhimbnkkaeohfgghhklpknlkffjgod-default]
+application-id='chrome-cinhimbnkkaeohfgghhklpknlkffjgod-Default.desktop'
+
+[org/gnome/desktop/notifications/application/firefox-firefox]
+application-id='firefox_firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-network-panel]
+application-id='gnome-network-panel.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/google-chrome]
+application-id='google-chrome.desktop'
+
+[org/gnome/desktop/notifications/application/gvim]
+application-id='gvim.desktop'
+
+[org/gnome/desktop/notifications/application/io-snapcraft-sessionagent]
+application-id='io.snapcraft.SessionAgent.desktop'
+
+[org/gnome/desktop/notifications/application/libreoffice-impress]
+application-id='libreoffice-impress.desktop'
+
+[org/gnome/desktop/notifications/application/libreoffice-startcenter]
+application-id='libreoffice-startcenter.desktop'
+
+[org/gnome/desktop/notifications/application/libreoffice-writer]
+application-id='libreoffice-writer.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-calendar]
+application-id='org.gnome.Calendar.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-chromegnomeshell]
+application-id='org.gnome.ChromeGnomeShell.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-dejadup]
+application-id='org.gnome.DejaDup.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-eog]
+application-id='org.gnome.eog.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-evince]
+application-id='org.gnome.Evince.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-evolution-alarm-notify]
+application-id='org.gnome.Evolution-alarm-notify.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-extensions-desktop]
+application-id='org.gnome.Extensions.desktop.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-extensions]
+application-id='org.gnome.Extensions.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-gedit]
+application-id='org.gnome.gedit.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-rhythmbox3]
+application-id='org.gnome.Rhythmbox3.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-shell-extensions-gsconnect-preferences]
+application-id='org.gnome.Shell.Extensions.GSConnect.Preferences.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-shell-extensions-gsconnect]
+application-id='org.gnome.Shell.Extensions.GSConnect.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-terminal-preferences]
+application-id='org.gnome.Terminal.Preferences.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-terminal]
+application-id='org.gnome.Terminal.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-texteditor]
+application-id='org.gnome.TextEditor.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-tweaks]
+application-id='org.gnome.tweaks.desktop'
+
+[org/gnome/desktop/notifications/application/zoom]
+application-id='Zoom.desktop'
+
+[org/gnome/desktop/peripherals/keyboard]
+numlock-state=true
+
+[org/gnome/desktop/peripherals/touchpad]
+click-method='fingers'
+edge-scrolling-enabled=true
+two-finger-scrolling-enabled=false
+
+[org/gnome/desktop/remote-desktop/rdp]
+enable=false
+tls-cert='/home/roopamjain/.local/share/gnome-remote-desktop/rdp-tls.crt'
+tls-key='/home/roopamjain/.local/share/gnome-remote-desktop/rdp-tls.key'
+view-only=true
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+lock-delay=uint32 0
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/DSC2943_by_kcpru.jpg'
+primary-color='#000000'
+secondary-color='#000000'
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 300
+
+[org/gnome/desktop/sound]
+theme-name='freedesktop'
+
+[org/gnome/desktop/wm/keybindings]
+maximize=@as []
+unmaximize=@as []
+
+[org/gnome/desktop/wm/preferences]
+button-layout=':minimize,maximize,close'
+focus-mode='click'
+resize-with-right-button=false
+titlebar-font='Ubuntu Bold 10'
+
+[org/gnome/eog/view]
+background-color='rgb(0,0,0)'
+use-background-color=true
+
+[org/gnome/evince]
+document-directory=@ms 'file:///media/roopamjain/New%20Volume1/Roopam/Book'
+
+[org/gnome/evince/default]
+window-ratio=(1.0956375838926173, 0.91211401425178151)
+
+[org/gnome/evolution-data-server]
+migrated=true
+network-monitor-gio-name=''
+
+[org/gnome/evolution-data-server/calendar]
+notify-window-height=703
+notify-window-paned-position=73
+notify-window-width=1366
+notify-window-x=0
+notify-window-y=0
+reminders-past=@as []
+
+[org/gnome/file-roller/dialogs/extract]
+recreate-folders=true
+skip-newer=false
+
+[org/gnome/file-roller/listing]
+list-mode='as-folder'
+name-column-width=250
+show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=600
+
+[org/gnome/gedit/plugins]
+active-plugins=['sort', 'filebrowser', 'openlinks', 'docinfo', 'spell', 'modelines']
+
+[org/gnome/gedit/plugins/filebrowser]
+root='file:///'
+tree-view=true
+virtual-root='file:///home/roopamjain/.config'
+
+[org/gnome/gedit/preferences/editor]
+scheme='Yaru-dark'
+
+[org/gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+size=(1366, 697)
+state=43908
+
+[org/gnome/gnome-system-monitor]
+current-tab='processes'
+maximized=true
+network-total-in-bits=false
+show-dependencies=false
+show-whose-processes='user'
+window-state=(1366, 740, 0, 0)
+
+[org/gnome/gnome-system-monitor/disktreenew]
+col-6-visible=true
+col-6-width=0
+
+[org/gnome/gnome-system-monitor/proctree]
+columns-order=[0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+sort-col=26
+sort-order=0
+
+[org/gnome/mutter]
+center-new-windows=true
+edge-tiling=false
+experimental-features=@as []
+overlay-key='Super_L'
+
+[org/gnome/mutter/keybindings]
+toggle-tiled-left=@as []
+toggle-tiled-right=@as []
+
+[org/gnome/nautilus/compression]
+default-compression-format='zip'
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+search-filter-time-type='last_modified'
+search-view='list-view'
+
+[org/gnome/nautilus/window-state]
+initial-size=(873, 647)
+maximized=false
+sidebar-width=140
+start-with-sidebar=true
+
+[org/gnome/rhythmbox]
+display-page-tree-visible=true
+follow-playing=true
+maximized=false
+position=(6, 20)
+queue-as-sidebar=false
+show-album-art=true
+show-song-position-slider=true
+size=(671, 700)
+
+[org/gnome/rhythmbox/library]
+layout-filename='%tN - %tt'
+layout-path='%aa/%at'
+
+[org/gnome/rhythmbox/library/encoding]
+media-type='audio/x-vorbis'
+
+[org/gnome/rhythmbox/library/source]
+show-browser=false
+sorting=('Album', true)
+
+[org/gnome/rhythmbox/player]
+volume=0.9499969482421875
+
+[org/gnome/rhythmbox/plugins]
+active-plugins=['audiocd', 'ipod', 'generic-player', 'rb', 'alternative-toolbar', 'artsearch', 'daap', 'notification', 'mpris', 'iradio', 'power-manager', 'audioscrobbler', 'android', 'fmradio', 'dbus-media-server', 'mtpdevice']
+seen-plugins=['ipod', 'rblirc', 'rb', 'alternative-toolbar', 'im-status', 'artsearch', 'magnatune', 'listenbrainz', 'daap', 'notification', 'audioscrobbler', 'fmradio', 'dbus-media-server', 'pythonconsole', 'grilo', 'mtpdevice', 'lyrics', 'webremote', 'replaygain']
+
+[org/gnome/rhythmbox/plugins/alternative_toolbar]
+show-source-toolbar=false
+
+[org/gnome/rhythmbox/plugins/audioscrobbler/Last.fm]
+scrobbling-enabled=true
+
+[org/gnome/rhythmbox/plugins/audioscrobbler/Libre.fm]
+scrobbling-enabled=true
+
+[org/gnome/rhythmbox/plugins/iradio]
+initial-stations-loaded=true
+
+[org/gnome/rhythmbox/plugins/iradio/source]
+show-browser=false
+
+[org/gnome/rhythmbox/podcast]
+download-location='file:///home/roopamjain/Music'
+
+[org/gnome/rhythmbox/podcast/source]
+show-browser=false
+
+[org/gnome/rhythmbox/rhythmdb]
+locations=['file:///home/roopamjain/Music']
+
+[org/gnome/rhythmbox/sources]
+browser-views='artists-albums'
+visible-columns=['post-time', 'duration', 'track-number', 'album', 'genre', 'artist', 'play-count']
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=false
+night-light-schedule-automatic=false
+night-light-schedule-from=22.0
+night-light-schedule-to=5.0
+night-light-temperature=uint32 3700
+
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='nothing'
+
+[org/gnome/settings-daemon/plugins/sharing/rygel]
+enabled-connections=@as []
+
+[org/gnome/shell]
+disable-user-extensions=false
+disabled-extensions=['wintile@nowsci.com', 'bluetooth-quick-connect@bjarosze.gmail.com', 'quick-settings@fmuellner.gnome.org', 'arcmenu@arcmenu.com', 'CoverflowAltTab@palatis.blogspot.com', 'mediacontrols@cliffniff.github.com', 'dash-to-panel@jderose9.github.com', 'quick-settings-tweaks@qwreey']
+enabled-extensions=['gsconnect@andyholmes.github.io', 'tweaks-system-menu@extensions.gnome-shell.fifi.org', 'rounded-window-corners@yilozt', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'timepp@zagortenay333', 'BingWallpaper@ineffable-gmail.com', 'dash-to-dock@micxgx.gmail.com', 'blur-my-shell@aunetx', 'unite@hardpixel.eu', 'gtktitlebar@velitasali.github.io', 'ubuntu-dock@ubuntu.com', 'widgets@aylur', 'tiling-assistant@leleat-on-github', 'useless-gaps@pimsnel.com']
+favorite-apps=['org.gnome.Nautilus.desktop', 'google-chrome.desktop', 'brave-browser-beta.desktop', 'org.gnome.Terminal.desktop', 'chrome-cinhimbnkkaeohfgghhklpknlkffjgod-Default.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Extensions.desktop']
+had-bluetooth-devices-setup=true
+welcome-dialog-last-shown-version='42.2'
+
+[org/gnome/shell/app-switcher]
+current-workspace-only=true
+
+[org/gnome/shell/extensions/arcmenu]
+apps-show-extra-details=false
+category-icon-type='Full_Color'
+extra-categories=[(0, true), (1, true), (2, true), (3, false), (4, false)]
+left-panel-width=290
+menu-background-color='rgba(48,48,49,0.98)'
+menu-border-color='rgb(60,60,60)'
+menu-button-appearance='Icon'
+menu-foreground-color='rgb(223,223,223)'
+menu-item-active-bg-color='rgb(25,98,163)'
+menu-item-active-fg-color='rgb(255,255,255)'
+menu-item-hover-bg-color='rgb(21,83,158)'
+menu-item-hover-fg-color='rgb(255,255,255)'
+menu-layout='Eleven'
+menu-separator-color='rgba(255,255,255,0.1)'
+menu-width-adjustment=-150
+override-menu-theme=false
+pinned-app-list=['Brave Web Browser (beta)', '', 'brave-browser-beta.desktop', 'Files', '', 'org.gnome.Nautilus.desktop', 'Terminal', '', 'org.gnome.Terminal.desktop', 'ArcMenu Settings', 'ArcMenu_ArcMenuIcon', 'gnome-extensions prefs arcmenu@arcmenu.com']
+prefs-visible-page=0
+search-provider-recent-files=true
+
+[org/gnome/shell/extensions/aylurs-widgets]
+background-clock=true
+background-clock-bg-border-color='rgba(0,0,0,0)'
+background-clock-bg-shadow-inset=false
+background-clock-clock-shadow-blur=0
+background-clock-clock-shadow-color='rgba(0,0,0,0)'
+background-clock-clock-shadow-width=20
+background-clock-clock-shadow-x=0
+background-clock-clock-shadow-y=0
+background-clock-date-shadow-color='rgba(0,0,0,0)'
+background-clock-enable-clock=true
+background-clock-position=2
+background-clock-x-offset=35
+background-clock-y-offset=40
+battery-bar=false
+dash-board=false
+dash-link-names=['reddit', 'youtube', 'gmail', 'twitter', 'github']
+dash-link-urls=['https://www.reddit.com/', 'https://www.youtube.com/', 'https://www.gmail.com/', 'https://twitter.com/', 'https://www.github.com/']
+date-menu-mod=false
+media-player-controls-position=2
+media-player-enable-track=true
+media-player-layout=1
+media-player-max-width=40
+media-player-position=2
+power-menu=false
+quick-toggles=true
+quick-toggles-style=0
+workspace-indicator=true
+
+[org/gnome/shell/extensions/bingwallpaper]
+bing-json="[{\"startdate\":\"20220820\",\"fullstartdate\":\"202208201830\",\"enddate\":\"20220821\",\"url\":\"/th?id=OHR.CostadaMorte_EN-IN0306708906_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.CostadaMorte_EN-IN0306708906\",\"copyright\":\"Faro de Playa Lago, Costa da Morte, Muxia, Galicia, Spain (© Carlos Fernandez/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Costa+da+Morte+Spain&form=hpcapt&filters=HpDate%3a%2220220820_1830%22\",\"title\":\"The Coast of Death\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220820_CostadaMorte%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"44e36360af12978287348f3f9dfc37db\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220821\",\"fullstartdate\":\"202208211830\",\"enddate\":\"20220822\",\"url\":\"/th?id=OHR.TenderMoment_EN-IN8350460285_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.TenderMoment_EN-IN8350460285\",\"copyright\":\"A burrowing owl chick and adult in South Florida (© Carlos Carreno/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=burrowing+owl&form=hpcapt&filters=HpDate%3a%2220220821_1830%22\",\"title\":\"Rebels of the owl world\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220821_TenderMoment%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"e0a95969a60680a803487d7d249c0178\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220822\",\"fullstartdate\":\"202208221830\",\"enddate\":\"20220823\",\"url\":\"/th?id=OHR.ChittorgarhFort_EN-IN9413170835_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.ChittorgarhFort_EN-IN9413170835\",\"copyright\":\"Chittorgarh Fort, India (© Anand Purohit/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Chittorgarh+Fort+Rajasthan+India&form=hpcapt&filters=HpDate%3a%2220220822_1830%22\",\"title\":\"A true symbol of heritage and royalty\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220822_ChittorgarhFort%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"e0400c81c18fe3f561c2cf7ab9d7088b\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220823\",\"fullstartdate\":\"202208231830\",\"enddate\":\"20220824\",\"url\":\"/th?id=OHR.WheatField_EN-IN9972968114_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.WheatField_EN-IN9972968114\",\"copyright\":\"Wheat field in Ukraine (© Yuriy Kulik/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=ukraine+independence+day&form=hpcapt&filters=HpDate%3a%2220220823_1830%22\",\"title\":\"Amber waves of grain\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220823_WheatField%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"4040b8f05b3867d4be2959c6e503c1f3\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220824\",\"fullstartdate\":\"202208241830\",\"enddate\":\"20220825\",\"url\":\"/th?id=OHR.CascadesNP_EN-IN2301005024_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.CascadesNP_EN-IN2301005024\",\"copyright\":\"North Cascades National Park, Washington (© Ethan Welty/Tandem Stills + Motion)\",\"copyrightlink\":\"https://www.bing.com/search?q=North+Cascades+National+Park&form=hpcapt&filters=HpDate%3a%2220220824_1830%22\",\"title\":\"America’s backyard\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220824_CascadesNP%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"e387aa3e5c7b5073349743c340b36059\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220825\",\"fullstartdate\":\"202208251830\",\"enddate\":\"20220826\",\"url\":\"/th?id=OHR.PeljesacWind_EN-IN8608718696_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.PeljesacWind_EN-IN8608718696\",\"copyright\":\"Kitesurfers and windsurfers near the Pelješac Peninsula, Croatia (© helivideo/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Pelje%C5%A1ac+peninsula&form=hpcapt&filters=HpDate%3a%2220220825_1830%22\",\"title\":\"Combine wind and water, and you’ll get...\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220825_PeljesacWind%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"4239290f947856788eaa4ab5cf96bdc8\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220826\",\"fullstartdate\":\"202208261830\",\"enddate\":\"20220827\",\"url\":\"/th?id=OHR.MSHV_EN-IN8875688613_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.MSHV_EN-IN8875688613\",\"copyright\":\"Boundary Trail in Mount St. Helens National Volcanic Monument, Washington (© Don Geyer/Alamy)\",\"copyrightlink\":\"https://www.bing.com/search?q=mount+st+helens+national+volcanic+monument+wiki&form=hpcapt&filters=HpDate%3a%2220220826_1830%22\",\"title\":\"40 years of recovery\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220826_MSHV%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"d0a52bfc2dc70a8ff1a02e553143a8f5\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220828\",\"fullstartdate\":\"202208281830\",\"enddate\":\"20220829\",\"url\":\"/th?id=OHR.EstoniaBaltic_EN-IN4189790923_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.EstoniaBaltic_EN-IN4189790923\",\"copyright\":\"Baltic Sea in Estonia (© fotoman-kharkov/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Baltic+Sea&form=hpcapt&filters=HpDate%3a%2220220828_1830%22\",\"title\":\"The sea that acts like a lake\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220828_EstoniaBaltic%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"8d010f3fe3ec450f7c1ab26210be69e0\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220829\",\"fullstartdate\":\"202208291830\",\"enddate\":\"20220830\",\"url\":\"/th?id=OHR.Migliarino_EN-IN4595544691_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.Migliarino_EN-IN4595544691\",\"copyright\":\"Regional Park of Migliarino, San Rossore, Massaciuccoli, Italy (© Stefano Valeri/Alamy)\",\"copyrightlink\":\"https://www.bing.com/search?q=Natural+Park+of+Migliarino+San+Rossore+Italy&form=hpcapt&filters=HpDate%3a%2220220829_1830%22\",\"title\":\"There’s more to Pisa than leaning towers\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220829_Migliarino%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"fd1d8ad14fab55bd2c71de0696599e39\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220831\",\"fullstartdate\":\"202208311830\",\"enddate\":\"20220901\",\"url\":\"/th?id=OHR.WildlifeCrossing_EN-IN2995565743_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.WildlifeCrossing_EN-IN2995565743\",\"copyright\":\"Wildlife crossing in Wierden, Netherlands (© Frans Lemmens/Alamy)\",\"copyrightlink\":\"https://www.bing.com/search?q=wildlife+crossing&form=hpcapt&filters=HpDate%3a%2220220831_1830%22\",\"title\":\"Who uses this grassy bridge?\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220831_WildlifeCrossing%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"48f73e059ad21bdaeb9737425bc7e9f6\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220902\",\"fullstartdate\":\"202209021830\",\"enddate\":\"20220903\",\"url\":\"/th?id=OHR.MalaysiaTwinTowers_EN-IN4494674825_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.MalaysiaTwinTowers_EN-IN4494674825\",\"copyright\":\"Petronas Twin Towers, Kuala Lumpur, Malaysia (© tampatra/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Petronas+Towers+Malaysia&form=hpcapt&filters=HpDate%3a%2220220902_1830%22\",\"title\":\"A pair of high achievers\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220902_MalaysiaTwinTowers%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"ad365e2dbdf0da521bdc07bd3302e66e\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220903\",\"fullstartdate\":\"202209031830\",\"enddate\":\"20220904\",\"url\":\"/th?id=OHR.ArambolBeach_EN-IN5435187663_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.ArambolBeach_EN-IN5435187663\",\"copyright\":\"Arambol Beach in Goa, India (© Ben Pipe/Alamy)\",\"copyrightlink\":\"https://www.bing.com/search?q=Arambol+Goa&form=hpcapt&filters=HpDate%3a%2220220903_1830%22\",\"title\":\"The Riviera of India\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220903_ArambolBeach%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"d15a94bbf69503f74435b3d4aca56b70\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220906\",\"fullstartdate\":\"202209061830\",\"enddate\":\"20220907\",\"url\":\"/th?id=OHR.MuseudoAmanha_EN-IN7752199486_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.MuseudoAmanha_EN-IN7752199486\",\"copyright\":\"Museu do Amanhã (Museum of Tomorrow) in Rio de Janeiro, Brazil (© Nido Huebl/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=Museum+of+Tomorrow&form=hpcapt&filters=HpDate%3a%2220220906_1830%22\",\"title\":\"Back to the future\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220906_MuseudoAmanha%22&FORM=HPQUIZ\",\"wp\":false,\"hsh\":\"abdd3d1f0ca47a5482394d26ed5305b0\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220909\",\"fullstartdate\":\"202209091830\",\"enddate\":\"20220910\",\"url\":\"/th?id=OHR.KLMidAutumn_EN-IN3314420087_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.KLMidAutumn_EN-IN3314420087\",\"copyright\":\"Moon installation during celebrations for the Mid-Autumn Festival in Kuala Lumpur, Malaysia (© Lim Huey Teng/Reuters)\",\"copyrightlink\":\"https://www.bing.com/search?q=mid-autumn+festival&form=hpcapt&filters=HpDate%3a%2220220909_1830%22\",\"title\":\"Getting starry-eyed at the moon\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220909_KLMidAutumn%22&FORM=HPQUIZ\",\"wp\":false,\"hsh\":\"f5c1e7b0b360d9763920f03fbe2d409a\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220911\",\"fullstartdate\":\"202209111830\",\"enddate\":\"20220912\",\"url\":\"/th?id=OHR.Aracari_EN-IN1457900474_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.Aracari_EN-IN1457900474\",\"copyright\":\"Chestnut-eared aracari in the Pantanal region of Brazil (© Ana Gram/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=Chestnut-eared+Aracari&form=hpcapt&filters=HpDate%3a%2220220911_1830%22\",\"title\":\"A different kind of toucan\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220911_Aracari%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"8f68beda2f2de3630a2bff879f6ed090\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220912\",\"fullstartdate\":\"202209121830\",\"enddate\":\"20220913\",\"url\":\"/th?id=OHR.GSDNPest_EN-IN4591436794_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.GSDNPest_EN-IN4591436794\",\"copyright\":\"Great Sand Dunes National Park and Preserve, Colorado (© Y Paudel/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=great+sand+dunes+national+park+and+preserve&form=hpcapt&filters=HpDate%3a%2220220912_1830%22\",\"title\":\"Like sands through the hourglass\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220912_GSDNPest%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"b522447b3b5cb760fc549cbfabc8084a\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220914\",\"fullstartdate\":\"202209141830\",\"enddate\":\"20220915\",\"url\":\"/th?id=OHR.MarbleCanyon_EN-IN7065098083_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.MarbleCanyon_EN-IN7065098083\",\"copyright\":\"Marble Canyon bridges over the Colorado River at the Glen Canyon National Recreation Area in northern Arizona (© trekandshoot/Alamy)\",\"copyrightlink\":\"https://www.bing.com/search?q=marble+canyon+bridge&form=hpcapt&filters=HpDate%3a%2220220914_1830%22\",\"title\":\"Bridging the gap two ways\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220914_MarbleCanyon%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"2ab99b48f82cf049d259246c30511620\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220916\",\"fullstartdate\":\"202209161830\",\"enddate\":\"20220917\",\"url\":\"/th?id=OHR.Wellenflug_EN-IN8703571340_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.Wellenflug_EN-IN8703571340\",\"copyright\":\"Oktoberfest visitors in Munich, Germany (© Karl-Josef Hildenbrand/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=oktoberfest+munich+germany+history&form=hpcapt&filters=HpDate%3a%2220220916_1830%22\",\"title\":\"Swinging over Munich\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220916_Wellenflug%22&FORM=HPQUIZ\",\"wp\":false,\"hsh\":\"bb859607a7450ab245cd7fa264943210\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220917\",\"fullstartdate\":\"202209171830\",\"enddate\":\"20220918\",\"url\":\"/th?id=OHR.ArashiyamaBamboo_EN-IN0589878479_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.ArashiyamaBamboo_EN-IN0589878479\",\"copyright\":\"Footpath in the Arashiyama Bamboo Grove, Kyoto, Japan (© Razvan Ciuca/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=arashiyama+bamboo+forest+kyoto+japan+history&FORM=hpcapt&filters=HpDate%3a%2220220917_1830%22\",\"title\":\"A grove glows green\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220917_ArashiyamaBamboo%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"c0680e4e1fd8ee32eed9e57ee3801b5b\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220920\",\"fullstartdate\":\"202209201830\",\"enddate\":\"20220921\",\"url\":\"/th?id=OHR.PWPeaceDoves_EN-IN1499522423_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.PWPeaceDoves_EN-IN1499522423\",\"copyright\":\"'Peace Doves' by artist Peter Walker, in Liverpool Cathedral, Liverpool, England (© PAUL ELLIS/AFP via Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=international+day+of+peace&form=hpcapt&filters=HpDate%3a%2220220920_1830%22\",\"title\":\"A dramatic celebration of peace\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220920_PWPeaceDoves%22&FORM=HPQUIZ\",\"wp\":false,\"hsh\":\"8e041f26e897f0d7f16443f772bd56f3\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220921\",\"fullstartdate\":\"202209211830\",\"enddate\":\"20220922\",\"url\":\"/th?id=OHR.LastDollarRoad_EN-IN2409980698_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.LastDollarRoad_EN-IN2409980698\",\"copyright\":\"The aspen canopy along Last Dollar Road near Telluride, Colorado (© Grant Ordelheide/Tandem Stills + Motion)\",\"copyrightlink\":\"https://www.bing.com/search?q=first+day+of+autumn&form=hpcapt&filters=HpDate%3a%2220220921_1830%22\",\"title\":\"Colours of Colorado\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220921_LastDollarRoad%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"63b4179cdb13736889798f799431a015\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220922\",\"fullstartdate\":\"202209221830\",\"enddate\":\"20220923\",\"url\":\"/th?id=OHR.GoldenJellyfish_EN-IN4273842650_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.GoldenJellyfish_EN-IN4273842650\",\"copyright\":\"Golden jellyfish in Jellyfish Lake on the island of Eil Malk, Palau (© Nature Picture Library/Alamy)\",\"copyrightlink\":\"https://www.bing.com/search?q=Golden+jellyfish+Palau&form=hpcapt&filters=HpDate%3a%2220220922_1830%22\",\"title\":\"Jellies in a world all their own\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220922_GoldenJellyfish%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"f654ed93c7801c949b4b30c87d5ffc35\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220923\",\"fullstartdate\":\"202209231830\",\"enddate\":\"20220924\",\"url\":\"/th?id=OHR.DarkSkyAcadia_EN-IN1497457710_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.DarkSkyAcadia_EN-IN1497457710\",\"copyright\":\"Milky Way over Acadia National Park, Maine (© Harry Collins/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=acadia+national+park+dark+sky&form=hpcapt&filters=HpDate%3a%2220220923_1830%22\",\"title\":\"Starry, starry night\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220923_DarkSkyAcadia%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"e2ef4d2e1faf92c9ad0887511baa4d78\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220925\",\"fullstartdate\":\"202209251830\",\"enddate\":\"20220926\",\"url\":\"/th?id=OHR.SusitnaRiver_EN-IN2619893035_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.SusitnaRiver_EN-IN2619893035\",\"copyright\":\"Caribou crossing the Susitna River during the autumn rut, Alaska (© Tim Plowden/Alamy)\",\"copyrightlink\":\"https://www.bing.com/search?q=caribou+reindeer&form=hpcapt&filters=HpDate%3a%2220220925_1830%22\",\"title\":\"Time to make an impression\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220925_SusitnaRiver%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"d81787631c47caf54db249686c4f5ede\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220927\",\"fullstartdate\":\"202209271830\",\"enddate\":\"20220928\",\"url\":\"/th?id=OHR.ToyTrainShimla_EN-IN1920290957_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.ToyTrainShimla_EN-IN1920290957\",\"copyright\":\"Toy train ride on the Kalka-Shimla route in India (© Amit kg/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=Kalka-Shimla+toy+train&form=hpcapt&filters=HpDate%3a%2220220927_1830%22\",\"title\":\"A train journey to remember\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220927_ToyTrainShimla%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"f707257ae6698870d45d64697b701ffb\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220928\",\"fullstartdate\":\"202209281830\",\"enddate\":\"20220929\",\"url\":\"/th?id=OHR.InfiniD_EN-IN2161897930_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.InfiniD_EN-IN2161897930\",\"copyright\":\"Infini-D, modeled during the World of WearableArt Awards in 2019 in Wellington, New Zealand (© Hagen Hopkins/Getty Images for World of WearableArt)\",\"copyrightlink\":\"https://www.bing.com/search?q=world+of+wearableart+competition&form=hpcapt&filters=HpDate%3a%2220220928_1830%22\",\"title\":\"Blurring the lines with wearable art\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220928_InfiniD%22&FORM=HPQUIZ\",\"wp\":false,\"hsh\":\"b03d39800f4c2984fad3a49c91bc68aa\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220929\",\"fullstartdate\":\"202209291830\",\"enddate\":\"20220930\",\"url\":\"/th?id=OHR.EubalaenaAustralis_EN-IN2975314371_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.EubalaenaAustralis_EN-IN2975314371\",\"copyright\":\"Southern right whale diving in the Golfo Nuevo near the Valdes Peninsula, Argentina (© Gabriel Rojo/Minden Pictures)\",\"copyrightlink\":\"https://www.bing.com/search?q=Southern+right+whale&form=hpcapt&filters=HpDate%3a%2220220929_1830%22\",\"title\":\"Giants of the Southern Ocean\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220929_EubalaenaAustralis%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"3e3bd43589975cb776aecdb797b18922\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20220930\",\"fullstartdate\":\"202209301830\",\"enddate\":\"20221001\",\"url\":\"/th?id=OHR.BridalVeilFalls_EN-IN3773661130_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.BridalVeilFalls_EN-IN3773661130\",\"copyright\":\"Bridalveil Fall, Yosemite National Park, California (© Jeff Foott/Minden Pictures)\",\"copyrightlink\":\"https://www.bing.com/search?q=yosemite+national+park&form=hpcapt&filters=HpDate%3a%2220220930_1830%22\",\"title\":\"Spirit of the Puffing Wind\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20220930_BridalVeilFalls%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"cb7487c7b1dfd121cee843cac903b681\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221002\",\"fullstartdate\":\"202210021830\",\"enddate\":\"20221003\",\"url\":\"/th?id=OHR.Porthuis_EN-IN7783895323_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.Porthuis_EN-IN7783895323\",\"copyright\":\"Port House designed by Zaha Hadid Architects, Antwerp, Belgium (© Dmitry Rukhlenko/Alamy)\",\"copyrightlink\":\"https://www.bing.com/search?q=port+house+antwerp+zaha+hadid+history&form=hpcapt&filters=HpDate%3a%2220221002_1830%22\",\"title\":\"A future built on the past\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221002_Porthuis%22&FORM=HPQUIZ\",\"wp\":false,\"hsh\":\"9ccd250a1275600d8643432b51c0964d\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221003\",\"fullstartdate\":\"202210031830\",\"enddate\":\"20221004\",\"url\":\"/th?id=OHR.CosmicCliffs_EN-IN3964319541_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.CosmicCliffs_EN-IN3964319541\",\"copyright\":\"Cosmic Cliffs in the Carina Nebula (© NASA, ESA, CSA, and STScI)\",\"copyrightlink\":\"https://www.bing.com/search?q=world+space+week&form=hpcapt&filters=HpDate%3a%2220221003_1830%22\",\"title\":\"Golden cliffs of deep space\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221003_CosmicCliffs%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"762c214ed164977b2a9c9aa9e6e90c28\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221005\",\"fullstartdate\":\"202210051830\",\"enddate\":\"20221006\",\"url\":\"/th?id=OHR.BayofBiscay_EN-IN9363973535_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.BayofBiscay_EN-IN9363973535\",\"copyright\":\"Bay of Biscay in the Basque Coast Geopark near Bilbao, Spain (© Olimpio Fantuz/eStock Photo)\",\"copyrightlink\":\"https://www.bing.com/search?q=basque+coast+geopark+diversity&form=hpcapt&filters=HpDate%3a%2220221005_1830%22\",\"title\":\"Dragon tails trail to the sea\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221005_BayofBiscay%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"56614edea915a6d9c0fd6679b68c86f1\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221006\",\"fullstartdate\":\"202210061830\",\"enddate\":\"20221007\",\"url\":\"/th?id=OHR.OberbaumBridge_EN-IN6110054143_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.OberbaumBridge_EN-IN6110054143\",\"copyright\":\"Designs projected on the Oberbaum Bridge during the yearly Festival of Lights in Berlin, Germany (© John MacDougall/AFP via Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Festival+of+Lights+in+Berlin&FORM=hpcapt&filters=HpDate%3a%2220221006_1830%22\",\"title\":\"An old bridge in a new light\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221006_OberbaumBridge%22&FORM=HPQUIZ\",\"wp\":false,\"hsh\":\"b0bf162a86d87e11b38c04b1dc27020c\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221009\",\"fullstartdate\":\"202210091830\",\"enddate\":\"20221010\",\"url\":\"/th?id=OHR.RioArazas_EN-IN1562638083_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.RioArazas_EN-IN1562638083\",\"copyright\":\"Waterfall on the Rio Arazas in Ordesa y Monte Perdido National Park, Pyrenees, Spain (© David Santiago Garcia/Cavan Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=ordesa+y+monte+perdido+national+park+pyrenees+spain+history&form=hpcapt&filters=HpDate%3a%2220221009_1830%22\",\"title\":\"Gateway to Iberia\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221009_RioArazas%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"8b7466e955fa789634a2bd6abe591a8d\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221010\",\"fullstartdate\":\"202210101830\",\"enddate\":\"20221011\",\"url\":\"/th?id=OHR.TortulaMoss_EN-IN5712136639_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.TortulaMoss_EN-IN5712136639\",\"copyright\":\"Wall-screw moss glistening with water droplets, Netherlands (© Arjan Troost/Minden Pictures)\",\"copyrightlink\":\"https://www.bing.com/search?q=tortula+muralis&form=hpcapt&filters=HpDate%3a%2220221010_1830%22\",\"title\":\"Magnified moss\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221010_TortulaMoss%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"6d43e33af3498a174ea8cf19bc8e17eb\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221011\",\"fullstartdate\":\"202210111830\",\"enddate\":\"20221012\",\"url\":\"/th?id=OHR.AmmoniteGraveyard_EN-IN5813452758_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.AmmoniteGraveyard_EN-IN5813452758\",\"copyright\":\"Ammonite Pavement at Monmouth Beach, Jurassic Coast World Heritage Site, Dorset, England (© AWL Images/Danita Delimont)\",\"copyrightlink\":\"https://www.bing.com/search?q=jurassic+coast+dorset+england+history&form=hpcapt&filters=HpDate%3a%2220221011_1830%22\",\"title\":\"Stepping back in time\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221011_AmmoniteGraveyard%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"fbcb056b5cd81c22da61e811a7000b47\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221012\",\"fullstartdate\":\"202210121830\",\"enddate\":\"20221013\",\"url\":\"/th?id=OHR.AlaskaMoose_EN-IN6174173002_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.AlaskaMoose_EN-IN6174173002\",\"copyright\":\"Bull and female moose in Denali National Park, Alaska (© Yva Momatiuk and John Eastcott/Minden Pictures)\",\"copyrightlink\":\"https://www.bing.com/search?q=alces+alces+moose&form=hpcapt&filters=HpDate%3a%2220221012_1830%22\",\"title\":\"When being in a rut is OK\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221012_AlaskaMoose%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"896b5391a8056241595bcb2c54617771\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221013\",\"fullstartdate\":\"202210131830\",\"enddate\":\"20221014\",\"url\":\"/th?id=OHR.BlueTigerButterflies_EN-IN0664966797_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.BlueTigerButterflies_EN-IN0664966797\",\"copyright\":\"Blue tiger butterflies on a tree in Bengaluru, India (© Amith Nag Photography/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=blue+tiger+butterfly&form=hpcapt&filters=HpDate%3a%2220221013_1830%22\",\"title\":\"Don't just fly, darling. Soar!\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221013_BlueTigerButterflies%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"d7fb0fd7d8e83d8cc813b9b4306a8b29\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221014\",\"fullstartdate\":\"202210141830\",\"enddate\":\"20221015\",\"url\":\"/th?id=OHR.NaqsheRustam_EN-IN7117853630_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.NaqsheRustam_EN-IN7117853630\",\"copyright\":\"Naqsh-e Rustam archaeological site near Persepolis, Iran (© mshirani/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=naqsh-e+rustam+iran&form=hpcapt&filters=HpDate%3a%2220221014_1830%22\",\"title\":\"International Archaeology Day\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221014_NaqsheRustam%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"da4b4a4492ed6199ebad41d6f6e4afd6\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221015\",\"fullstartdate\":\"202210151830\",\"enddate\":\"20221016\",\"url\":\"/th?id=OHR.PrinceChristianSound_EN-IN7719950776_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.PrinceChristianSound_EN-IN7719950776\",\"copyright\":\"Prince Christian Sound in southern Greenland (© Posnov/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=prince+christian+sound+greenland&form=hpcapt&filters=HpDate%3a%2220221015_1830%22\",\"title\":\"Southern tip of a northern isle\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221015_PrinceChristianSound%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"59050bf19c2896d4149f36cd2a818f5c\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221016\",\"fullstartdate\":\"202210161830\",\"enddate\":\"20221017\",\"url\":\"/th?id=OHR.SwedenOwl_EN-IN1275763197_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.SwedenOwl_EN-IN1275763197\",\"copyright\":\"Long-eared owl in the Bohemian-Moravian Highlands of the Czech Republic (© Ondrej Prosicky/Alamy)\",\"copyrightlink\":\"https://www.bing.com/search?q=Long-eared+owl&form=hpcapt&filters=HpDate%3a%2220221016_1830%22\",\"title\":\"Widespread and long-eared\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221016_SwedenOwl%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"e9dcc88a7ac22ea3bce7ec32b0fa2fe9\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221017\",\"fullstartdate\":\"202210171830\",\"enddate\":\"20221018\",\"url\":\"/th?id=OHR.GB25Anni_EN-IN9809281562_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.GB25Anni_EN-IN9809281562\",\"copyright\":\"Guggenheim Museum Bilbao, Bilbao, Spain (© Jeremy Horner/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=guggenheim+museum+bilbao+established+date&form=hpcapt&filters=HpDate%3a%2220221017_1830%22\",\"title\":\"Night outside the museum\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221017_GB25Anni%22&FORM=HPQUIZ\",\"wp\":false,\"hsh\":\"ee3121037fec72c67af4059c7f85f9c9\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221018\",\"fullstartdate\":\"202210181830\",\"enddate\":\"20221019\",\"url\":\"/th?id=OHR.WartburgCastle_EN-IN0185565397_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.WartburgCastle_EN-IN0185565397\",\"copyright\":\"Thuringian Forest in autumn with Wartburg Castle, Germany (© ezypix/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=wartburg+castle+history+ludwig+der+springer&form=hpcapt&filters=HpDate%3a%2220221018_1830%22\",\"title\":\"'Wait, mountain – you shall bear my castle!'\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221018_WartburgCastle%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"321cbfbd529e8f67c7c1c424b3b1b5bf\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221020\",\"fullstartdate\":\"202210201830\",\"enddate\":\"20221021\",\"url\":\"/th?id=OHR.GeorgiaCypress_EN-IN7514884484_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.GeorgiaCypress_EN-IN7514884484\",\"copyright\":\"Cypress trees in autumn, Georgia (© Chris Moore/Tandem Stills + Motion)\",\"copyrightlink\":\"https://www.bing.com/search?q=Bald+cypress+tree&form=hpcapt&filters=HpDate%3a%2220221020_1830%22\",\"title\":\"Leaf-peeping Southern style\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221020_GeorgiaCypress%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"117cb6c3b8200ab22f5c871b634b330a\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221021\",\"fullstartdate\":\"202210211830\",\"enddate\":\"20221022\",\"url\":\"/th?id=OHR.KarstMountains_EN-IN4213912109_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.KarstMountains_EN-IN4213912109\",\"copyright\":\"Karst mountains in Guilin and Lijiang River National Park, China (© Sean Pavone/Alamy)\",\"copyrightlink\":\"https://www.bing.com/search?q=guilin+and+lijiang+river+national+park+karst+mountains+topography&form=hpcapt&filters=HpDate%3a%2220221021_1830%22\",\"title\":\"Misty mountain hop\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221021_KarstMountains%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"4247da5499ee0f08063ca9bb6c9c3c9a\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221022\",\"fullstartdate\":\"202210221830\",\"enddate\":\"20221023\",\"url\":\"/th?id=OHR.Knobbelzwaan_EN-IN3786620643_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.Knobbelzwaan_EN-IN3786620643\",\"copyright\":\"Mute swan in Valkenhorst Nature Reserve, near Valkenswaard, the Netherlands (© David Pattyn/Minden Pictures)\",\"copyrightlink\":\"https://www.bing.com/search?q=Mute+swan&form=hpcapt&filters=HpDate%3a%2220221022_1830%22\",\"title\":\"An ugly duckling no more\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221022_Knobbelzwaan%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"fec2eca31f41a662a3c32d759e008b80\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221023\",\"fullstartdate\":\"202210231830\",\"enddate\":\"20221024\",\"url\":\"/th?id=OHR.DiwaliOilLamps_EN-IN0701838177_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.DiwaliOilLamps_EN-IN0701838177\",\"copyright\":\"Oil lamps on the occasion of Diwali (© Subodh Sathe/Alamy Stock Photo)\",\"copyrightlink\":\"https://www.bing.com/search?q=diwali&form=hpcapt&filters=HpDate%3a%2220221023_1830%22\",\"title\":\"Lighting the world\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221023_DiwaliOilLamps%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"4795e8385045169366ff7fa953aa3dd7\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221024\",\"fullstartdate\":\"202210241830\",\"enddate\":\"20221025\",\"url\":\"/th?id=OHR.OrcusMouth_EN-IN4307683259_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.OrcusMouth_EN-IN4307683259\",\"copyright\":\"Orcus sculpture in the Gardens of Bomarzo in Bomarzo, Italy (© Scott Wilson/Alamy)\",\"copyrightlink\":\"https://www.bing.com/search?q=gardens+of+bomarzo+park+of+the+monsters+history&FORM=hpcapt&filters=HpDate%3a%2220221024_1830%22\",\"title\":\"Park of the Monsters\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221024_OrcusMouth%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"0be8fbc007330f1893255550163f2a14\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221025\",\"fullstartdate\":\"202210251830\",\"enddate\":\"20221026\",\"url\":\"/th?id=OHR.BrockenSpecter_EN-IN4945372418_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.BrockenSpecter_EN-IN4945372418\",\"copyright\":\"Brocken specter in Central Balkan National Park, Bulgaria (© Maya Karkalicheva/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=brocken+spectre&form=hpcapt&filters=HpDate%3a%2220221025_1830%22\",\"title\":\"A ghost on the mountain\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221025_BrockenSpecter%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"68ab8adffda863dc8cedc461c347e401\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221026\",\"fullstartdate\":\"202210261830\",\"enddate\":\"20221027\",\"url\":\"/th?id=OHR.BridgeofSighs_EN-IN1934990115_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.BridgeofSighs_EN-IN1934990115\",\"copyright\":\"Bridge of Sighs in Venice, Italy (© Doug Pearson/Alamy)\",\"copyrightlink\":\"https://www.bing.com/search?q=bridge+of+sighs+history&form=hpcapt&filters=HpDate%3a%2220221026_1830%22\",\"title\":\"A kiss and a sigh\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221026_BridgeofSighs%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"30044aad65077d0b7c1839b462a251c1\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221027\",\"fullstartdate\":\"202210271830\",\"enddate\":\"20221028\",\"url\":\"/th?id=OHR.FrankensteinFriday_EN-IN2387604310_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.FrankensteinFriday_EN-IN2387604310\",\"copyright\":\"Stormy sky over Lake Geneva in Lausanne, Switzerland (© Suradech Singhanat/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=Lake+Geneva+Lausanne+Switzerland&form=hpcapt&filters=HpDate%3a%2220221027_1830%22\",\"title\":\"On a dark and stormy night...\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221027_FrankensteinFriday%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"57b94aac0d7a56f220922b6a8977a572\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221028\",\"fullstartdate\":\"202210281830\",\"enddate\":\"20221029\",\"url\":\"/th?id=OHR.SeaAngel_EN-IN2839358434_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.SeaAngel_EN-IN2839358434\",\"copyright\":\"Sea angel (© Alexander Semenov Images/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=sea+angel+sea+slug&form=hpcapt&filters=HpDate%3a%2220221028_1830%22\",\"title\":\"Angel of the sea\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221028_SeaAngel%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"74cf54b9a01995610fbe9fa59f7d280b\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221030\",\"fullstartdate\":\"202210301830\",\"enddate\":\"20221031\",\"url\":\"/th?id=OHR.WychwoodForest_EN-IN4221356081_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.WychwoodForest_EN-IN4221356081\",\"copyright\":\"Trees in Wychwood Forest near Chipping Norton, Oxfordshire, England (© Frederick Ardley/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=halloween&form=hpcapt&filters=HpDate%3a%2220221030_1830%22\",\"title\":\"Who's in this creepy copse?\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221030_WychwoodForest%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"6d7df06b0099ce3b865c8ca16294ae9a\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221031\",\"fullstartdate\":\"202210311830\",\"enddate\":\"20221101\",\"url\":\"/th?id=OHR.Calacas_EN-IN6289630026_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.Calacas_EN-IN6289630026\",\"copyright\":\"Skeletons (calacas) dressed up for Día de los Muertos celebrations in Mexico (© Amelia Fuentes Marin/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=calacas+day+of+the+dead&FORM=hpcapt&filters=HpDate%3a%2220221031_1830%22\",\"title\":\"What are they celebrating?\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221031_Calacas%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"212524dea1d7c532057304c784a9b7d1\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221101\",\"fullstartdate\":\"202211011830\",\"enddate\":\"20221102\",\"url\":\"/th?id=OHR.TeaPlantationsMunnar_EN-IN6708509609_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.TeaPlantationsMunnar_EN-IN6708509609\",\"copyright\":\"Tea plantations in Munnar, Kerala, India (© Mazur Travel/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=Munnar+India&form=hpcapt&filters=HpDate%3a%2220221101_1830%22\",\"title\":\"Your TEA comes from here!\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221101_TeaPlantationsMunnar%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"3cb8746a8e4e84da3461acf55a315b5d\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221102\",\"fullstartdate\":\"202211021830\",\"enddate\":\"20221103\",\"url\":\"/th?id=OHR.AmboseliBioshere_EN-IN7057422618_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.AmboseliBioshere_EN-IN7057422618\",\"copyright\":\"Mount Kilimanjaro with Cape buffalo in foreground, Amboseli Biosphere Reserve, Kenya (© RealityImages/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=Amboseli+Biosphere&form=hpcapt&filters=HpDate%3a%2220221102_1830%22\",\"title\":\"An experiment in sustainability\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221102_AmboseliBioshere%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"404b6b09bdb4bbf6a10c487d2edb2c6b\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221103\",\"fullstartdate\":\"202211031830\",\"enddate\":\"20221104\",\"url\":\"/th?id=OHR.Deities_EN-IN6823352594_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.Deities_EN-IN6823352594\",\"copyright\":\"Depiction of deities from the Tomb of Tutankhamun at the Egyptian Museum, Cairo, Egypt (© Stefan Lippmann/Universal Images Group via Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=discovery+of+the+tomb+of+tutankhamun&form=hpcapt&filters=HpDate%3a%2220221103_1830%22\",\"title\":\"Tomb of the Golden Pharaoh\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221103_Deities%22&FORM=HPQUIZ\",\"wp\":false,\"hsh\":\"1ab5dd7c0bf64d6ec471de0fdc464551\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221105\",\"fullstartdate\":\"202211051830\",\"enddate\":\"20221106\",\"url\":\"/th?id=OHR.MarathonSunday_EN-IN5943628545_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.MarathonSunday_EN-IN5943628545\",\"copyright\":\"Runners in the 1990 New York City Marathon crossing the Verrazzano-Narrows Bridge (© David Madison/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=new+york+city+marathon&form=hpcapt&filters=HpDate%3a%2220221105_1830%22\",\"title\":\"Racing through the five boroughs\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221105_MarathonSunday%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"60357bced171762ede325f0ad128c927\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221106\",\"fullstartdate\":\"202211061830\",\"enddate\":\"20221107\",\"url\":\"/th?id=OHR.CrestedButteEclispe_EN-IN9293713189_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.CrestedButteEclispe_EN-IN9293713189\",\"copyright\":\"Lunar eclipse above Mount Crested Butte, Colorado (© Mengzhonghua Photography/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Lunar+eclipse&form=hpcapt&filters=HpDate%3a%2220221106_1830%22\",\"title\":\"Blood moon\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221106_CrestedButteEclispe%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"7361847bb7111550fa9aea9dc9272dfb\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221107\",\"fullstartdate\":\"202211071830\",\"enddate\":\"20221108\",\"url\":\"/th?id=OHR.GoldenTemplePunjab_EN-IN9163263543_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.GoldenTemplePunjab_EN-IN9163263543\",\"copyright\":\"Golden Temple in Amritsar, Punjab, India (© epics.ca/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Guru+Nanak+Gurpurab+wiki&form=hpcapt&filters=HpDate%3a%2220221107_1830%22\",\"title\":\"Celebrating Guru Nanak Gurpurab\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221107_GoldenTemplePunjab%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"87dc8dd9b663677a92b7b4e06dc07412\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221109\",\"fullstartdate\":\"202211091830\",\"enddate\":\"20221110\",\"url\":\"/th?id=OHR.BadLightning_EN-IN8659016190_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.BadLightning_EN-IN8659016190\",\"copyright\":\"Rock formations in Badlands National Park during a lightning storm, South Dakota (© DEEPOL by plainpicture)\",\"copyrightlink\":\"https://www.bing.com/search?q=badlands+national+park+history&form=hpcapt&filters=HpDate%3a%2220221109_1830%22\",\"title\":\"Happy birthday Badlands National Park\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221109_BadLightning%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"e63d7a0548eb4b1f4664ae09e8688cba\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221110\",\"fullstartdate\":\"202211101830\",\"enddate\":\"20221111\",\"url\":\"/th?id=OHR.MountAbu_EN-IN9235554332_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.MountAbu_EN-IN9235554332\",\"copyright\":\"Mount Abu and the Aravalli Range in Rajasthan, India (© saiko3p/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=Mount+Abu+Rajasthan&form=hpcapt&filters=HpDate%3a%2220221110_1830%22\",\"title\":\"An oasis in the desert\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221110_MountAbu%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"b7fedbd06af5f6f2ebd9e46c7fb184b9\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221112\",\"fullstartdate\":\"202211121830\",\"enddate\":\"20221113\",\"url\":\"/th?id=OHR.FosterCoveredBridge_EN-IN9279266132_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.FosterCoveredBridge_EN-IN9279266132\",\"copyright\":\"Foster Covered Bridge in Cabot, Vermont (© Alan Majchrowicz/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Covered+bridge&form=hpcapt&filters=HpDate%3a%2220221112_1830%22\",\"title\":\"A modern recreation\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221112_FosterCoveredBridge%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"177a575051a011ee118a5249201c3476\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221113\",\"fullstartdate\":\"202211131830\",\"enddate\":\"20221114\",\"url\":\"/th?id=OHR.SanGiovanni_EN-IN0204571624_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.SanGiovanni_EN-IN0204571624\",\"copyright\":\"Ruins of the medieval castle of the Knights of St. John above the village of Chorio, Halki Island, Greece (© Massimo Ripani/eStock Photo)\",\"copyrightlink\":\"https://www.bing.com/search?q=Halki+Greece&form=hpcapt&filters=HpDate%3a%2220221113_1830%22\",\"title\":\"High above the Aegean Sea\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221113_SanGiovanni%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"4d78152eba5a5adbd0336f57c970def0\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221114\",\"fullstartdate\":\"202211141830\",\"enddate\":\"20221115\",\"url\":\"/th?id=OHR.LontraCanadensis_EN-IN0625737183_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.LontraCanadensis_EN-IN0625737183\",\"copyright\":\"North American river otters swimming in Acadia National Park, Maine (© George Sanker/Minden Pictures)\",\"copyrightlink\":\"https://www.bing.com/search?q=North+American+river+otter&form=hpcapt&filters=HpDate%3a%2220221114_1830%22\",\"title\":\"You 'otter' check this out\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221114_LontraCanadensis%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"a3afa09e6218fea8b31d03baf81f994c\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221115\",\"fullstartdate\":\"202211151830\",\"enddate\":\"20221116\",\"url\":\"/th?id=OHR.Unesco50_EN-IN0976809645_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.Unesco50_EN-IN0976809645\",\"copyright\":\"Cliff dwellings in Mesa Verde National Park in Colorado, USA (© Brad McGinley Photography/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=UNESCO+World+Heritage+sites&form=hpcapt&filters=HpDate%3a%2220221115_1830%22\",\"title\":\"A 50-year balancing act\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221115_Unesco50%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"00c2526c6ddd05f3d334aec9550f18a2\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221116\",\"fullstartdate\":\"202211161830\",\"enddate\":\"20221117\",\"url\":\"/th?id=OHR.McKenzieRiverTrail_EN-IN1387365715_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.McKenzieRiverTrail_EN-IN1387365715\",\"copyright\":\"Bridge on the McKenzie River Trail, Willamette National Forest, Oregon (© Don Paulson/Danita Delimont)\",\"copyrightlink\":\"https://www.bing.com/search?q=mckenzie+river+national+recreation+trail&form=hpcapt&filters=HpDate%3a%2220221116_1830%22\",\"title\":\"Take a hike!\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221116_McKenzieRiverTrail%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"631e54269ec9cc036b9fdf5066d1c2fd\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221117\",\"fullstartdate\":\"202211171830\",\"enddate\":\"20221118\",\"url\":\"/th?id=OHR.IslamicArt_EN-IN9111194134_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.IslamicArt_EN-IN9111194134\",\"copyright\":\"The gates of the Royal Palace (Dar El Makhzen) in Fez, Morocco (© Adam Smigielski/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=islamic+architecture+history&form=hpcapt&filters=HpDate%3a%2220221117_1830%22\",\"title\":\"Keyholes to the kingdom\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221117_IslamicArt%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"30c340f8e247b270cd9d070ef202d2c0\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221118\",\"fullstartdate\":\"202211181830\",\"enddate\":\"20221119\",\"url\":\"/th?id=OHR.ZNPVR_EN-IN9994229994_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.ZNPVR_EN-IN9994229994\",\"copyright\":\"Virgin River in Zion National Park, Utah (© Jonathan Ross/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=zion+national+park+history+geology+anniversary&FORM=hpcapt&filters=HpDate%3a%2220221118_1830%22\",\"title\":\"103 years of Zion\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221118_ZNPVR%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"f70d50b920d764bf073550dddd572f9b\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221119\",\"fullstartdate\":\"202211191830\",\"enddate\":\"20221120\",\"url\":\"/th?id=OHR.LandartPainting_EN-IN7351909485_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.LandartPainting_EN-IN7351909485\",\"copyright\":\"Land art painting entitled 'World in Progress II' by artist Saype at the Headquarters of the United Nations in New York City (© Valentin Flauraud/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=World+in+Progress+II+painting+saype&form=hpcapt&filters=HpDate%3a%2220221119_1830%22\",\"title\":\"Creating a better world\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221119_LandartPainting%22&FORM=HPQUIZ\",\"wp\":false,\"hsh\":\"32974ecab0bb2872ed1cd3d9c0d70827\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221120\",\"fullstartdate\":\"202211201830\",\"enddate\":\"20221121\",\"url\":\"/th?id=OHR.FIFA2022_EN-IN0747471587_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.FIFA2022_EN-IN0747471587\",\"copyright\":\"Ahmad Bin Ali Stadium in Doha, Qatar (© Qatar 2022/Supreme Committee via Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=2022+fifa+world+cup&form=hpcapt&filters=HpDate%3a%2220221120_1830%22\",\"title\":\"Kickoff in Qatar\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221120_FIFA2022%22&FORM=HPQUIZ\",\"wp\":false,\"hsh\":\"0fff7bbb57693f0e62dc7fa166683646\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221121\",\"fullstartdate\":\"202211211830\",\"enddate\":\"20221122\",\"url\":\"/th?id=OHR.Waterleidingduinen_EN-IN4295260812_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.Waterleidingduinen_EN-IN4295260812\",\"copyright\":\"Red fox in Amsterdamse Waterleidingduinen Nature Reserve in the Netherlands (© Edwin Giesbers/Minden Pictures)\",\"copyrightlink\":\"https://www.bing.com/search?q=Red+fox&form=hpcapt&filters=HpDate%3a%2220221121_1830%22\",\"title\":\"A fox in the dunes\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221121_Waterleidingduinen%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"02a30588831d43ed6c71dd3aaaeea90a\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221122\",\"fullstartdate\":\"202211221830\",\"enddate\":\"20221123\",\"url\":\"/th?id=OHR.HelianthusAnnuus_EN-IN4868983337_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.HelianthusAnnuus_EN-IN4868983337\",\"copyright\":\"Sunflower (© Dileep Chandran/Alamy)\",\"copyrightlink\":\"https://www.bing.com/search?q=fibonacci+day&form=hpcapt&filters=HpDate%3a%2220221122_1830%22\",\"title\":\"Nature, art, and...math?\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221122_HelianthusAnnuus%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"7c8e180b6148d56e6f498b4984a2b792\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221123\",\"fullstartdate\":\"202211231830\",\"enddate\":\"20221124\",\"url\":\"/th?id=OHR.RovinjCroatia_EN-IN5575438445_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.RovinjCroatia_EN-IN5575438445\",\"copyright\":\"The Old Town of Rovinj, Croatia (© trabantos/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=rovinj+croatia&form=hpcapt&filters=HpDate%3a%2220221123_1830%22\",\"title\":\"Jewel of the Adriatic\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221123_RovinjCroatia%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"a02477261abf2484e23408b36e231933\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221124\",\"fullstartdate\":\"202211241830\",\"enddate\":\"20221125\",\"url\":\"/th?id=OHR.OliveTreeDay_EN-IN2858135320_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.OliveTreeDay_EN-IN2858135320\",\"copyright\":\"An olive tree in front of the Temple of Concordia on the island of Sicily, Italy (© Alfio Finocchiaro/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=Olive+plant&form=hpcapt&filters=HpDate%3a%2220221124_1830%22\",\"title\":\"A symbol of peace\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221124_OliveTreeDay%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"ff431f944da81f7beffbb408e641cf61\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221125\",\"fullstartdate\":\"202211251830\",\"enddate\":\"20221126\",\"url\":\"/th?id=OHR.VidhanaSoudha_EN-IN5543965189_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.VidhanaSoudha_EN-IN5543965189\",\"copyright\":\"Sunset at Vidhana Soudha (State Legislature Building) in Bangalore, India (© Artie Photography/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Constitution+Day+India&form=hpcapt&filters=HpDate%3a%2220221125_1830%22\",\"title\":\"The pillar of democracy\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221125_VidhanaSoudha%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"806d80fad0f68a652a724fed14e478a7\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20221126\",\"fullstartdate\":\"202211261830\",\"enddate\":\"20221127\",\"url\":\"/th?id=OHR.Cecropia_EN-IN6595144388_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.Cecropia_EN-IN6595144388\",\"copyright\":\"Cecropia leaf atop lobster claw petals, Mexico (© Gerry Ellis/Minden Pictures)\",\"copyrightlink\":\"https://www.bing.com/search?q=Cecropia&form=hpcapt&filters=HpDate%3a%2220221126_1830%22\",\"title\":\"Unbe-leaf-able\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20221126_Cecropia%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"48f183f98aea5736e688bb0d7f860cb1\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]}]"
+download-folder='~/Pictures/BingWallpaper/'
+hide=false
+icon-name='low-frame-symbolic'
+lockscreen-blur-brightness=40
+lockscreen-blur-strength=7
+notify=false
+override-lockscreen-blur=true
+selected-image='current'
+state='{"maxlongdate":202211261830,"title":"Cecropia leaf atop lobster claw petals, Mexico","explanation":"Bing Wallpaper of the Day for 2022-11-26","copyright":"© Gerry Ellis/Minden Pictures","longstartdate":"202211261830","imageinfolink":"https://www.bing.com/search?q=Cecropia&form=hpcapt&filters=HpDate%3a%2220221126_1830%22","imageURL":"https://www.bing.com/th?id=OHR.Cecropia_EN-IN6595144388_UHD.jpg","filename":"/home/roopamjain/Pictures/BingWallpaper/20221126-Cecropia_EN-IN6595144388_UHD.jpg"}'
+
+[org/gnome/shell/extensions/blur-my-shell]
+brightness=0.69999999999999996
+hacks-level=3
+noise-amount=0.0
+sigma=1
+
+[org/gnome/shell/extensions/blur-my-shell/appfolder]
+customize=true
+sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/applications]
+blacklist=@as []
+blur=false
+blur-on-overview=false
+brightness=1.0
+enable-all=false
+opacity=226
+sigma=17
+whitelist=['Gnome-terminal', 'Google-chrome']
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
+blur=false
+brightness=0.14999999999999999
+customize=true
+override-background=true
+sigma=0
+style-dash-to-dock=2
+unblur-in-overview=true
+
+[org/gnome/shell/extensions/blur-my-shell/hidetopbar]
+compatibility=false
+
+[org/gnome/shell/extensions/blur-my-shell/lockscreen]
+customize=true
+sigma=14
+
+[org/gnome/shell/extensions/blur-my-shell/overview]
+blur=true
+brightness=0.65000000000000002
+customize=true
+sigma=10
+style-components=1
+
+[org/gnome/shell/extensions/blur-my-shell/panel]
+blur=true
+customize=true
+sigma=11
+
+[org/gnome/shell/extensions/dash-to-dock]
+apply-custom-theme=false
+background-opacity=1.0
+custom-background-color=false
+custom-theme-shrink=true
+dash-max-icon-size=24
+dock-fixed=false
+dock-position='BOTTOM'
+extend-height=false
+height-fraction=0.90000000000000002
+isolate-workspaces=true
+preferred-monitor=-2
+preferred-monitor-by-connector='eDP-1'
+show-mounts=true
+show-mounts-only-mounted=true
+transparency-mode='FIXED'
+
+[org/gnome/shell/extensions/dash-to-panel]
+animate-app-switch=true
+animate-appicon-hover=true
+animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
+appicon-margin=3
+appicon-padding=4
+available-monitors=[0]
+dot-style-unfocused='DOTS'
+hot-keys=false
+hotkeys-overlay-combo='TEMPORARILY'
+intellihide=true
+intellihide-animation-time=200
+intellihide-behaviour='FOCUSED_WINDOWS'
+intellihide-close-delay=400
+intellihide-enable-start-delay=2000
+intellihide-hide-from-windows=true
+intellihide-key-toggle=['<Super>i']
+intellihide-key-toggle-text='<Super>i'
+intellihide-only-secondary=false
+intellihide-pressure-threshold=100
+intellihide-pressure-time=1000
+intellihide-show-in-fullscreen=false
+intellihide-use-pressure=false
+isolate-workspaces=true
+leftbox-padding=-1
+leftbox-size=0
+panel-anchors='{"0":"MIDDLE"}'
+panel-element-positions='{"0":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
+panel-lengths='{"0":100}'
+panel-positions='{"0":"BOTTOM"}'
+panel-sizes='{"0":32}'
+primary-monitor=0
+status-icon-padding=-1
+stockgs-keep-dash=false
+stockgs-keep-top-panel=false
+stockgs-panelbtn-click-only=false
+tray-padding=-1
+tray-size=0
+window-preview-title-position='TOP'
+
+[org/gnome/shell/extensions/ding]
+icon-size='tiny'
+keep-arranged=false
+show-home=false
+
+[org/gnome/shell/extensions/gsconnect]
+devices=['ff90c0afe772ffc8']
+id='1d25d21c-8306-4bcb-a291-fb805062af33'
+name='dell-Inspiron-15-3567'
+show-indicators=true
+
+[org/gnome/shell/extensions/gsconnect/device/ff90c0afe772ffc8]
+certificate-pem='-----BEGIN CERTIFICATE-----\nMIIC9zCCAd+gAwIBAgIBATANBgkqhkiG9w0BAQsFADA/MRkwFwYDVQQDDBBmZjkw\nYzBhZmU3NzJmZmM4MRQwEgYDVQQLDAtLREUgQ29ubmVjdDEMMAoGA1UECgwDS0RF\nMB4XDTIwMTIxMzE4MzAwMFoXDTMwMTIxMzE4MzAwMFowPzEZMBcGA1UEAwwQZmY5\nMGMwYWZlNzcyZmZjODEUMBIGA1UECwwLS0RFIENvbm5lY3QxDDAKBgNVBAoMA0tE\nRTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKiMaZ2bvkeWktx636kn\nlcHVW1J5Ed1XJGIfYW4SbSkgXr9mLZovn0cs3nxAIXiNd3FpruX0VVbzVlkl8VNy\nilerU8QP1Mp59l7HXG7LpqWiXH9OLJIbTOfvsITPPM/iiTb3pgBvqx3FWUO5ZQUu\nRaFOWy9KIl0EuArJgXALb/2iZ2k7v6WFX4+f3f8ZQwtkrf/aAtWLWT1lD50lfXXO\nFGqqLCrkSidtwvbHppbLok6b80hw0sodPDfWWWoUOhtM8iKpY1y70sjdnozIFqTb\nAOolgqiiK+tDcfOjbyiPHDS20FXrMpr4wBWCo/4M4pF/9fU2OXlN3hybQxFagvoi\nVUsCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEARYLrRAaH3CPMbNcrtFZj9KeV5MUo\n7pr2MRZdoxm0LBvkeEG4nSBG33+4/UXdWaKBo0bk8nbWnvlcaSsMeBp4olM6s4Bf\neDiq4xhH1GjwRv4ngHcCYfhVpeD3JFx+MODxb1tI1g18XOSDka06xa8bKUPrTWW3\n8qfBnzHx8PLJL/LNvsA6k5omJ7aljWb+mEyzQiAnutvvtsWxhjCScUgbYEpAJvPy\nN+VZFCFu6/HG9dOPIGLJipCisKyqWmbIKYQ+cb4DhPYO2TIwaouV92b38i+88EkJ\nv7ZoUoDiIy6oc/QSUlSh3X1/cooyAh9AuhIXZk/r3YkbjIdMxWr7R4qwoQ==\n-----END CERTIFICATE-----\n'
+incoming-capabilities=['kdeconnect.battery', 'kdeconnect.battery.request', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report.request', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.photo.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.share.request.update', 'kdeconnect.sms.request', 'kdeconnect.sms.request_attachment', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.telephony.request', 'kdeconnect.telephony.request_mute']
+last-connection='lan://192.168.167.94:1716'
+name='RMX1971'
+outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.battery.request', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report', 'kdeconnect.contacts.response_uids_timestamps', 'kdeconnect.contacts.response_vcards', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.echo', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.request', 'kdeconnect.photo', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand.request', 'kdeconnect.sftp', 'kdeconnect.share.request', 'kdeconnect.sms.attachment_file', 'kdeconnect.sms.messages', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony']
+paired=true
+supported-plugins=['battery', 'clipboard', 'connectivity_report', 'contacts', 'findmyphone', 'mousepad', 'mpris', 'notification', 'photo', 'ping', 'presenter', 'runcommand', 'sftp', 'share', 'sms', 'systemvolume', 'telephony']
+type='phone'
+
+[org/gnome/shell/extensions/gsconnect/device/ff90c0afe772ffc8/plugin/battery]
+custom-battery-notification-value=uint32 80
+
+[org/gnome/shell/extensions/gsconnect/device/ff90c0afe772ffc8/plugin/notification]
+applications='{"Tweaks":{"iconName":"gnome-tweaks","enabled":true},"Power":{"iconName":"battery-caution-symbolic","enabled":true},"Printers":{"iconName":"printer","enabled":true},"Evolution Alarm Notify":{"iconName":"appointment-soon","enabled":true},"Snapd User Session Agent":{"iconName":"application-x-executable","enabled":true},"Date & Time":{"iconName":"preferences-system-time","enabled":true},"Network":{"iconName":"nm-device-wireless","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Color":{"iconName":"preferences-color","enabled":true},"Rhythmbox":{"iconName":"org.gnome.Rhythmbox","enabled":true},"Backups":{"iconName":"org.gnome.DejaDup","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Archive Manager":{"iconName":"org.gnome.ArchiveManager","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true}}'
+
+[org/gnome/shell/extensions/gsconnect/device/ff90c0afe772ffc8/plugin/runcommand]
+command-list={'8bace5d7-62e4-41d3-8395-21adcfe337ad': <{'name': 'Lock Screen', 'command': "SESSION=$(loginctl list-sessions | grep $(whoami) | awk '{print $1}'); loginctl lock-session $SESSION\n"}>, '0a374c4b-cc49-4bdb-9b62-fb023271a50a': <{'name': 'Unlock', 'command': "SESSION=$(loginctl list-sessions | grep $(whoami) | awk '{print $1}'); loginctl unlock-session $SESSION\n"}>}
+
+[org/gnome/shell/extensions/gsconnect/device/ff90c0afe772ffc8/plugin/share]
+receive-directory='/home/roopamjain/Downloads'
+
+[org/gnome/shell/extensions/gsconnect/messaging]
+window-maximized=false
+window-size=(640, 480)
+
+[org/gnome/shell/extensions/gsconnect/preferences]
+window-maximized=false
+window-size=(874, 440)
+
+[org/gnome/shell/extensions/hidetopbar]
+enable-intellihide=false
+keep-round-corners=false
+mouse-sensitive=true
+mouse-sensitive-fullscreen-window=true
+show-in-overview=true
+
+[org/gnome/shell/extensions/mediacontrols]
+colored-player-icon=true
+element-order=['title', 'icon', 'controls', 'menu']
+extension-index=1
+extension-position='right'
+hide-media-notification=true
+max-widget-width=25
+mouse-actions=['toggle_play', 'toggle_menu', 'none', 'none', 'none', 'none', 'none', 'none']
+seperator-chars=['|', '|']
+show-control-icons=true
+show-seperators=false
+show-text=false
+track-label=['track', '-', 'none']
+
+[org/gnome/shell/extensions/quick-settings-tweaks]
+list-buttons='[{"name":"Clutter_Actor","label":null,"visible":true},{"name":"SystemItem","label":null,"visible":true},{"name":"OutputStreamSlider","label":null,"visible":true},{"name":"InputStreamSlider","label":null,"visible":false},{"name":"St_BoxLayout","label":null,"visible":true},{"name":"BrightnessItem","label":null,"visible":true},{"name":"NMWiredToggle","label":null,"visible":false},{"name":"NMWirelessToggle","label":"Galaxy M52 5G6974","visible":true},{"name":"NMModemToggle","label":null,"visible":false},{"name":"NMBluetoothToggle","label":null,"visible":false},{"name":"NMVpnToggle","label":null,"visible":false},{"name":"BluetoothToggle","label":"Bluetooth","visible":true},{"name":"PowerProfilesToggle","label":null,"visible":false},{"name":"NightLightToggle","label":"Night Light","visible":true},{"name":"DarkModeToggle","label":"Dark Mode","visible":true},{"name":"RfkillToggle","label":"Airplane Mode","visible":true},{"name":"RotationToggle","label":"Auto Rotate","visible":false},{"name":"ServiceToggle","label":"GSConnect","visible":true},{"name":"DndQuickToogle","label":"Do Not Disturb","visible":true},{"name":"MediaSection","label":null,"visible":false}]'
+notifications-integrated=false
+
+[org/gnome/shell/extensions/rounded-window-corners]
+black-list=@as []
+border-color=(0.5, 0.5, 0.5, 1.0)
+border-width=0
+custom-rounded-corner-settings=@a{sv} {}
+focused-shadow={'vertical_offset': 4, 'horizontal_offset': 5, 'blur_offset': 31, 'spread_radius': 4, 'opacity': 22}
+global-rounded-corner-settings={'padding': <{'left': <uint32 0>, 'right': <uint32 1>, 'top': <uint32 0>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 7>, 'smoothing': <uint32 0>, 'enabled': <true>}
+settings-version=uint32 5
+unfocused-shadow={'vertical_offset': 2, 'horizontal_offset': 0, 'blur_offset': 12, 'spread_radius': -1, 'opacity': 65}
+
+[org/gnome/shell/extensions/tiling-assistant]
+active-window-hint-color='rgb(219,222,229)'
+last-version-installed=39
+
+[org/gnome/shell/extensions/timepp]
+alarms-fullscreen-monitor-pos=0
+alarms-play-sound=true
+alarms-separate-menu=false
+alarms-sound-file-path='file:///home/roopamjain/.local/share/gnome-shell/extensions/timepp@zagortenay333/data/sounds/beeps.ogg'
+panel-item-position='Right'
+pomodoro-fullscreen-monitor-pos=0
+pomodoro-separate-menu=true
+pomodoro-sound-file-path-long-break='file:///home/roopamjain/.local/share/gnome-shell/extensions/timepp@zagortenay333/data/sounds/beeps.ogg'
+pomodoro-sound-file-path-pomo='file:///home/roopamjain/.local/share/gnome-shell/extensions/timepp@zagortenay333/data/sounds/beeps.ogg'
+pomodoro-sound-file-path-short-break='file:///home/roopamjain/.local/share/gnome-shell/extensions/timepp@zagortenay333/data/sounds/beeps.ogg'
+sections={'Timer': {'enabled': true}, 'Stopwatch': {'enabled': true}, 'Pomodoro': {'enabled': true}, 'Alarms': {'enabled': true}, 'Todo': {'enabled': true}}
+stopwatch-fullscreen-monitor-pos=0
+stopwatch-separate-menu=true
+timer-fullscreen-monitor-pos=0
+timer-sound-file-path='file:///home/roopamjain/.local/share/gnome-shell/extensions/timepp@zagortenay333/data/sounds/beeps.ogg'
+todo-show-task-editor-preview=true
+todo-task-width=150
+unicon-mode=true
+
+[org/gnome/shell/extensions/unite]
+app-menu-ellipsize-mode='end'
+app-menu-max-width=0
+autofocus-windows=false
+enable-titlebar-actions=true
+extend-left-box=false
+greyscale-tray-icons=false
+hide-activities-button='never'
+hide-app-menu-icon=false
+hide-dropdown-arrows=false
+hide-window-titlebars='always'
+notifications-position='right'
+reduce-panel-spacing=false
+restrict-to-primary-screen=false
+show-desktop-name=false
+show-legacy-tray=false
+show-window-buttons='always'
+show-window-title='never'
+window-buttons-placement='auto'
+
+[org/gnome/shell/extensions/useless-gaps]
+gap-size=6
+
+[org/gnome/shell/extensions/user-theme]
+name='Graphite-Dark-nord'
+
+[org/gnome/shell/overrides]
+edge-tiling=false
+
+[org/gnome/simple-scan]
+document-type='photo'
+
+[org/gnome/software]
+check-timestamp=int64 1669519585
+online-updates-timestamp=int64 1662730157
+update-notification-timestamp=int64 1669089877
+
+[org/gnome/terminal/legacy]
+default-show-menubar=false
+headerbar=@mb false
+
+[org/gnome/terminal/legacy/keybindings]
+toggle-menubar='<Primary>m'
+
+[org/gnome/terminal/legacy/profiles:]
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '23ea85c5-2cdc-440f-a6cc-91ee5fd5990c']
+
+[org/gnome/terminal/legacy/profiles:/:23ea85c5-2cdc-440f-a6cc-91ee5fd5990c]
+background-color='rgb(26,25,25)'
+background-transparency-percent=14
+bold-is-bright=true
+default-size-columns=65
+default-size-rows=40
+font='Monaco 10'
+foreground-color='rgb(17,247,237)'
+palette=['rgb(23,20,33)', 'rgb(192,28,40)', 'rgb(38,162,105)', 'rgb(162,115,76)', 'rgb(18,72,139)', 'rgb(163,71,186)', 'rgb(42,161,179)', 'rgb(208,207,204)', 'rgb(94,92,100)', 'rgb(246,97,81)', 'rgb(51,209,122)', 'rgb(233,173,12)', 'rgb(42,123,222)', 'rgb(192,97,203)', 'rgb(51,199,222)', 'rgb(255,255,255)']
+scrollbar-policy='never'
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+visible-name='Terminal'
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(26,25,25)'
+background-transparency-percent=14
+bold-is-bright=true
+default-size-columns=65
+default-size-rows=40
+font='Monaco 10'
+foreground-color='rgb(17,247,237)'
+palette=['rgb(23,20,33)', 'rgb(192,28,40)', 'rgb(38,162,105)', 'rgb(162,115,76)', 'rgb(18,72,139)', 'rgb(163,71,186)', 'rgb(42,161,179)', 'rgb(208,207,204)', 'rgb(94,92,100)', 'rgb(246,97,81)', 'rgb(51,209,122)', 'rgb(233,173,12)', 'rgb(42,123,222)', 'rgb(192,97,203)', 'rgb(51,199,222)', 'rgb(255,255,255)']
+scrollbar-policy='never'
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+
+[org/gtk/gtk4/settings/color-chooser]
+custom-colors=[(0.0, 0.0, 0.0, 0.0), (0.5, 0.5, 0.5, 1.0)]
+selected-color=(true, 0.0, 0.0, 0.0, 0.0)
+
+[org/gtk/gtk4/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=157
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-size=(800, 609)
+
+[org/gtk/settings/color-chooser]
+custom-colors=[(0.067666666666666722, 0.96666666666666667, 0.9304653243847878, 1.0), (0.15000000000000008, 0.90000000000000002, 0.86979865771812104, 1.0), (0.0, 1.0, 0.0, 1.0), (0.10333333333333335, 0.096100000000000019, 0.096100000000000019, 1.0), (0.080000000000000002, 0.070666666666666669, 0.070666666666666669, 1.0), (0.88627450980392153, 0.83529411764705885, 0.18431372549019609, 1.0), (0.88666666666666671, 0.83495436241610743, 0.18619999999999998, 1.0), (0.18847188665175241, 0.69333333333333336, 0.071644444444444483, 1.0)]
+selected-color=(true, 0.067666666666666722, 0.96666666666666667, 0.9304653243847878, 1.0)
+
+[org/gtk/settings/debug]
+enable-inspector-keybinding=true
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=true
+show-size-column=true
+show-type-column=true
+sidebar-width=168
+sort-column='modified'
+sort-directories-first=true
+sort-order='descending'
+type-format='category'
+window-position=(0, 30)
+window-size=(1366, 682)
+
+[org/yorba/shotwell/preferences/ui]
+display-basic-properties=true
+display-extended-properties=false
+display-photo-comments=false
+display-photo-ratings=true
+display-photo-tags=true
+display-photo-titles=false
+display-search-bar=false
+display-sidebar=true
+events-sort-ascending=false
+library-photos-sort-ascending=false
+library-photos-sort-by=2
+show-welcome-dialog=false
+sidebar-position=180
+
+[org/yorba/shotwell/preferences/window]
+library-height=704
+library-maximize=false
+library-width=1024

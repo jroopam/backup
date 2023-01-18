@@ -23,8 +23,9 @@ Media Controls
 Quick Settings Tweaker
 Rounded Window Corners
 Time++
-Unite
-Useless Gaps
+Tiling Assistant
+Unite (For terminal it seemed only to work with xorg display server for Ubuntu 22.10)
+Useless Gps
 User Themes
 
 # Themes:
@@ -34,6 +35,7 @@ WhiteSur-Dark-solid-red
 MonoTheme
 Flat remix
 Fluent
+Graphite-Dark-Nord
 Orchis
 
 # Icons:
@@ -45,6 +47,7 @@ Papirus
 Gilroy(Similar to Google's font)
 Fira
 Cascadia
+Comic Mono
 
 # Settings(Gnome Tweaks)
 Interface Text: 11
@@ -52,7 +55,7 @@ Document Text: 10
 Rest all: 11
 Scaling Factor 0.79
 
-
+**Note**: Wayland may be better but neither the screen sharing works nor unite(at least for terminal)
 
 **For Scaling**
 - https://askubuntu.com/questions/955038/change-the-display-scaling-on-the-fly

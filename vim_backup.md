@@ -15,7 +15,7 @@
 	- Add the above lines in init.vim to have all the configurations of vim
 	- Will upload this to github
 3. For copy/pasting to and from clipboard(you have to install some service depending upon your display server, it was wayland earlier but due to issue with google screen sharing had to switch to x11) github.com/equalsraf/neovim-qt/issues/621
-4. # CUSTOM_NVIM_PATH=/usr/local/bin/nvim.appimage
+4. CUSTOM_NVIM_PATH=/usr/local/bin/nvim.appimage
 ## The neovim folder resides in .config
 ### Set the above with the correct path, then run the rest of the commands:
 set -u
@@ -36,7 +36,7 @@ sudo update-alternatives --install /usr/bin/vimdiff vimdiff "${CUSTOM_NVIM_PATH}
 For telescope installed fd-find
 
 # Extensions
-- NerdTree
+- NvimTree
 - NerdCommenter
 - airline
 - rainbow

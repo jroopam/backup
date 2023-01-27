@@ -20,8 +20,6 @@ set wildmode=list:longest
 "autocmd TextChanged,TextChangedI <buffer> silent write
 "Need vim-gtk3 for the next line to work
 set clipboard+=unnamedplus
-noremap t gt
-noremap T gT
 set number relativenumber
 set whichwrap=lh
 let mapleader = " "
@@ -29,6 +27,14 @@ let mapleader = " "
 "Change split size using mouse
 "set mouse=n
 "set ttymouse=xterm2
+
+"Tabs and buffers
+"noremap t gt
+"noremap T gT
+noremap t :bnext<CR>
+noremap T :bprevious<CR>
+nmap <leader>bq :bp <BAR> bd #<CR>
+nmap <leader>bl :ls<CR>
 
 "Switching between splits
 nmap <silent> <c-k> :wincmd k<CR>
@@ -63,7 +69,8 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 
 "vim-airline
-"let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 "let g:airline_powerline_fonts=0
 
 
@@ -146,7 +153,7 @@ if g:multiedit_no_mappings != 1
     nmap <leader>C :Multiedit!<CR>
     " Unset the region under the cursor
     nmap <silent> <leader>md :MultieditClear<CR>
-    " Unset all regions
+    " Uset all regions
     nmap <silent> <leader>mr :MultieditReset<CR>
 endif
 
@@ -197,5 +204,4 @@ endif
 "nnoremap <C-_> :call ToggleComment()<CR>
 "inoremap <C-_> <C-o>:call ToggleComment()<CR>
 "xnoremap <C-_> :'<,'>call ToggleComment()<CR>
-
 

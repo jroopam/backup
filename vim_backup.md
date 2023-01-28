@@ -41,7 +41,7 @@ For telescope installed fd-find
 - airline
 - rainbow
 - vim-auto-save
-- YouCompleteMe
+- YouCompleteMe(Can be installed without vundle, mkdir ~/.vim/bundle and clone ycm repo there. Install all required things before. After cloning do git submodule --init --recursive. Then run python3 install.py --all. It should be working.)
 
 # Installation
 - Planning to upload most of the extensions on github only so cloning should work

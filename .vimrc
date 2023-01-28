@@ -42,7 +42,6 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
-
 "Bracket pair colorizer
 let g:rainbow_active = 1
 
@@ -67,18 +66,16 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
-
 "vim-airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 "let g:airline_powerline_fonts=0
 
-
-
-
-
-
-
+"YCM
+filetype plugin indent on
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
+let g:ycm_server_python_interpreter = '/usr/bin/python3.8'
+set runtimepath+=~/.vim/bundle/YouCompleteMe/
 
 " *multiedit.txt* Multi-editing for Vim
 "
@@ -94,7 +91,6 @@ if exists('g:loaded_multiedit') || &cp
     finish
 endif
 let g:loaded_multiedit = 1
-
 
 " Settings
 if !exists('g:multiedit_no_mappings')
@@ -113,11 +109,9 @@ if !exists('g:multiedit_auto_restore')
     let g:multiedit_auto_restore = 1
 endif
 
-
 " Color highlights
 hi default link MultieditRegions Search
 hi default link MultieditFirstRegion IncSearch
-
 
 " Mappings
 com! -bar -range MultieditAddRegion call multiedit#addRegion()
@@ -158,12 +152,6 @@ if g:multiedit_no_mappings != 1
 endif
 
 " vim: set foldmarker={{,}} foldlevel=0 foldmethod=marker
-
-
-
-
-
-
 
 
 "Multi cursor

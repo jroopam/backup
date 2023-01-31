@@ -42,6 +42,27 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
+"Code folding
+set foldmethod=indent   
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
+
+"Ctrl Backspace - Not working
+"inoremap <C-w> <C-\><C-o>dB
+"inoremap <C-BS> <C-\><C-o>db
+noremap! <C-BS> <C-w>
+noremap! <C-h> <C-w>
+
+"Python indentation
+let g:python_indent = {}
+let g:python_indent.open_paren = 'shiftwidth() * 2'
+let g:python_indent.nested_paren = 'shiftwidth()'
+let g:python_indent.continue = 'shiftwidth() * 2'
+let g:python_indent.closed_paren_align_last_line = v:false
+let g:python_indent.searchpair_timeout = 500
+let g:python_indent.disable_parentheses_indenting = 1
+
 "Bracket pair colorizer
 let g:rainbow_active = 1
 
@@ -76,6 +97,8 @@ filetype plugin indent on
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
 let g:ycm_server_python_interpreter = '/usr/bin/python3.8'
 set runtimepath+=~/.vim/bundle/YouCompleteMe/
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 " *multiedit.txt* Multi-editing for Vim
 "

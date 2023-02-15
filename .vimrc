@@ -44,9 +44,10 @@ nmap <silent> <c-l> :wincmd l<CR>
 
 "Code folding
 set foldmethod=indent   
-set foldnestmax=10
-set nofoldenable
-set foldlevel=2
+set foldignore=
+"set foldnestmax=10
+"set nofoldenable
+"set foldlevel=2
 
 "Ctrl Backspace - Not working
 "inoremap <C-w> <C-\><C-o>dB

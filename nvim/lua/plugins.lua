@@ -21,8 +21,7 @@ packer.startup(function(use)
 	    if layout[1] == "leaf" and vim.api.nvim_buf_get_option(vim.api.nvim_win_get_buf(layout[2]), "filetype") == "NvimTree" and layout[3] == nil then vim.cmd("confirm quit") end
 	  end
 	})
-	use {
-		"catppuccin/nvim", as = "catppuccin"
-	}
+	use {'neoclide/coc.nvim', branch = 'release'}
+	use {"catppuccin/nvim", as = "catppuccin"}
 	use { "ellisonleao/gruvbox.nvim" }
 end)

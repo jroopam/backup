@@ -74,7 +74,7 @@ noremap <C-_> :call nerdcommenter#Comment(0,"toggle")<C-m>
 inoremap <C-_> :call nerdcommenter#Comment(0,"toggle")<C-m>
 
 "NvimTree
-nnoremap <C-n> :NvimTreeToggle<CR>
+nnoremap <C-p> :NvimTreeToggle<CR>
 nnoremap <C-t> :NvimTreeFocus<CR>
 autocmd VimEnter * NvimTreeOpen | wincmd p
 " Exit Vim if NERDTree is the only window remaining in the only tab.

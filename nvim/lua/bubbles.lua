@@ -49,6 +49,14 @@ require('lualine').setup {
       { 'location', separator = { right = '' }, left_padding = 2 },
     },
   },
+  tabline = {
+    lualine_a = {'buffers'},
+    lualine_b = {'branch'},
+    lualine_c = {'filename'},
+    lualine_x = {},
+    lualine_y = {},
+    lualine_z = {'tabs'}
+  },
   inactive_sections = {
     lualine_a = { 'filename' },
     lualine_b = {},

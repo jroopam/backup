@@ -14,22 +14,23 @@ https://superuser.com/questions/1729457/google-meet-share-screen-black-after-upg
 * Plank
 
 # Installed gnome extensions:
-ArcMenu
-Aylur's Widgets
-Bing Wallpaper
-Blur my shell
-Coverflow Alt-Tab
-Dash to Panel or Dash to Dock
-GSConnect
-GTK Title Bar
-Media Controls
-Quick Settings Tweaker
-Rounded Window Corners
-Time++
-Tiling Assistant
-Unite (For terminal it seemed only to work with xorg display server for Ubuntu 22.10)
-Useless Gps
-User Themes
+* ArcMenu
+* Aylur's Widgets
+* Bing Wallpaper
+* Blur my shell
+* Burn My windows
+* Coverflow Alt-Tab
+* Dash to Panel or Dash to Dock
+* GSConnect
+* GTK Title Bar
+* Media Controls
+* Quick Settings Tweaker
+* Rounded Window Corners
+* Time++
+* Tiling Assistant
+* Unite (For terminal it seemed only to work with xorg display server for Ubuntu 22.10)
+* Useless Gps
+* User Themes
 
 # Themes:
 Vimix

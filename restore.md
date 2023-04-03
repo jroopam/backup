@@ -21,6 +21,7 @@ https://superuser.com/questions/1729457/google-meet-share-screen-black-after-upg
 * Burn My windows
 * Coverflow Alt-Tab
 * Dash to Panel or Dash to Dock
+* Gesture Improvements(Also install utility mentioned in extension homepage)
 * GSConnect
 * GTK Title Bar
 * Media Controls

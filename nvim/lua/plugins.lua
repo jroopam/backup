@@ -22,8 +22,9 @@ packer.startup(function(use)
 	  end
 	})
 	use {'neoclide/coc.nvim', branch = 'release'}
-	use {"catppuccin/nvim", as = "catppuccin"}
-	use {'folke/tokyonight.nvim'}
-	use {'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
+	--use {"catppuccin/nvim", as = "catppuccin"}
+	--use {'folke/tokyonight.nvim'}
+	--use {'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
+	use {'navarasu/onedark.nvim'}
 	use {'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true }}
 end)

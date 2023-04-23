@@ -24,6 +24,14 @@ set number relativenumber
 set whichwrap=lh
 let mapleader = " "
 
+"Colorscheme
+"let g:gruvbox_italic = 1
+"let g:gruvbox_contrast_dark = 'hard'
+"let g:gruvbox_italicize_strings = 1
+"let g:gruvbox_italicize_comments = 1
+"let g:gruvbox_transparent_bg = 1
+"colorscheme gruvbox
+
 "Change split size using mouse
 "set mouse=n
 "set ttymouse=xterm2
@@ -216,4 +224,3 @@ endif
 "nnoremap <C-_> :call ToggleComment()<CR>
 "inoremap <C-_> <C-o>:call ToggleComment()<CR>
 "xnoremap <C-_> :'<,'>call ToggleComment()<CR>
-

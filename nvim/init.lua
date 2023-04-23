@@ -5,8 +5,7 @@ source ~/.vimrc
 ]])
 
 require("plugins")
-require("evil_lualine")
--- require("bubbles")
+
 -- disable netrw at the very start of your init.lua (strongly advised)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -224,3 +223,4 @@ keyset("n", "<space>k", ":<C-u>CocPrev<cr>", opts)
 keyset("n", "<space>p", ":<C-u>CocListResume<cr>", opts)
 
 vim.o.background = "dark" -- or "light" for light mode
+require('onedark').load()

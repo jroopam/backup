@@ -101,13 +101,12 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 "let g:airline_powerline_fonts=0
 
-"YCM
-filetype plugin indent on
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
-let g:ycm_server_python_interpreter = '/usr/bin/python3.8'
-set runtimepath+=~/.vim/bundle/YouCompleteMe/
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_autoclose_preview_window_after_completion = 1
+" define line highlight color
+highlight LineHighlight ctermbg=darkgray guibg=darkgray
+" highlight the current line
+nnoremap <silent> <Leader>l :call matchadd('LineHighlight', '\%'.line('.').'l')<CR>
+" clear all the highlighted lines
+nnoremap <silent> <Leader>c :call clearmatches()<CR>
 
 " *multiedit.txt* Multi-editing for Vim
 "

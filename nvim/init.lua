@@ -12,6 +12,11 @@ vim.api.nvim_set_keymap('n', '<M-Down>', ':resize +2<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<M-Left>', ':vertical resize -2<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<M-Right>', ':vertical resize +2<CR>', { noremap = true })
 
+-- Code indentation lines
+vim.opt.expandtab = false
+vim.opt.listchars = { tab = "| " }
+vim.opt.list = true
+
 require("plugins")
 
 -- disable netrw at the very start of your init.lua (strongly advised)

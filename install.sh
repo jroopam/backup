@@ -18,7 +18,13 @@ chmod u+x nvim.appimage
 # sudo ln -s /squashfs-root/AppRun /usr/local/bin/nvim
 # nvim
 
-export CUSTOM_NVIM_PATH=/usr/local/bin/nvim
+# Moving to ~/.local/bin
+mv nvim.appimage ~/.local/bin/
+sudo ln -s ~/.local/bin/nvim.appimage /usr/bin/nvim
+
+
+# export CUSTOM_NVIM_PATH=/usr/local/bin/nvim
+export CUSTOM_NVIM_PATH=~/.local/bin/nvim
 # Set the above with the correct path, then run the rest of the commands:
 set -u
 # sudo update-alternatives --install /usr/bin/ex ex "${CUSTOM_NVIM_PATH}" 110

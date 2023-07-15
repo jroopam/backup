@@ -26,6 +26,9 @@ vim.g.loaded_netrwPlugin = 1
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
+-- Scope.nvim for seperate buffers in each tab
+require("scope").setup({})
+
 -- empty setup using defaults
 --require("nvim-tree").setup()
 

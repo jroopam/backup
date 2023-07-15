@@ -13,6 +13,7 @@ packer.startup(function(use)
 			'nvim-tree/nvim-web-devicons',
 		},
 	}
+	use("tiagovla/scope.nvim")
 	vim.api.nvim_create_autocmd("BufEnter", {
 	  group = vim.api.nvim_create_augroup("NvimTreeClose", {clear = true}),
 	  pattern = "NvimTree_*",

@@ -23,6 +23,7 @@ packer.startup(function(use)
 	  end
 	})
 	use {'neoclide/coc.nvim', branch = 'release'}
+	use {'lewis6991/gitsigns.nvim'}
 	--use {"catppuccin/nvim", as = "catppuccin"}
 	--use {'folke/tokyonight.nvim'}
 	--use {'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }

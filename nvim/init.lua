@@ -29,6 +29,9 @@ vim.opt.termguicolors = true
 -- Scope.nvim for seperate buffers in each tab
 require("scope").setup({})
 
+-- Gitsigns.nvim
+require('gitsigns').setup()
+
 -- empty setup using defaults
 --require("nvim-tree").setup()
 

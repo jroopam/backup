@@ -41,6 +41,9 @@ mkdir -p ~/.vim/pack/plugins/start && git clone https://github.com/mg979/vim-vis
 # NerdCommenter
 git clone https://github.com/preservim/nerdcommenter.git ~/.vim/pack/vendor/start/nerdcommenter
 
+# vim-devicons
+git clone https://github.com/ryanoasis/vim-devicons.git ~/.vim/pack/vendor/start/vim-devicons
+
 # vim-auto-save
  git clone https://github.com/907th/vim-auto-save.git ~/.vim/pack/vendor/start/vim-auto-save
  

@@ -81,6 +81,11 @@ let g:NERDDefaultAlign = 'left'
 noremap <C-_> :call nerdcommenter#Comment(0,"toggle")<C-m>
 inoremap <C-_> :call nerdcommenter#Comment(0,"toggle")<C-m>
 
+" For vim-devicons(square bracket issue)
+if exists("g:loaded_webdevicons")
+	call webdevicons#refresh()
+endif
+
 "NvimTree
 "nnoremap <C-p> :NvimTreeToggle<CR>
 "nnoremap <C-t> :NvimTreeFocus<CR>

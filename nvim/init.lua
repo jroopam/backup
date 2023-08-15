@@ -4,18 +4,10 @@ let &packpath = &runtimepath
 source ~/.vimrc
 ]])
 
--- Key Mapppings and Options
-
--- Resize mappings with Alt + arrow keys
-vim.api.nvim_set_keymap('n', '<M-Up>', ':resize -2<CR>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<M-Down>', ':resize +2<CR>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<M-Left>', ':vertical resize -2<CR>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<M-Right>', ':vertical resize +2<CR>', { noremap = true })
-
 -- Code indentation lines
-vim.opt.expandtab = false
-vim.opt.listchars = { tab = "| " }
-vim.opt.list = true
+--vim.opt.expandtab = false
+--vim.opt.listchars = { tab = "| " }
+--vim.opt.list = true
 
 require("plugins")
 

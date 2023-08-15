@@ -44,6 +44,12 @@ noremap T :bprevious<CR>
 nmap <leader>bq :bp <BAR> bd #<CR>
 nmap <leader>bl :ls<CR>
 
+" Resize windows with Meta key and arrow keys
+nnoremap <M-Up> :resize -2<CR>
+nnoremap <M-Down> :resize +2<CR>
+nnoremap <M-Left> :vertical resize -2<CR>
+nnoremap <M-Right> :vertical resize +2<CR>
+
 "Switching between splits
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
@@ -81,11 +87,6 @@ let g:NERDDefaultAlign = 'left'
 noremap <C-_> :call nerdcommenter#Comment(0,"toggle")<C-m>
 inoremap <C-_> :call nerdcommenter#Comment(0,"toggle")<C-m>
 
-" For vim-devicons(square bracket issue)
-if exists("g:loaded_webdevicons")
-	call webdevicons#refresh()
-endif
-
 "NvimTree
 "nnoremap <C-p> :NvimTreeToggle<CR>
 "nnoremap <C-t> :NvimTreeFocus<CR>
@@ -101,7 +102,7 @@ autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_
     \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
 
 " For vim-devicons
-set guifont=FiraCode\ Nerd\ Font\ 11
+"set guifont=FiraCode\ Nerd\ Font\ 11
 
 "Telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
@@ -236,3 +237,10 @@ endif
 "nnoremap <C-_> :call ToggleComment()<CR>
 "inoremap <C-_> <C-o>:call ToggleComment()<CR>
 "xnoremap <C-_> :'<,'>call ToggleComment()<CR>
+
+g:webdevicons_conceal_nerdtree_brackets = 1
+
+" For vim-devicons(square bracket issue)
+"if exists("g:loaded_webdevicons")
+"    call webdevicons#refresh()
+"endif

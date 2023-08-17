@@ -23,14 +23,7 @@ set clipboard+=unnamedplus
 set number relativenumber
 set whichwrap=lh
 let mapleader = " "
-
-"Colorscheme
-"let g:gruvbox_italic = 1
-"let g:gruvbox_contrast_dark = 'hard'
-"let g:gruvbox_italicize_strings = 1
-"let g:gruvbox_italicize_comments = 1
-"let g:gruvbox_transparent_bg = 1
-"colorscheme gruvbox
+set scrolloff=8
 
 "Change split size using mouse
 "set mouse=n
@@ -86,11 +79,6 @@ let g:NERDCreateDefaultMappings = 0
 let g:NERDDefaultAlign = 'left'
 noremap <C-_> :call nerdcommenter#Comment(0,"toggle")<C-m>
 inoremap <C-_> :call nerdcommenter#Comment(0,"toggle")<C-m>
-
-"NvimTree
-"nnoremap <C-p> :NvimTreeToggle<CR>
-"nnoremap <C-t> :NvimTreeFocus<CR>
-"autocmd VimEnter * NvimTreeOpen | wincmd p
 
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 nnoremap <C-p> :NERDTreeToggle<CR>
@@ -237,8 +225,6 @@ endif
 "nnoremap <C-_> :call ToggleComment()<CR>
 "inoremap <C-_> <C-o>:call ToggleComment()<CR>
 "xnoremap <C-_> :'<,'>call ToggleComment()<CR>
-
-g:webdevicons_conceal_nerdtree_brackets = 1
 
 " For vim-devicons(square bracket issue)
 "if exists("g:loaded_webdevicons")

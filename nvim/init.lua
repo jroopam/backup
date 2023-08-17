@@ -24,26 +24,60 @@ require("scope").setup({})
 -- Gitsigns.nvim
 require('gitsigns').setup()
 
+-- Colorscheme
+-- Set Gruvbox specific options
+vim.g.gruvbox_italic = 1
+vim.g.gruvbox_contrast_dark = 'hard'
+vim.g.gruvbox_italicize_strings = 1
+vim.g.gruvbox_italicize_comments = 1
+vim.g.gruvbox_transparent_bg = 1
+
+-- Load the Gruvbox color scheme
+vim.cmd('colorscheme gruvbox')
+
+-- Explorer
+-- NvimTree
 -- empty setup using defaults
 --require("nvim-tree").setup()
 
 -- OR setup with some options
-require("nvim-tree").setup({
-	sort_by = "case_sensitive",
-	view = {
-		mappings = {
-			list = {
-				{ key = "u", action = "dir_up" },
-			},
-		},
-	},
-	renderer = {
-		group_empty = true,
-	},
-	filters = {
-		dotfiles = true,
-	},
-})
+--require("nvim-tree").setup({
+--    sort_by = "case_sensitive",
+--    view = {
+--        mappings = {
+--            list = {
+--                { key = "u", action = "dir_up" },
+--            },
+--        },
+--    },
+--    renderer = {
+--        group_empty = true,
+--    },
+--    filters = {
+--        dotfiles = true,
+--    },
+--})
+
+--vim.api.nvim_set_keymap('n', '<C-p>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('n', '<C-t>', ':NvimTreeFocus<CR>', { noremap = true, silent = true })
+
+---- Auto-open NvimTree when VimEnter
+--vim.cmd([[autocmd VimEnter * NvimTreeOpen | wincmd p]])
+
+-- NerdTree
+-- Exit Neovim if NERDTree is the only window remaining in the only tab.
+vim.api.nvim_set_keymap('n', '<C-p>', ':NERDTreeToggle<CR>', { noremap = true })
+
+-- Close the tab if NERDTree is the only window remaining in it.
+vim.cmd([[ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif ]])
+vim.cmd([[ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif ]])
+
+-- If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
+vim.cmd([[ autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+    \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+]])
+
+vim.g.webdevicons_conceal_nerdtree_brackets = 1
 
 -- Coc
 -- Some servers have issues with backup files, see #649
@@ -234,4 +268,4 @@ keyset("n", "<space>k", ":<C-u>CocPrev<cr>", opts)
 keyset("n", "<space>p", ":<C-u>CocListResume<cr>", opts)
 
 vim.o.background = "dark" -- or "light" for light mode
-require('onedark').load()
+--require('onedark').load()

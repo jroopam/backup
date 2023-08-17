@@ -26,7 +26,7 @@ packer.startup(function(use)
 	use {'lewis6991/gitsigns.nvim'}
 	--use {"catppuccin/nvim", as = "catppuccin"}
 	--use {'folke/tokyonight.nvim'}
-	--use {'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
-	use {'navarasu/onedark.nvim'}
+	use {'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
+	--use {'navarasu/onedark.nvim'}
 	use {'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true }}
 end)

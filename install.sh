@@ -39,10 +39,10 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 mkdir -p ~/.vim/pack/plugins/start && git clone https://github.com/mg979/vim-visual-multi ~/.vim/pack/plugins/start/vim-visual-multi
 
 # NerdCommenter
-git clone https://github.com/preservim/nerdcommenter.git ~/.vim/pack/vendor/start/nerdcommenter
+#git clone https://github.com/preservim/nerdcommenter.git ~/.vim/pack/vendor/start/nerdcommenter
 
 # vim-devicons
-git clone https://github.com/ryanoasis/vim-devicons.git ~/.vim/pack/vendor/start/vim-devicons
+#git clone https://github.com/ryanoasis/vim-devicons.git ~/.vim/pack/vendor/start/vim-devicons
 
 # vim-auto-save
  git clone https://github.com/907th/vim-auto-save.git ~/.vim/pack/vendor/start/vim-auto-save

@@ -38,7 +38,15 @@ vim.cmd('colorscheme gruvbox')
 -- Explorer
 -- NvimTree
 -- empty setup using defaults
---require("nvim-tree").setup()
+require("nvim-tree").setup()
+local function change_root_to_global_cwd()
+	print('aaa')
+  local api = require("nvim-tree.api")
+  local global_cwd = vim.fn.getcwd()
+  api.tree.change_root(global_cwd)
+end
+
+vim.keymap.set('n', '<C-c>', change_root_to_global_cwd)
 
 -- OR setup with some options
 --require("nvim-tree").setup({
@@ -58,24 +66,24 @@ vim.cmd('colorscheme gruvbox')
 --    },
 --})
 
---vim.api.nvim_set_keymap('n', '<C-p>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
---vim.api.nvim_set_keymap('n', '<C-t>', ':NvimTreeFocus<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-p>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-t>', ':NvimTreeFocus<CR>', { noremap = true, silent = true })
 
 ---- Auto-open NvimTree when VimEnter
---vim.cmd([[autocmd VimEnter * NvimTreeOpen | wincmd p]])
+vim.cmd([[autocmd VimEnter * NvimTreeOpen | wincmd p]])
 
 -- NerdTree
 -- Exit Neovim if NERDTree is the only window remaining in the only tab.
-vim.api.nvim_set_keymap('n', '<C-p>', ':NERDTreeToggle<CR>', { noremap = true })
+--vim.api.nvim_set_keymap('n', '<C-p>', ':NERDTreeToggle<CR>', { noremap = true })
 
 -- Close the tab if NERDTree is the only window remaining in it.
-vim.cmd([[ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif ]])
-vim.cmd([[ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif ]])
+--vim.cmd([[ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif ]])
+--vim.cmd([[ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif ]])
 
 -- If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
-vim.cmd([[ autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
-    \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
-]])
+--vim.cmd([[ autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+    --\ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+--]])
 
 vim.g.webdevicons_conceal_nerdtree_brackets = 1
 

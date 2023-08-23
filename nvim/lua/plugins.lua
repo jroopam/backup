@@ -29,4 +29,5 @@ packer.startup(function(use)
 	use {'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
 	--use {'navarasu/onedark.nvim'}
 	use {'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true }}
+	use {'akinsho/bufferline.nvim', requires = 'nvim-tree/nvim-web-devicons'}
 end)

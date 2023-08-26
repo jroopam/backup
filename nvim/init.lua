@@ -39,14 +39,7 @@ vim.cmd('colorscheme gruvbox')
 -- NvimTree
 -- empty setup using defaults
 require("nvim-tree").setup()
-local function change_root_to_global_cwd()
-	print('aaa')
-  local api = require("nvim-tree.api")
-  local global_cwd = vim.fn.getcwd()
-  api.tree.change_root(global_cwd)
-end
-
-vim.keymap.set('n', '<C-c>', change_root_to_global_cwd)
+require("change_nvim_tree_dir_tab")
 
 -- OR setup with some options
 --require("nvim-tree").setup({

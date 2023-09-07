@@ -9,7 +9,7 @@ set number
 set cursorcolumn
 set shiftwidth=4
 set tabstop=4
-"set expandtab
+set expandtab
 "set nowrap
 set incsearch
 set ignorecase
@@ -17,6 +17,8 @@ set showcmd
 set hlsearch
 set wildmenu
 set wildmode=list:longest
+"set hlsearch
+"set insearch
 "autocmd TextChanged,TextChangedI <buffer> silent write
 "Need vim-gtk3 for the next line to work
 set clipboard+=unnamedplus
@@ -24,6 +26,8 @@ set number relativenumber
 set whichwrap=lh
 let mapleader = " "
 set scrolloff=8
+nnoremap("<C-d>", "<C-d>zz")
+nnoremap("<C-u>", "<C-u>zz")
 
 "Change split size using mouse
 "set mouse=n

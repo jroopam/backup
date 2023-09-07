@@ -5,7 +5,6 @@ lsp.preset("recommended")
 lsp.ensure_installed({
   'tsserver',
   'rust_analyzer',
-  'sunmeko_lua'
 })
 
 -- Fix Undefined global 'vim'

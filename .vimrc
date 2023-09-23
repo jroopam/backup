@@ -45,8 +45,8 @@ nmap <leader>bl :ls<CR>
 " Resize windows with Meta key and arrow keys
 nnoremap <M-Up> :resize -2<CR>
 nnoremap <M-Down> :resize +2<CR>
-nnoremap <M-Left> :vertical resize -2<CR>
-nnoremap <M-Right> :vertical resize +2<CR>
+nnoremap <M--> :vertical resize -2<CR>
+nnoremap <M-+> :vertical resize +2<CR>
 
 "Switching between splits
 nmap <silent> <c-k> :wincmd k<CR>

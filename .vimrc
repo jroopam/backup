@@ -6,19 +6,20 @@ syntax on
 set autoindent
 set number
 "set cursorline
+
 set cursorcolumn
 set shiftwidth=4
 set tabstop=4
 set expandtab
 "set nowrap
+
 set incsearch
+set nohlsearch
 set ignorecase
 set showcmd
-set hlsearch
 set wildmenu
 set wildmode=list:longest
-"set hlsearch
-"set insearch
+
 "autocmd TextChanged,TextChangedI <buffer> silent write
 "Need vim-gtk3 for the next line to work
 set clipboard+=unnamedplus
@@ -84,14 +85,14 @@ let g:NERDDefaultAlign = 'left'
 noremap <C-_> :call nerdcommenter#Comment(0,"toggle")<C-m>
 inoremap <C-_> :call nerdcommenter#Comment(0,"toggle")<C-m>
 
-" Exit Vim if NERDTree is the only window remaining in the only tab.
-nnoremap <C-p> :NERDTreeToggle<CR>
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-" Close the tab if NERDTree is the only window remaining in it.
-autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
-autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
-    \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+"" Exit Vim if NERDTree is the only window remaining in the only tab.
+"nnoremap <C-p> :NERDTreeToggle<CR>
+"autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+"" Close the tab if NERDTree is the only window remaining in it.
+"autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+"" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
+"autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+"    \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
 
 " For vim-devicons
 "set guifont=FiraCode\ Nerd\ Font\ 11

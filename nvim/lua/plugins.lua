@@ -38,6 +38,15 @@ packer.startup(function(use)
 			{'L3MON4D3/LuaSnip'},     -- Required
 		}
 	}
+    use({
+        "Pocco81/auto-save.nvim",
+        config = function()
+            require("auto-save").setup {
+                -- your config goes here
+                -- or just leave it empty :)
+            }
+        end,
+    })
 	use {'lewis6991/gitsigns.nvim'}
 	--use {"catppuccin/nvim", as = "catppuccin"}
 	--use {'folke/tokyonight.nvim'}

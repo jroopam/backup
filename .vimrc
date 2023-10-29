@@ -55,7 +55,7 @@ nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
 "Code folding
-set foldmethod=indent   
+set foldmethod=syntax
 set foldignore=
 "set foldnestmax=10
 "set nofoldenable

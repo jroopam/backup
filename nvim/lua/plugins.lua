@@ -47,6 +47,19 @@ packer.startup(function(use)
             }
         end,
     })
+
+    use {
+        'levouh/tint.nvim'
+    }
+
+    use {
+        "folke/noice.nvim",
+        requires = {
+            "MunifTanjim/nui.nvim",
+            "rcarriga/nvim-notify",
+        }
+    }
+
 	use {'lewis6991/gitsigns.nvim'}
 	--use {"catppuccin/nvim", as = "catppuccin"}
 	--use {'folke/tokyonight.nvim'}

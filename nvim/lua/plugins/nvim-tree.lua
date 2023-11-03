@@ -63,7 +63,4 @@ return {
             },
         },
     },
-    {
-        dir = "../change_nvim_tree_dir_tab"
-    }
 }

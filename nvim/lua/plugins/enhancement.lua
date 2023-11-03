@@ -13,12 +13,24 @@ return {
     },
     {
         'levouh/tint.nvim',
+        event = "WinNew",
         config = function()
             require('tint').setup({
                 tint = -50
             })
         end
     },
+    --[[ {
+        'numToStr/Comment.nvim',
+        event = {'BufReadPre', 'BufNewFile'},
+        config = function()
+            require('Comment').setup({
+                toggler = {
+                    line = '<C-_>',
+                }
+            })
+        end
+    }, ]]
     {
         'aluriak/nerdcommenter'
     },

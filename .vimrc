@@ -82,31 +82,14 @@ let g:rainbow_active = 1
 "NERDCommenter
 let g:NERDCreateDefaultMappings = 0
 let g:NERDDefaultAlign = 'left'
-noremap <C-_> :call nerdcommenter#Comment(0,"toggle")<C-m>
-inoremap <C-_> :call nerdcommenter#Comment(0,"toggle")<C-m>
-
-"" Exit Vim if NERDTree is the only window remaining in the only tab.
-"nnoremap <C-p> :NERDTreeToggle<CR>
-"autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-"" Close the tab if NERDTree is the only window remaining in it.
-"autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-"" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
-"autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
-"    \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
-
-" For vim-devicons
-"set guifont=FiraCode\ Nerd\ Font\ 11
+noremap <C-_> :call NERDComment(0,"toggle")<C-m>
+inoremap <C-_> :call NERDComment(0,"toggle")<C-m>
 
 "Telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
-
-"vim-airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-"let g:airline_powerline_fonts=0
 
 " define line highlight color
 highlight LineHighlight ctermbg=darkgray guibg=darkgray

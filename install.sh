@@ -33,20 +33,8 @@ sudo update-alternatives --install /usr/bin/view view "${CUSTOM_NVIM_PATH}" 110
 sudo update-alternatives --install /usr/bin/vim vim "${CUSTOM_NVIM_PATH}" 110
 sudo update-alternatives --install /usr/bin/vimdiff vimdiff "${CUSTOM_NVIM_PATH}" 110
 
-git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+ln -s ~/.vim/* ~/.config/nvim
 
-# vim-visual-multi
-mkdir -p ~/.vim/pack/plugins/start && git clone https://github.com/mg979/vim-visual-multi ~/.vim/pack/plugins/start/vim-visual-multi
-
-# NerdCommenter
-#git clone https://github.com/preservim/nerdcommenter.git ~/.vim/pack/vendor/start/nerdcommenter
-
-# vim-devicons
-#git clone https://github.com/ryanoasis/vim-devicons.git ~/.vim/pack/vendor/start/vim-devicons
-
-# vim-auto-save
- git clone https://github.com/907th/vim-auto-save.git ~/.vim/pack/vendor/start/vim-auto-save
- 
 # Github copilot
 git clone https://github.com/github/copilot.vim ~/.config/nvim/pack/github/start/copilot.vim
 

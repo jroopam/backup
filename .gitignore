@@ -2,3 +2,6 @@ YouCompleteMe
 .local/share/nvim/*
 vim-visual-multi
 packer_compiled.lua
+lazy-lock.json
+nvim/autoload
+nvim/plugin

@@ -35,6 +35,9 @@ sudo update-alternatives --install /usr/bin/vimdiff vimdiff "${CUSTOM_NVIM_PATH}
 
 ln -s ~/.vim/* ~/.config/nvim
 
+# mkdir -p ~/.vim/pack/plugins/start && git clone https://github.com/mg979/vim-visual-multi ~/.vim/pack/plugins/start/vim-visual-multi
+# git clone https://github.com/preservim/nerdcommenter.git ~/.vim/pack/vendor/start/nerdcommenter
+
 # Github copilot
 git clone https://github.com/github/copilot.vim ~/.config/nvim/pack/github/start/copilot.vim
 

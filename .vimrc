@@ -38,7 +38,7 @@ nnoremap("<C-u>", "<C-u>zz")
 "noremap t gt
 "noremap T gT
 noremap <leader>d :bnext<CR>
-noremap <leader>D :bprevious<CR>
+noremap D :bprevious<CR>
 nmap <leader>bq :bp <BAR> bd #<CR>
 nmap <leader>bl :ls<CR>
 

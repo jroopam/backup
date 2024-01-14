@@ -37,8 +37,8 @@ nnoremap("<C-u>", "<C-u>zz")
 "Tabs and buffers
 "noremap t gt
 "noremap T gT
-noremap <leader>d :bnext<CR>
-noremap D :bprevious<CR>
+noremap b :bnext<CR>
+noremap B :bprevious<CR>
 nmap <leader>bq :bp <BAR> bd #<CR>
 nmap <leader>bl :ls<CR>
 

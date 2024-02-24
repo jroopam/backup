@@ -35,10 +35,12 @@ nnoremap("<C-u>", "<C-u>zz")
 "set ttymouse=xterm2
 
 "Tabs and buffers
-"noremap t gt
-"noremap T gT
-noremap t :bnext<CR>
-noremap T :bprevious<CR>
+"Cannot use t as it is a default keybinding for till char
+"map <leader>n :bnext<cr>
+"map <leader>p :bprevious<cr>
+noremap <silent> <tab> :bnext<CR>
+noremap <silent> <s-tab> :bprevious<CR>
+nnoremap <leader><tab> :b#<cr>
 nmap <leader>bq :bp <BAR> bd #<CR>
 nmap <leader>bl :ls<CR>
 

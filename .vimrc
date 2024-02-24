@@ -41,6 +41,8 @@ nnoremap("<C-u>", "<C-u>zz")
 noremap <silent> <tab> :bnext<CR>
 noremap <silent> <s-tab> :bprevious<CR>
 nnoremap <leader><tab> :b#<cr>
+"noremap t gt
+"noremap T gT
 nmap <leader>bq :bp <BAR> bd #<CR>
 nmap <leader>bl :ls<CR>
 

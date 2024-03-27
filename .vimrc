@@ -63,6 +63,45 @@ set foldignore=
 "set nofoldenable
 "set foldlevel=2
 
+" Function to toggle focus on the current split
+let g:isWindowFocussed = 0
+let g:originalWinWidths = {}
+
+function! SaveWindowWidths()
+    let winwidths = {}
+    for i in range(1, winnr('$'))
+        "execute i . 'wincmd w'
+        let winwidths[i] = winwidth(i)
+    endfor
+    return winwidths
+endfunction
+
+function! RestoreWindowWidths(widths)
+    for i in range(1, winnr('$'))
+        if has_key(a:widths, i)
+            execute i . 'wincmd w'
+            execute 'vertical resize ' . a:widths[i]
+        endif
+    endfor
+endfunction
+
+function! ToggleWindowFocus()
+    let currentWin = win_getid()
+    if g:isWindowFocussed
+        call RestoreWindowWidths(g:originalWinWidths)
+        let g:isWindowFocussed = 0
+    else
+        let g:originalWinWidths = SaveWindowWidths()
+        let targetWidth = float2nr((&columns * 0.75))
+        call win_gotoid(currentWin)
+        execute 'vertical resize ' . targetWidth
+        let g:isWindowFocussed = 1
+    endif
+
+    call win_gotoid(currentWin)
+endfunction
+nnoremap <M-i> :call ToggleWindowFocus()<CR>
+
 "Ctrl Backspace - Not working
 "inoremap <C-w> <C-\><C-o>dB
 "inoremap <C-BS> <C-\><C-o>db

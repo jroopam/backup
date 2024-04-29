@@ -42,3 +42,7 @@ ln -s ~/.vim/* ~/.config/nvim
 git clone https://github.com/github/copilot.vim ~/.config/nvim/pack/github/start/copilot.vim
 
 echo "yanking or pasting might not work, install the necessary things!"
+
+#---------------------------------------------------------
+# Startup scripts
+ln -s ~/backup/services/* ~/.config/systemd/user/ # start and enable the services after this

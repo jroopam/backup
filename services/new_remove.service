@@ -1,0 +1,12 @@
+[Unit]
+Description=Remove variables from .zshenv and touch a file at logout
+DefaultDependencies=no
+Before=shutdown.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/roopamjain/backup/scripts/remove_env_variables.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=default.target

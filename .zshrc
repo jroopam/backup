@@ -103,3 +103,23 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# ---------------------------------------------------------------------
+#start_tmux_session() {
+#    if [ -z "$TMUX" ]; then
+#        local tmux_attached=$(tmux ls | grep -v attached | cut -d: -f1)
+#        if [ -n "$tmux_attached" ]; then
+#            tmux attach-session -t "$tmux_attached"
+#        else
+#            tmux new-session -s mysession -d
+#            tmux attach-session -t mysession
+#        fi
+#    fi
+#}
+
+#start_tmux_session
+
+if [ -z "$TMUX_STARTED" ] || [ $TMUX_STARTED -eq 0 ]; then
+    echo "export TMUX_STARTED=1" > .zshenv
+    ~/backup/scripts/start_tmux.sh
+fi

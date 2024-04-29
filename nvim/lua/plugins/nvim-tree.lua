@@ -10,6 +10,9 @@ return {
             local nvimtree = require("nvim-tree")
 
             nvimtree.setup({
+                git = {
+                    ignore = false,
+                },
                 --view = {
                 --    float = {
                 --        enable = true,
@@ -43,7 +46,7 @@ return {
             --vim.api.nvim_set_keymap('n', '<C-t>', ':NvimTreeFocus<CR>', { noremap = true, silent = true })
 
             ---- Auto-open NvimTree when VimEnter
-            vim.cmd([[autocmd VimEnter * NvimTreeOpen | wincmd p]])
+            --vim.cmd([[autocmd VimEnter * NvimTreeOpen | wincmd p]])
             vim.api.nvim_create_autocmd("BufEnter", {
                 group = vim.api.nvim_create_augroup("NvimTreeClose", {clear = true}),
                 pattern = "NvimTree_*",

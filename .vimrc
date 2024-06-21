@@ -14,7 +14,7 @@ set expandtab
 "set nowrap
 
 set incsearch
-set nohlsearch
+set hlsearch
 set ignorecase
 set showcmd
 set wildmenu

@@ -2,21 +2,28 @@ return {
     {
         'akinsho/toggleterm.nvim', version = "*", 
         opts = {
+            size = function(term)
+                if term.direction == "horizontal" then
+                    return 15
+                elseif term.direction == "vertical" then
+                    return vim.o.columns * 0.4
+                end
+            end,
             open_mapping = [[<c-\>]],
             hide_numbers = true,
             autochdir = false,
-            direction = 'float',
-            float_opts = {
-                -- The border key is *almost* the same as 'nvim_open_win'
-                -- see :h nvim_open_win for details on borders however
-                -- the 'curved' border is a custom border type
-                -- not natively supported but implemented in this plugin.
-                border = 'curved',
-               --width = 3,
-                --height = 80,
-                winblend = 3,
-                zindex = 10,
-            },
+            direction = 'horizontal',
+            --float_opts = {
+            --    -- The border key is *almost* the same as 'nvim_open_win'
+            --    -- see :h nvim_open_win for details on borders however
+            --    -- the 'curved' border is a custom border type
+            --    -- not natively supported but implemented in this plugin.
+            --    border = 'curved',
+            --   --width = 3,
+            --    --height = 80,
+            --    winblend = 3,
+            --    zindex = 10,
+            --},
             winbar = {
                 enabled = false,
                 name_formatter = function(term) --  term: Terminal

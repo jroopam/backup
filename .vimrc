@@ -41,7 +41,8 @@ nnoremap("<C-u>", "<C-u>zz")
 noremap <silent> <tab> :bnext<CR>
 noremap <silent> <s-tab> :bprevious<CR>
 nnoremap <leader><tab> :b#<cr>
-nmap <leader>bq :bp <BAR> bd #<CR>
+"nmap <leader>bq :bp <BAR> bd #<CR>
+nmap <C-w> :bp <BAR> bd #<CR>
 nmap <leader>bl :ls<CR>
 
 " Resize windows with Meta key and arrow keys

@@ -45,6 +45,9 @@ nnoremap <leader><tab> :b#<cr>
 nmap <C-w> :bp <BAR> bd #<CR>
 nmap <leader>bl :ls<CR>
 
+"New tmp buffer
+nnoremap <C-a> :enew<CR>
+
 " Resize windows with Meta key and arrow keys
 nnoremap <M-Up> :resize -2<CR>
 nnoremap <M-Down> :resize +2<CR>

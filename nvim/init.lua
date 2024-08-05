@@ -29,4 +29,5 @@ require("lazy").setup("plugins")
 
 require('change_nvim_tree_dir_tab')
 
+vim.api.nvim_create_autocmd({ "FocusGained", "TermClose", "TermLeave" }, { command = "checktime" })
 vim.o.background = "dark" -- or "light" for light mode

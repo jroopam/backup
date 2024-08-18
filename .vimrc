@@ -43,12 +43,12 @@ noremap <silent> <s-tab> :bprevious<CR>
 "More ways to switch buffers
 map gn :bnext<cr>
 map gp :bprevious<cr>
-map gd :bdelete<cr>  
+"map gd :bdelete<cr>  
 map <leader>n :bnext<cr>
 map <leader>p :bprevious<cr>
 map <leader>d :bdelete<cr>
 nnoremap <leader><tab> :b#<cr>
-"nmap <leader>bq :bp <BAR> bd #<CR>
+nmap <leader>q :bp <BAR> bd #<CR>
 nmap <C-w> :bp <BAR> bd #<CR>
 nmap <leader>bl :ls<CR>
 

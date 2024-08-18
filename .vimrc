@@ -34,6 +34,10 @@ nnoremap("<C-u>", "<C-u>zz")
 "set mouse=n
 "set ttymouse=xterm2
 
+"netrw
+noremap <silent> <C-p> :Explore<CR>
+let g:netrw_liststyle = 3
+
 "Tabs and buffers
 "Cannot use t as it is a default keybinding for till char
 "map <leader>n :bnext<cr>

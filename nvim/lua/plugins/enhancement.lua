@@ -20,17 +20,13 @@ return {
             })
         end
     },
-    --[[ {
-        'numToStr/Comment.nvim',
-        event = {'BufReadPre', 'BufNewFile'},
-        config = function()
-            require('Comment').setup({
-                toggler = {
-                    line = '<C-_>',
-                }
-            })
-        end
-    }, ]]
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true
+        -- use opts = {} for passing setup options
+        -- this is equivalent to setup({}) function
+    },
     {
         "lukas-reineke/indent-blankline.nvim", main = "ibl",
         opts = {

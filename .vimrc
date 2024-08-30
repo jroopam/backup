@@ -111,6 +111,9 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
+"Commenting
+noremap <C-/> gc<CR>
+
 "Code folding
 set foldmethod=syntax
 set foldignore=
@@ -174,12 +177,6 @@ let g:python_indent.disable_parentheses_indenting = 1
 
 "Bracket pair colorizer
 let g:rainbow_active = 1
-
-"NERDCommenter
-let g:NERDCreateDefaultMappings = 0
-let g:NERDDefaultAlign = 'left'
-noremap <C-_> :call NERDComment(0,"toggle")<C-m>
-inoremap <C-_> :call NERDComment(0,"toggle")<C-m>
 
 "Telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>

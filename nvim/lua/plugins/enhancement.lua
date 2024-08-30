@@ -32,9 +32,6 @@ return {
         end
     }, ]]
     {
-        'aluriak/nerdcommenter'
-    },
-    {
         "lukas-reineke/indent-blankline.nvim", main = "ibl",
         opts = {
             indent = {

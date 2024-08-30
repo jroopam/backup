@@ -38,6 +38,46 @@ nnoremap("<C-u>", "<C-u>zz")
 noremap <silent> <C-p> :Explore<CR>
 let g:netrw_liststyle = 3
 
+"" Terminal Function
+let g:term_buf = 0
+let g:term_win = 0
+
+function! TermToggle(height, width, direction)
+    if win_gotoid(g:term_win)
+        hide
+    else
+        if a:direction ==# 'v'
+            execute 'vertical botright new'
+            execute 'vertical resize ' . a:width
+        else
+            botright new
+            execute 'resize ' . a:height
+        endif
+        try
+            execute 'buffer ' . g:term_buf
+        catch
+            call termopen($SHELL, {"detach": 0})
+            let g:term_buf = bufnr("")
+        endtry
+        setlocal nonumber
+        setlocal norelativenumber
+        setlocal signcolumn=no
+        startinsert!
+        let g:term_win = win_getid()
+    endif
+endfunction
+
+" Horizontal split
+nnoremap <C-\> :call TermToggle(12, 0, 'h')<CR>
+inoremap <C-\> <Esc>:call TermToggle(12, 0, 'h')<CR>
+tnoremap <C-\> <C-\><C-n>:call TermToggle(12, 0, 'h')<CR>
+
+" Vertical split
+nnoremap <A-\> :call TermToggle(0, 80, 'v')<CR>
+inoremap <A-\> <Esc>:call TermToggle(0, 80, 'v')<CR>
+tnoremap <A-\> <C-\><C-n>:call TermToggle(0, 80, 'v')<CR>
+tnoremap <Esc> <C-\><C-n>
+
 "Tabs and buffers
 "Cannot use t as it is a default keybinding for till char
 "map <leader>n :bnext<cr>

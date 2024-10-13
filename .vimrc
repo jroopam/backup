@@ -111,12 +111,9 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
-"Commenting
-noremap <C-/> gc<CR>
-
 "Code folding
-set foldmethod=syntax
-set foldignore=
+"set foldmethod=syntax
+"set foldignore=
 "set foldnestmax=10
 "set nofoldenable
 "set foldlevel=2

@@ -31,3 +31,8 @@ require('change_nvim_tree_dir_tab')
 
 vim.api.nvim_create_autocmd({ "FocusGained", "TermClose", "TermLeave" }, { command = "checktime" })
 vim.o.background = "dark" -- or "light" for light mode
+
+-- Commenting
+-- Ref: https://github.com/neovim/neovim/discussions/29075
+vim.keymap.set({"n", "v"}, "<C-_>", "gc", {remap = true})
+vim.keymap.set({"n"}, "<C-_>", "gcc", {remap = true})  -- Use with leader n to comment n lines

@@ -84,6 +84,11 @@ tnoremap <Esc> <C-\><C-n>
 "map <leader>p :bprevious<cr>
 noremap <silent> <tab> :bnext<CR>
 noremap <silent> <s-tab> :bprevious<CR>
+noremap <silent> <C-tab> :bnext<CR>
+noremap <silent> <C-s-tab> :bprevious<CR>
+noremap <silent> <s-l> :bnext<CR>
+noremap <silent> <s-h> :bprevious<CR>
+
 "More ways to switch buffers
 map gn :bnext<cr>
 map gp :bprevious<cr>

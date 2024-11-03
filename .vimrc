@@ -98,7 +98,7 @@ map <leader>p :bprevious<cr>
 map <leader>d :bdelete<cr>
 nnoremap <leader><tab> :b#<cr>
 nmap <leader>q :bp <BAR> bd #<CR>
-nmap <C-w> :bp <BAR> bd #<CR>
+nmap <leader><leader>d :bp <BAR> bd #<CR>
 nmap <leader>bl :ls<CR>
 
 "New tmp buffer

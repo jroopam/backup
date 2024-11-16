@@ -52,6 +52,9 @@ return {
             },
         }
     },
+    {
+        'echasnovski/mini.animate',
+        config = true,
+        version = false
+    }
 }
-
-

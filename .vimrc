@@ -116,6 +116,15 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
+" reloading after file changed(https://www.reddit.com/r/neovim/comments/f0qx2y/automatically_reload_file_if_contents_changed/)
+" trigger `autoread` when files changes on disk
+set autoread
+set updatetime=100
+autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
+au BufWinEnter *. set updatetime=300 | set autoread
+" notification after file change
+autocmd FileChangedShellPost *
+            \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 "Code folding
 "set foldmethod=syntax
 "set foldignore=

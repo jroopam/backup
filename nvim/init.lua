@@ -32,6 +32,17 @@ require('change_nvim_tree_dir_tab')
 vim.api.nvim_create_autocmd({ "FocusGained", "TermClose", "TermLeave" }, { command = "checktime" })
 vim.o.background = "dark" -- or "light" for light mode
 
+-- Configuration
+vim.api.nvim_create_user_command("DiagnosticToggle", function()
+	local config = vim.diagnostic.config
+	local vt = config().virtual_text
+	config {
+		virtual_text = not vt,
+		underline = not vt,
+		signs = not vt,
+	}
+end, { desc = "toggle diagnostic" })
+
 -- Commenting
 -- Ref: https://github.com/neovim/neovim/discussions/29075
 vim.keymap.set({"n", "v"}, "<C-_>", "gc", {remap = true})

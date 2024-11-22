@@ -5,11 +5,12 @@ return {
     },
     {
         'folke/tokyonight.nvim',
+        lazy = true,
         --config = function() vim.cmd.colorscheme("tokyonight") end 
     },
     {
         'ellisonleao/gruvbox.nvim', 
-        --lazy = true,
+        lazy = true,
         config = function()
             -- Default options:
             require("gruvbox").setup({
@@ -41,11 +42,8 @@ return {
         end
     },
     {
-        'navarasu/onedark.nvim',
-        lazy = true,
-    },
-    {
         'rebelot/kanagawa.nvim',
+        lazy = true,
         config = function ()
             -- Default options:
             require('kanagawa').setup({
@@ -74,9 +72,13 @@ return {
         })
 
         --vim.cmd("colorscheme kanagawa")
-        vim.cmd("colorscheme kanagawa-wave")
+        -- vim.cmd("colorscheme kanagawa-wave")
         --vim.cmd("colorscheme kanagawa-dragon")
         --vim.cmd("colorscheme kanagawa-lotus")
         end
+    },
+    {
+        "olimorris/onedarkpro.nvim",
+        priority = 1000, -- Ensure it loads first
     }
 }

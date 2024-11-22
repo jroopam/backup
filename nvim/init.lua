@@ -47,3 +47,6 @@ end, { desc = "toggle diagnostic" })
 -- Ref: https://github.com/neovim/neovim/discussions/29075
 vim.keymap.set({"n", "v"}, "<C-_>", "gc", {remap = true})
 vim.keymap.set({"n"}, "<C-_>", "gcc", {remap = true})  -- Use with leader n to comment n lines
+
+-- Colorscheme
+vim.cmd('colorscheme onedark_dark')

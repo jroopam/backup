@@ -45,3 +45,5 @@ echo "yanking or pasting might not work, install the necessary things!"
 #---------------------------------------------------------
 # Startup scripts
 ln -s ~/backup/services/* ~/.config/systemd/user/ # start and enable the services after this
+
+ln -s ~/backup/kitty.conf ~/.config/kitty/kitty.conf

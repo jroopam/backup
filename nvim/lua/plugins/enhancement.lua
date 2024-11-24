@@ -52,9 +52,13 @@ return {
             },
         }
     },
-    {
-        'echasnovski/mini.animate',
-        config = true,
-        version = false
-    }
+    -- {
+    --     'echasnovski/mini.animate',
+    --     config = true,
+    --     version = false
+    -- }
+    -- Ref1: https://www.reddit.com/r/neovim/comments/1gydpht/smooth_cursor_in_standard_terminal/
+    -- Ref2: https://www.reddit.com/r/neovim/comments/1gyt2ea/karb94neoscrollnvim_sphambasmearcursornvim_make/
+    -- 1. Using kitty: Use cursor_trail
+    -- 2. Use plugins: smear-cursor and neoscroll
 }

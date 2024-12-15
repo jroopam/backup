@@ -36,15 +36,4 @@ sudo update-alternatives --install /usr/bin/vimdiff vimdiff "${CUSTOM_NVIM_PATH}
 For telescope installed fd-find
 
 # Extensions
-- NvimTree
-- NerdCommenter
-- airline
-- rainbow
-- vim-auto-save
-<!-- - YouCompleteMe(Can be installed without vundle, mkdir ~/.vim/bundle and clone ycm repo there. Install all required things before. After cloning do git submodule --init --recursive. Then run python3 install.py --all. It should be working.) -->
-- coc
 - vim-visual-multi
-
-# Installation
-- Planning to upload most of the extensions on github only so cloning should work
-<!-- - For ycm as it's quite big, it should be installed manually -->

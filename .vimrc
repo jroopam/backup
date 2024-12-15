@@ -7,7 +7,7 @@ set autoindent
 set number
 "set cursorline
 
-set cursorcolumn
+"set cursorcolumn
 set shiftwidth=4
 set tabstop=4
 set expandtab
@@ -37,6 +37,7 @@ nnoremap("<C-u>", "<C-u>zz")
 "netrw
 noremap <silent> <C-p> :Explore<CR>
 let g:netrw_liststyle = 3
+" gn is the mapping to make the directory you're on the current directory
 
 "" Terminal Function
 let g:term_buf = 0

@@ -47,3 +47,6 @@ echo "yanking or pasting might not work, install the necessary things!"
 ln -s ~/backup/services/* ~/.config/systemd/user/ # start and enable the services after this
 
 ln -s ~/backup/kitty.conf ~/.config/kitty/kitty.conf
+
+# Useful Links:
+# Make blluetooth devices connect faster: https://superuser.com/questions/1558381/ubuntu-bluetooth-slow-to-connect

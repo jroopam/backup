@@ -1,0 +1,34 @@
+{
+  "keyMappings": "# Insert your preferred key mappings here.\nmap H previousTab\nmap L nextTab\nmap J goForward\nmap K goBackward",
+  "settingsVersion": "2.1.2",
+  "exclusionRules": [
+    {
+      "passKeys": "",
+      "pattern": "https?://mail.google.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://monkeytype.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://thetypingcat.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://thetypingcat.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://excalidraw.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://keep.google.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://keep.google.com/*"
+    }
+  ]
+}

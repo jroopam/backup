@@ -121,8 +121,8 @@ nmap <silent> <c-l> :wincmd l<CR>
 " trigger `autoread` when files changes on disk
 set autoread
 set updatetime=100
-autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
-au BufWinEnter *. set updatetime=300 | set autoread
+"autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | silent! checktime | endif
+"au BufWinEnter *. set updatetime=300 | set autoread
 " notification after file change
 autocmd FileChangedShellPost *
             \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None

@@ -239,7 +239,7 @@ return {
                 options = {
                     mode = "buffers", -- set to "tabs" to only show tabpages instead
                     style_preset = bufferline.style_preset.default, -- or bufferline.style_preset.minimal,
-                    numbers = "both",
+                    -- numbers = "both",
                     close_command = "bdelete! %d",       -- can be a string | function, | false see "Mouse actions"
                     right_mouse_command = "bdelete! %d", -- can be a string | function | false, see "Mouse actions"
                     left_mouse_command = "buffer %d",    -- can be a string | function, | false see "Mouse actions"
@@ -256,7 +256,7 @@ return {
                     max_prefix_length = 15, -- prefix used when a buffer is de-duplicated
                     truncate_names = true, -- whether or not tab names should be truncated
                     tab_size = 18,
-                    diagnostics = "coc",
+                    diagnostics = "nvim_lsp",
                     diagnostics_update_in_insert = false,
                     offsets = {
                         {

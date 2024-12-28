@@ -2,6 +2,43 @@ return {
     {
         'catppuccin/nvim',
         lazy = true,
+        name = "catppuccin",
+        config = function ()
+            require('catppuccin').setup({
+                term_colors = true,
+                transparent_background = false,
+                styles = {
+                    comments = {},
+                    conditionals = {},
+                    loops = {},
+                    functions = {},
+                    keywords = {},
+                    strings = {},
+                    variables = {},
+                    numbers = {},
+                    booleans = {},
+                    properties = {},
+                    types = {},
+                },
+                color_overrides = {
+                    mocha = {
+                        base = "#141414",
+                        mantle = "#141414",
+                        crust = "#141414",
+                    },
+                },
+                integrations = {
+                    telescope = {
+                        enabled = true,
+                        style = "nvchad",
+                    },
+                    dropbar = {
+                        enabled = true,
+                        color_mode = true,
+                    },
+                },
+            })
+        end
     },
     {
         'folke/tokyonight.nvim',
@@ -79,6 +116,6 @@ return {
     },
     {
         "olimorris/onedarkpro.nvim",
-        priority = 1000, -- Ensure it loads first
+        -- priority = 1000, -- Ensure it loads first
     }
 }

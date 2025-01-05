@@ -63,7 +63,9 @@ return {
         },
         config = function()
             require("markview").setup({
-                hybrid_modes = { "n" },
+                modes = {"n", "i"},
+                hybrid_modes = { "n", "i" },
+                ignore_modes = nil,
                 code_blocks = {
                     enable = true,
 

@@ -1,0 +1,4 @@
+font-size = 11.5
+theme = gruvbox-material
+window-padding-y = 0,0
+window-decoration = false

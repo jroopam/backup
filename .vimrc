@@ -30,6 +30,15 @@ set scrolloff=8
 nnoremap("<C-d>", "<C-d>zz")
 nnoremap("<C-u>", "<C-u>zz")
 
+"Marks
+" ' is used to go to exact position and ` is used to go to line of mark
+nnoremap ' `
+nnoremap ` '
+vnoremap ' `
+vnoremap ` '
+onoremap ' `
+onoremap ` '
+
 "Change split size using mouse
 "set mouse=n
 "set ttymouse=xterm2

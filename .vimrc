@@ -137,8 +137,9 @@ set updatetime=100
 "autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | silent! checktime | endif
 "au BufWinEnter *. set updatetime=300 | set autoread
 " notification after file change
-autocmd FileChangedShellPost *
-            \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
+"autocmd FileChangedShellPost *
+"            \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
+autocmd FileChangedShell *.cpp let v:fcs_choice = 'reload'
 "Code folding
 "set foldmethod=syntax
 "set foldignore=

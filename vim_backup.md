@@ -9,9 +9,9 @@
 	- Still doesn't work: sudo apt install libfuse2
 2. :help nvim-from-vim
 	- Basically you need to have a nvim dir in ~/.config and in that you should have init.vim
-	- set runtimepath^=~/.vim runtimepath+=~/.vim/after
-	- let &packpath = &runtimepath
-	- source ~/.vimrc
+	- `set runtimepath^=~/.vim runtimepath+=~/.vim/after`
+	- `let &packpath = &runtimepath`
+	- `source ~/.vimrc`
 	- Add the above lines in init.vim to have all the configurations of vim
 	- Will upload this to github
 3. For copy/pasting to and from clipboard(you have to install some service depending upon your display server, it was wayland earlier but due to issue with google screen sharing had to switch to x11) github.com/equalsraf/neovim-qt/issues/621

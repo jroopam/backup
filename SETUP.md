@@ -23,4 +23,18 @@ Plugins:
 - ICS
 
 # Chrome Extension
-- [Vimium Options](vimium-options.json)
+- Use this json for mappings [Vimium Options](vimium-options.json)
+
+# Local Network file transfer
+- [Ref](https://www.reddit.com/r/linuxquestions/comments/elaq5i/simpleminimalistic_upnpdlna_media_server_for/)
+- Used serviio for this
+- [Download](https://serviio.org/download)
+- Use `README.txt` for startup details
+
+# Torrent
+- Use `qbittorrent`
+- As an addition [enable search plugins](https://www.reddit.com/r/qBittorrent/comments/1ar12wh/how_to_use_the_search_function/)
+- For some reason when the code is copied and pasted in some random file name it does not work
+- You should use `Save Link As` and don't change anything
+- [Github](https://github.com/qbittorrent/search-plugins/wiki/Unofficial-search-plugins)
+

@@ -2,6 +2,7 @@
 - Fira Code
 - Monaco
 - Cascadia Code
+- JetBrainsMono
 
 # Extensions
 - GS Connect

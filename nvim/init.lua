@@ -73,8 +73,8 @@ local function special_down()
   end
 end
 
-vim.keymap.set({ 'n', 'x' }, '<C-u>', function() special_up() end)
-vim.keymap.set({ 'n', 'x' }, '<C-d>', function() special_down() end)
+vim.keymap.set({ 'n', 'x' }, '<M-u>', function() special_up() end)
+vim.keymap.set({ 'n', 'x' }, '<M-d>', function() special_down() end)
 ------------------------------------
 
 -- Colorscheme

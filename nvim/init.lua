@@ -46,6 +46,15 @@ end, { desc = "toggle diagnostic" })
 vim.keymap.set({"n", "v"}, "<C-_>", "gc", {remap = true})
 vim.keymap.set({"n"}, "<C-_>", "gcc", {remap = true})  -- Use with leader n to comment n lines
 
+-- Code folding
+vim.o.fillchars = 'eob: ,fold: ,foldopen:,foldsep: ,foldclose:'
+vim.o.foldcolumn = '1'
+vim.o.foldenable = true
+vim.o.foldexpr = 'v:lua.vim.lsp.foldexpr()'
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldmethod = 'expr'
+
 ---- Better Vertical Motions -------
 -- Ref: https://www.reddit.com/r/neovim/comments/1jk3r0n/found_a_comfortable_way_to_combine_jumping_and/?rdt=40859
 -- When you use normal <C-d> or <C-u>, it scrolls which is the cursor remains in the same position wrt window but the line number under the cursor changes

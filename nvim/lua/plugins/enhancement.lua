@@ -63,9 +63,11 @@ return {
         },
         config = function()
             require("markview").setup({
-                modes = {"n", "i"},
-                hybrid_modes = { "n", "i" },
                 ignore_modes = nil,
+                preview = {
+                    modes = {"n", "i"},
+                    hybrid_modes = { "n", "i" },
+                },
                 code_blocks = {
                     enable = true,
 
@@ -94,7 +96,7 @@ return {
                     --- Used by other options that end with "_hl" when
                     --- their values are nil.
                     ---@type string
-                    hl = "MarkviewCode",
+                    border_hl = "MarkviewCode",
 
                     --- Highlight group for the info string
                     ---@type string
@@ -160,51 +162,53 @@ return {
                     ---@type string?
                     corner_right_hl = nil,
                 },
-                list_items = {
-                    enable = true,
+                markdown = {
+                    list_items = {
+                        enable = true,
 
-                    --- Amount of spaces that defines an indent
-                    --- level of the list item.
-                    ---@type integer
-                    indent_size = 2,
+                        --- Amount of spaces that defines an indent
+                        --- level of the list item.
+                        ---@type integer
+                        indent_size = 2,
 
-                    --- Amount of spaces to add per indent level
-                    --- of the list item.
-                    ---@type integer
-                    shift_width = 2,
+                        --- Amount of spaces to add per indent level
+                        --- of the list item.
+                        ---@type integer
+                        shift_width = 2,
 
-                    marker_minus = {
-                        add_padding = false,
+                        marker_minus = {
+                            add_padding = false,
 
-                        text = "",
-                        hl = "MarkviewListItemMinus"
-                    },
-                    marker_plus = {
-                        add_padding = false,
+                            text = "",
+                            hl = "MarkviewListItemMinus"
+                        },
+                        marker_plus = {
+                            add_padding = false,
 
-                        text = "",
-                        hl = "MarkviewListItemPlus"
-                    },
-                    marker_star = {
-                        add_padding = false,
+                            text = "",
+                            hl = "MarkviewListItemPlus"
+                        },
+                        marker_star = {
+                            add_padding = false,
 
-                        text = "",
-                        hl = "MarkviewListItemStar"
-                    },
+                            text = "",
+                            hl = "MarkviewListItemStar"
+                        },
 
-                    --- These items do NOT have a text or
-                    --- a hl property!
+                        --- These items do NOT have a text or
+                        --- a hl property!
 
-                    --- n. Items
-                    marker_dot = {
-                        add_padding = true
-                    },
+                        --- n. Items
+                        marker_dot = {
+                            add_padding = true
+                        },
 
-                    --- n) Items
-                    marker_parenthesis = {
-                        add_padding = true
+                        --- n) Items
+                        marker_parenthesis = {
+                            add_padding = true
+                        }
                     }
-                }
+                },
             });
         end
     },

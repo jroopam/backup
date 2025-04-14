@@ -86,5 +86,8 @@ vim.keymap.set({ 'n', 'x' }, '<M-u>', function() special_up() end)
 vim.keymap.set({ 'n', 'x' }, '<M-d>', function() special_down() end)
 ------------------------------------
 
+-- Telescope
+vim.cmd('cnoreab ss Telescope')
+
 -- Colorscheme
 vim.cmd('colorscheme onedark')

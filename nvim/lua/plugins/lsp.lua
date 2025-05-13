@@ -4,8 +4,8 @@ return {
     dependencies = {
         -- LSP Support
         {'neovim/nvim-lspconfig'},             -- Required
-        {'williamboman/mason.nvim'},           -- Optional
-        {'williamboman/mason-lspconfig.nvim'}, -- Optional
+        {'mason-org/mason.nvim'},           -- Optional
+        {'mason-org/mason-lspconfig.nvim'}, -- Optional
 
         -- Autocompletion
         {'hrsh7th/nvim-cmp'},     -- Required
@@ -17,11 +17,6 @@ return {
         local lsp = require("lsp-zero")
 
         lsp.preset("recommended")
-
-        lsp.ensure_installed({
-            'tsserver',
-            'rust_analyzer',
-        })
 
         -- Fix Undefined global 'vim'
         --lsp.configure('lua-language-server', {

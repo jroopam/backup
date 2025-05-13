@@ -88,6 +88,7 @@ vim.keymap.set({ 'n', 'x' }, '<M-d>', function() special_down() end)
 
 -- Telescope
 vim.cmd('cnoreab ss Telescope')
+vim.keymap.set('c', '<tab>', '<C-z>', { silent = false }) -- to fix cmp
 
 -- Colorscheme
 vim.cmd('colorscheme onedark')

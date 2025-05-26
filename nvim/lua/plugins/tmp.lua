@@ -5,7 +5,7 @@ return {
         dependencies = { "MunifTanjim/nui.nvim" },
         opts = {
             max_time = 1200,
-            max_count = 1;
+            max_count = 2;
         }
     },
     {

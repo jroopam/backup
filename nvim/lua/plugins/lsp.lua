@@ -1,85 +1,68 @@
+-- The need for completion plugins
+-- Language servers provide different completion results depending on the capabilities of the client. Neovim's default omnifunc has basic support for serving completion candidates. nvim-cmp supports more types of completion candidates, so users must override the capabilities sent to the server such that it can provide these candidates during a completion request.
+-- Good Ref: https://www.reddit.com/r/neovim/comments/1khidkg/mind_sharing_your_new_lsp_setup_for_nvim_011/
 return {
-    'VonHeikemen/lsp-zero.nvim',
-    branch = 'v2.x',
-    dependencies = {
-        -- LSP Support
-        {'neovim/nvim-lspconfig'},             -- Required
-        {'mason-org/mason.nvim'},           -- Optional
-        {'mason-org/mason-lspconfig.nvim'}, -- Optional
+    {
+        'saghen/blink.cmp', -- Ref: https://cmp.saghen.dev/installation#lazy-nvim
+        dependencies = { 'rafamadriz/friendly-snippets' },
 
-        -- Autocompletion
-        {'hrsh7th/nvim-cmp'},     -- Required
-        {'hrsh7th/cmp-nvim-lsp'}, -- Required
-        {'L3MON4D3/LuaSnip'},     -- Required
+        version = '1.*',
+
+        ---@module 'blink.cmp'
+        ---@type blink.cmp.Config
+        opts = {
+            keymap = {
+                ['<S-Tab>'] = { 'select_prev', 'fallback_to_mappings' },
+                ['<Tab>'] = { 'select_next', 'fallback_to_mappings' },
+                ['<CR>'] = { 'accept', 'fallback' },
+            },
+
+            appearance = {
+                nerd_font_variant = 'mono'
+            },
+
+            completion = {
+                documentation = { auto_show = false },
+            },
+
+            sources = {
+                default = { 'lsp', 'path', 'snippets', 'buffer' },
+            },
+
+            cmdline = {
+                enabled = false, -- the native autcomplete menu, has better UX for me(after pressing :)
+            },
+
+            fuzzy = { implementation = "prefer_rust_with_warning" }
+        },
+        opts_extend = { "sources.default" }
     },
-    config = function ()
-
-        local lsp = require("lsp-zero")
-
-        lsp.preset("recommended")
-
-        -- Fix Undefined global 'vim'
-        --lsp.configure('lua-language-server', {
-        --    settings = {
-        --        Lua = {
-        --            diagnostics = {
-        --                globals = { 'vim' }
-        --            }
-        --        }
-        --    }
-        --})
-
-
-        local cmp = require('cmp')
-        local cmp_select = {behavior = cmp.SelectBehavior.Select}
-        local cmp_action = require('lsp-zero').cmp_action()
-        local cmp_mappings = lsp.defaults.cmp_mappings({
-            --['<C-b>'] = cmp.mapping.scroll_docs(-4),
-            --['<C-f>'] = cmp.mapping.scroll_docs(4),
-            ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-            ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-            ['<CR>'] = cmp.mapping.confirm({ select = true }),
-            ["<C-Space>"] = cmp.mapping.complete(),
-            ['<C-f>'] = cmp_action.luasnip_jump_forward(),
-            ['<C-b>'] = cmp_action.luasnip_jump_backward(),
-        })
-
-        --cmp_mappings['<Tab>'] = nil
-        --cmp_mappings['<S-Tab>'] = nil
-
-        lsp.setup_nvim_cmp({
-            mapping = cmp_mappings
-        })
-
-        lsp.set_preferences({
-            suggest_lsp_servers = false,
-            sign_icons = {
-                error = 'E',
-                warn = 'W',
-                hint = 'H',
-                info = 'I'
+    {
+        'neovim/nvim-lspconfig',
+        dependencies = {
+            'williamboman/mason.nvim',
+            'williamboman/mason-lspconfig.nvim', -- Installed this so that I don't have to configure lsp server manually
+        },
+        lazy = false,
+        config = function()
+            local servers = {
+                'dockerls',
             }
-        })
 
-        lsp.on_attach(function(client, bufnr)
-            local opts = {buffer = bufnr, remap = false}
-
-            vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
-            vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
-            vim.keymap.set("n", "<leader>vws", function() vim.lsp.buf.workspace_symbol() end, opts)
-            vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, opts)
-            vim.keymap.set("n", "[d", function() vim.diagnostic.goto_next() end, opts)
-            vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
-            vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, opts)
-            vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
-            vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
-            vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
-        end)
-
-        lsp.setup()
-
-        vim.diagnostic.config({
-            virtual_text = true
-        })
-    end
+            require('mason').setup()
+            require('mason-lspconfig').setup({
+                ensure_installed = servers,
+                automatic_enable = {
+                    exclude = { -- It was enabling lua_ls I installed using Maosn while I just wanted the one I had configured
+                        "lua_ls"
+                    }
+                }
+            })
+            local capabilities = vim.lsp.protocol.make_client_capabilities()
+            capabilities = require('blink.cmp').get_lsp_capabilities(capabilities)
+            vim.lsp.config('*', {
+                capabilities = capabilities,
+            })
+        end,
+    },
 }

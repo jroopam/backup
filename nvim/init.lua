@@ -92,3 +92,93 @@ vim.keymap.set('c', '<tab>', '<C-z>', { silent = false }) -- to fix cmp
 
 -- Colorscheme
 vim.cmd('colorscheme onedark')
+
+vim.lsp.enable({
+    'lua',
+})
+
+vim.api.nvim_create_autocmd("LspAttach", {
+
+    desc = "LSP actions",
+    callback = function(args)
+        local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
+        local bufnr = args.buf
+        if not client then
+            return
+        end
+
+        ---[[ Format and autoimport on Save
+        -- vim.api.nvim_create_autocmd("BufWritePre", {
+        --     buffer = args.buf,
+        --     callback = function()
+        --         if client:supports_method("textDocument/formatting") then
+        --             vim.lsp.buf.format({ bufnr = args.buf, id = client.id })
+        --         end
+        --         if client:supports_method("textDocument/codeAction") then
+        --             local function apply_code_action(action_type)
+        --                 local ctx = { only = action_type, diagnostics = {} }
+        --                 local actions = vim.lsp.buf.code_action({ context = ctx, apply = true, return_actions = true })
+        --
+        --                 -- only apply if code action is available
+        --                 if actions and #actions > 0 then
+        --                     vim.lsp.buf.code_action({ context = ctx, apply = true })
+        --                 end
+        --             end
+        --             apply_code_action({ "source.fixAll" })
+        --             apply_code_action({ "source.organizeImports" })
+        --         end
+        --     end,
+        -- })
+        ---]]
+
+        ---[[ Lsp Keymaps
+        local nmap = function(keys, func, desc)
+            if desc then
+                desc = "LSP: " .. desc
+            end
+            vim.keymap.set("n", keys, func, { buffer = args.buf, noremap = true, silent = true, desc = desc })
+        end
+
+        nmap("K", vim.lsp.buf.hover, "Open hover")
+        nmap("<leader>r", vim.lsp.buf.rename, "Rename")
+        nmap("<leader>dr", vim.lsp.buf.references, "References")
+        nmap("<leader>ca", vim.lsp.buf.code_action, "Code action")
+        nmap("<leader>df", vim.lsp.buf.definition, "Goto definition")
+        nmap("<leader>ds", "<cmd>vs | lua vim.lsp.buf.definition()<cr>", "Goto definition (v-split)")
+        nmap("<leader>dh", "<cmd>sp | lua vim.lsp.buf.definition()<cr>", "Goto definition (h-split)")
+
+        local opts = {buffer = bufnr, remap = false}
+        vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
+        vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
+        vim.keymap.set("n", "<leader>vws", function() vim.lsp.buf.workspace_symbol() end, opts)
+        vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, opts)
+        vim.keymap.set("n", "[d", function() vim.diagnostic.goto_next() end, opts)
+        vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
+        vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, opts)
+        vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
+        vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
+        vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+
+        -- Diagnostic
+        nmap("dn", function()
+            vim.diagnostic.jump({ count = 1, float = true })
+        end, "Goto next diagnostic")
+        nmap("dN", function()
+            vim.diagnostic.jump({ count = -1, float = true })
+        end, "Goto prev diagnostic")
+        nmap("<leader>q", vim.diagnostic.setloclist, "Open diagnostics list")
+        nmap("<leader>e", vim.diagnostic.open_float, "Open diagnostic float")
+
+        vim.keymap.set("i", "<M-t>", vim.lsp.buf.signature_help, { buffer = args.buf })
+
+        -- inlay hints
+        nmap("<leader>lh", function()
+            vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+        end, "Toggle inlay hints")
+
+        vim.api.nvim_buf_create_user_command(args.buf, "Fmt", function(_)
+            vim.lsp.buf.format()
+        end, { desc = "Format current buffer with LSP" })
+        ---]]
+    end,
+})

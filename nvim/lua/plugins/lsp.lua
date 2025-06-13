@@ -12,6 +12,8 @@ return {
         ---@type blink.cmp.Config
         opts = {
             keymap = {
+                ['<C-f>'] = { 'snippet_forward', 'fallback' },
+                ['<C-b>'] = { 'snippet_backward', 'fallback' },
                 ['<S-Tab>'] = { 'select_prev', 'fallback_to_mappings' },
                 ['<Tab>'] = { 'select_next', 'fallback_to_mappings' },
                 ['<CR>'] = { 'accept', 'fallback' },

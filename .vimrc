@@ -27,6 +27,8 @@ set number relativenumber
 set whichwrap=lh
 let mapleader = " "
 
+" Forward jump wasn't working: https://github.com/neovim/neovim/issues/20126
+nnoremap <C-I> <C-I>
 "Marks
 " ' is used to go to exact position and ` is used to go to line of mark
 nnoremap ' `

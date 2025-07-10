@@ -42,6 +42,34 @@ onoremap ` '
 nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
 nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
 
+" Ref: https://vi.stackexchange.com/questions/31197/add-current-position-to-the-jump-list-the-first-time-c-u-or-c-d-is-pressed
+" The actual cursor movement is here, so the autocmd won't be cleared till this executes
+function! SaveJump(motion)
+  if exists('#SaveJump#CursorMoved')
+    autocmd! SaveJump
+  else
+    normal! m'
+  endif
+  let m = a:motion
+  if v:count
+    let m = v:count.m
+  endif
+  execute 'normal!' m
+endfunction
+
+" Whenever the cursor moves, clear the autocmd
+" If you use <C-d> then some other motion then again <C-d> it should and will have 2 entries in the jumplist. As the autocmd will be cleared on cursor move
+function! SetJump()
+  augroup SaveJump
+    autocmd!
+    autocmd CursorMoved * autocmd! SaveJump
+  augroup END
+endfunction
+
+" :<C-u> is in command mode not normal and serves a different purpose
+nnoremap <silent> <C-u> :<C-u>call SaveJump("\<lt>C-u>zz")<CR>:call SetJump()<CR>
+nnoremap <silent> <C-d> :<C-u>call SaveJump("\<lt>C-d>zz")<CR>:call SetJump()<CR>
+
 "Change split size using mouse
 "set mouse=n
 "set ttymouse=xterm2

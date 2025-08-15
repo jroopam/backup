@@ -29,16 +29,8 @@ let mapleader = " "
 
 " Forward jump wasn't working: https://github.com/neovim/neovim/issues/20126
 nnoremap <C-I> <C-I>
-"Marks
-" ' is used to go to exact position and ` is used to go to line of mark
-nnoremap ' `
-nnoremap ` '
-vnoremap ' `
-vnoremap ` '
-onoremap ' `
-onoremap ` '
 
-"Jumplist
+" ---Jumplist Related Mappings---
 nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
 nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
 
@@ -69,6 +61,21 @@ endfunction
 " :<C-u> is in command mode not normal and serves a different purpose
 nnoremap <silent> <C-u> :<C-u>call SaveJump("\<lt>C-u>zz")<CR>:call SetJump()<CR>
 nnoremap <silent> <C-d> :<C-u>call SaveJump("\<lt>C-d>zz")<CR>:call SetJump()<CR>
+" ---END---
+
+" ---Moving lines up/down---
+" Ref: https://vi.stackexchange.com/questions/2674/how-can-i-easily-move-a-line
+" Ref: https://vim.fandom.com/wiki/Moving_lines_up_or_down
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+" Working: We need to use '> for the starting of text block to calculate the position to move to and the gv part is to indent and reselect
+" But how does it know which part to move? When we use vnoremap, it automatically inserts the visual range '<,'>. This is how it might be behaving => :'<,'> m +10
+" Ref: https://vi.stackexchange.com/questions/7149/mapping-a-command-in-visual-mode-results-in-error-e481-no-range-alllowed
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+" ---END---
 
 "Change split size using mouse
 "set mouse=n

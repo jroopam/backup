@@ -1,6 +1,7 @@
 return {
     {
         'nvim-lualine/lualine.nvim',
+        event = "BufEnter",
         config = function ()
 
             -- Eviline config for lualine
@@ -232,6 +233,7 @@ return {
         dependencies = {
             'nvim-tree/nvim-web-devicons'
         },
+        event = "BufEnter",
         config = function ()
 
             local bufferline = require('bufferline')

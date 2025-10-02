@@ -6,7 +6,7 @@ return {
         config = function ()
             require('catppuccin').setup({
                 term_colors = true,
-                transparent_background = true,
+                -- transparent_background = true,
                 styles = {
                     comments = {},
                     conditionals = {},
@@ -116,9 +116,11 @@ return {
     },
     {
         "olimorris/onedarkpro.nvim",
+        lazy = true,
         -- priority = 1000, -- Ensure it loads first
     },
     {
-        'sainnhe/gruvbox-material'
+        'sainnhe/gruvbox-material',
+        lazy = true,
     }
 }

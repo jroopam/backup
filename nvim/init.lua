@@ -91,7 +91,7 @@ vim.cmd('cnoreab ss Telescope')
 vim.keymap.set('c', '<tab>', '<C-z>', { silent = false }) -- to fix cmp
 
 -- Colorscheme
-vim.cmd('colorscheme onedark')
+vim.cmd('colorscheme vaporwave')
 
 vim.lsp.enable({
     'lua',

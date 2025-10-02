@@ -1,6 +1,7 @@
 return {
     {
         'tiagovla/scope.nvim',
+        lazy = true,
         config = function()
             vim.opt.sessionoptions = {
                 "buffers",
@@ -18,6 +19,7 @@ return {
     },
     {
         'levouh/tint.nvim',
+        lazy = true,
         event = "WinNew",
         config = function()
             require('tint').setup({
@@ -27,6 +29,7 @@ return {
     },
     {
         'windwp/nvim-autopairs',
+        lazy = true,
         event = "InsertEnter",
         config = true
         -- use opts = {} for passing setup options
@@ -34,6 +37,7 @@ return {
     },
     {
         "lukas-reineke/indent-blankline.nvim", main = "ibl",
+        event = "VeryLazy",
         opts = {
             indent = {
                 char = "│",
@@ -59,11 +63,12 @@ return {
     },
     {
         "sindrets/diffview.nvim",
+        lazy = true,
         config = true,
     },
     {
         "OXY2DEV/markview.nvim",
-        lazy = false,      -- Recommended
+        lazy = true,      -- Recommended
         -- ft = "markdown" -- If you decide to lazy-load anyway
 
         dependencies = {
@@ -73,6 +78,9 @@ return {
         config = function()
             require("markview").setup({
                 ignore_modes = nil,
+                experimental = {
+                    check_rtp_message = false,
+                },
                 preview = {
                     modes = {"n", "i"},
                     hybrid_modes = { "n", "i" },

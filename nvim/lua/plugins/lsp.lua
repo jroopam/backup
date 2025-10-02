@@ -7,6 +7,7 @@ return {
         dependencies = { 'rafamadriz/friendly-snippets' },
 
         version = '1.*',
+        event = "VeryLazy",
 
         ---@module 'blink.cmp'
         ---@type blink.cmp.Config
@@ -45,7 +46,7 @@ return {
             'williamboman/mason.nvim',
             'williamboman/mason-lspconfig.nvim', -- Installed this so that I don't have to configure lsp server manually
         },
-        lazy = false,
+        event = "VeryLazy",
         config = function()
             local servers = {
                 'dockerls',

@@ -1,5 +1,10 @@
 return {
     {
-        'mg979/vim-visual-multi'
+        'mg979/vim-visual-multi',
+        keys = {
+            {"<C-n>"},
+            {"<C-Down>"},
+            {"<C-Up>"},
+        }
     }
 }

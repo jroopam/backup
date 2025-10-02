@@ -123,3 +123,6 @@ if [ -z "$TMUX_STARTED" ] || [ $TMUX_STARTED -eq 0 ]; then
     echo "export TMUX_STARTED=1" > .zshenv
     ~/backup/scripts/start_tmux.sh
 fi
+
+export EDITOR="nvim --clean"
+export VISUAL="$EDITOR"

@@ -154,7 +154,7 @@ nnoremap <C-a> :enew<CR>
 nnoremap <M-Up> :resize -2<CR>
 nnoremap <M-Down> :resize +2<CR>
 nnoremap <M--> :vertical resize -2<CR>
-nnoremap <M-=> :vertical resize +2<CR>
+noremap <M-=> :vertical resize +2<CR>
 
 "Switching between splits
 nmap <silent> <c-k> :wincmd k<CR>

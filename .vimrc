@@ -151,10 +151,10 @@ nmap <leader>bl :ls<CR>
 nnoremap <C-a> :enew<CR>
 
 " Resize windows with Meta key and arrow keys
-nnoremap <M-Up> :resize -2<CR>
-nnoremap <M-Down> :resize +2<CR>
-nnoremap <M--> :vertical resize -2<CR>
-noremap <M-=> :vertical resize +2<CR>
+nnoremap <expr> <M-Up> winnr('j') == winnr() ? ':resize +2<CR>' : ':resize -2<CR>'
+nnoremap <expr> <M-Down> winnr('j') == winnr() ? ':resize -2<CR>' : ':resize +2<CR>'
+nnoremap <expr> <M-Left> winnr('l') == winnr() ? ':vertical resize +2<CR>' : ':vertical resize -2<CR>'
+nnoremap <expr> <M-Right> winnr('l') == winnr() ? ':vertical resize -2<CR>' : ':vertical resize +2<CR>'
 
 "Switching between splits
 nmap <silent> <c-k> :wincmd k<CR>

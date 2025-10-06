@@ -11,7 +11,9 @@ source ~/.vimrc
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
---LazyVim
+------------------------- Lazy -------------------------------------
+--- opts => When opts is provided, lazy automatically calls require("plugin").setup(opts) for you. opts will be overriding the configurations provided by the plugin.
+--- config => provides more granular control over the plugin's initialization process. It allows you to execute custom Lua code when the plugin loads. This function can contain any Lua code needed for setup, including calling require("your_plugin_main_module").setup().
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -26,6 +28,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
+--------------------------------------------------------------------
 
 vim.api.nvim_create_autocmd({ "FocusGained", "TermClose", "TermLeave" }, { command = "checktime" })
 vim.o.background = "dark" -- or "light" for light mode

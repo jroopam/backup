@@ -145,7 +145,6 @@ map <leader>d :bdelete<cr>
 nnoremap <leader><tab> :b#<cr>
 nmap <leader>q :bp <BAR> bd #<CR>
 nmap <leader><leader>d :bp <BAR> bd #<CR>
-nmap <leader>bl :ls<CR>
 
 "New tmp buffer
 nnoremap <C-a> :enew<CR>
@@ -235,12 +234,6 @@ let g:python_indent.disable_parentheses_indenting = 1
 
 "Bracket pair colorizer
 let g:rainbow_active = 1
-
-"Telescope
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " define line highlight color
 highlight LineHighlight ctermbg=darkgray guibg=darkgray

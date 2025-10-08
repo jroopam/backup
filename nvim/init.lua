@@ -185,3 +185,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
         ---]]
     end,
 })
+
+-- Ref: https://www.reddit.com/r/neovim/comments/1o0uo9q/comment/nie1a7p/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+vim.cmd"packadd nvim.undotree"

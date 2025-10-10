@@ -18,7 +18,7 @@ set hlsearch
 set ignorecase
 set showcmd
 set wildmenu
-set wildmode=longest:full,full
+"set wildmode=longest:full,full
 
 "autocmd TextChanged,TextChangedI <buffer> silent write
 "Need vim-gtk3 for the next line to work

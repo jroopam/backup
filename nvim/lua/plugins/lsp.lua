@@ -13,6 +13,7 @@ return {
         ---@type blink.cmp.Config
         opts = {
             keymap = {
+                -- The snippet keymaps only work in select mode. When you exit that mode it can't be used.
                 ['<C-f>'] = { 'snippet_forward', 'fallback' },
                 ['<C-b>'] = { 'snippet_backward', 'fallback' },
                 ['<S-Tab>'] = { 'select_prev', 'fallback_to_mappings' },

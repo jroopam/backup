@@ -1,7 +1,12 @@
+function writeScope()
+    vim.cmd"ScopeSaveState"
+end
+function readScope()
+    vim.cmd"ScopeLoadState"
+end
 return {
     {
         'tiagovla/scope.nvim',
-        lazy = true,
         config = function()
             vim.opt.sessionoptions = {
                 "buffers",
@@ -10,6 +15,18 @@ return {
             }
             require("scope").setup({})
         end
+    },
+    {
+        'nvim-mini/mini.sessions',
+        opts = {
+            hooks = {
+                -- Before successful action
+                pre = { read = nil, write = writeScope, delete = nil },
+                -- After successful action
+                post = { read = readScope, write = nil, delete = nil },
+            },
+            autoread = true,
+        }
     },
     {
         'Pocco81/auto-save.nvim',
@@ -64,6 +81,7 @@ return {
     {
         "sindrets/diffview.nvim",
         lazy = true,
+        event="VeryLazy",
         config = true,
     },
     {

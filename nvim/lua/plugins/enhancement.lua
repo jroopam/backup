@@ -7,6 +7,7 @@ end
 return {
     {
         'tiagovla/scope.nvim',
+        event = "VimEnter",
         config = function()
             vim.opt.sessionoptions = {
                 "buffers",
@@ -18,6 +19,7 @@ return {
     },
     {
         'nvim-mini/mini.sessions',
+        event = "VimEnter",
         opts = {
             hooks = {
                 -- Before successful action
@@ -30,6 +32,7 @@ return {
     },
     {
         'Pocco81/auto-save.nvim',
+        event = "VeryLazy",
         config = function()
             require('auto-save').setup({})
         end

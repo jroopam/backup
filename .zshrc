@@ -126,3 +126,43 @@ fi
 
 export EDITOR="nvim --clean"
 export VISUAL="$EDITOR"
+bindkey -v
+# set -o vi
+# Ref: https://rm-rf.ca/posts/2020/zsh-vi-mode/
+
+# beginning search with arrow keys and j/k
+bindkey "^[OA" up-line-or-beginning-search
+bindkey "^[OB" down-line-or-beginning-search
+bindkey -M vicmd "k" up-line-or-beginning-search
+bindkey -M vicmd "j" down-line-or-beginning-search
+export KEYTIMEOUT=1
+
+bindkey -M viins '^X^E' edit-command-line
+bindkey -M vicmd '^X^E' edit-command-line
+
+# Only searches prefix
+# beginning search in insert mode, redundant with the up/down arrows above
+# but a little easier to press.
+bindkey "^P" history-search-backward
+bindkey "^N" history-search-forward
+
+# incremental search in insert mode
+# “Bind Ctrl+R in the currently active keymap (usually the default one).”
+# bindkey ... (no -M) = context-sensitive, may or may not work depending on when you ran it or which map was active.
+# bindkey "^F" history-incremental-search-forward
+# bindkey "^R" history-incremental-search-backward
+
+# Using pattern search Only
+bindkey "^F" history-incremental-pattern-search-forward
+bindkey "^R" history-incremental-pattern-search-backward
+
+# incremental -> Updates as you type
+# patten -> Can use * 
+# incremental search in command mode
+bindkey -M vicmd '/' history-incremental-search-backward
+bindkey -M vicmd '?' history-incremental-search-forward
+
+# The following is redundant after bindkey for each mode?
+# navigate matches in incremental search
+# bindkey -M viins '^R' history-incremental-pattern-search-backward
+# bindkey -M viins '^F' history-incremental-pattern-search-forward

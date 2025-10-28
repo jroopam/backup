@@ -155,6 +155,7 @@ bindkey "^N" history-search-forward
 # Using pattern search Only
 bindkey "^F" history-incremental-pattern-search-forward
 bindkey "^R" history-incremental-pattern-search-backward
+bindkey "^S" history-incremental-pattern-search-backward
 
 # incremental -> Updates as you type
 # patten -> Can use * 

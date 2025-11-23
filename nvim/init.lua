@@ -187,4 +187,40 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 -- Ref: https://www.reddit.com/r/neovim/comments/1o0uo9q/comment/nie1a7p/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
-vim.cmd"packadd nvim.undotree"
+-- Ref: https://github.com/nvim-mini/mini.deps/blob/8f6f74a8b68dbad02f1813dff4ddae5afeee92df/lua/mini/deps.lua#L1564
+-- plugin_callback_queue should contain in this format: function() require('mini.pick').setup() end
+local plugin_callback_queue = {
+    function () vim.cmd"packadd nvim.undotree" end,
+}
+local finish_is_scheduled = false
+
+schedule_finish = function()
+  if finish_is_scheduled then return end
+  vim.schedule(finish)
+  finish_is_scheduled = true
+end
+
+finish = function()
+  local timer, step_delay = vim.loop.new_timer(), 1
+  local f = nil
+  f = vim.schedule_wrap(function()
+    print("Loading plugin...")
+    local callback = plugin_callback_queue[1]
+    if callback == nil then
+      finish_is_scheduled, plugin_callback_queue = false, {}
+      return
+    end
+
+    table.remove(plugin_callback_queue, 1)
+    pcall(callback)
+    timer:start(step_delay, 0, f)
+  end)
+  timer:start(step_delay, 0, f)
+end
+
+vim.api.nvim_create_autocmd("VimEnter", {
+    once = true,
+    callback = function ()
+        schedule_finish()
+    end
+})

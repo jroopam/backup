@@ -73,6 +73,8 @@ local function exit_cmdline()
 end
 
 local function reset_state()
+    print("reset_state")
+    print(debug.traceback())
         vim.api.nvim_buf_clear_namespace(0, NS, 0, -1)
         state = {
             mode = STATE.IDLE,
@@ -257,9 +259,11 @@ local function filter_labels_by_prefix(labels, prefix)
     -- print("filter_labels " .. vim.json.encode(labels))
     local out = {}
     for _, l in ipairs(labels) do
-      if l.text:sub(1, #prefix) == prefix then
-        table.insert(out, l)
-      end
+        if l.text == prefix then
+            table.insert(out, 1, l)
+        elseif l.text:sub(1, #prefix) == prefix then
+            table.insert(out, l)
+        end
     end
     -- for _, l in ipairs(labels) do
     --     -- print("filter_labels " .. l.text .. " " .. prefix)
@@ -267,7 +271,7 @@ local function filter_labels_by_prefix(labels, prefix)
     --         table.insert(out, l)
     --     end
     -- end
-    print("filter_labels " .. vim.json.encode(out))
+    -- print("filter_labels " .. vim.json.encode(out))
     return out
 end
 
@@ -285,11 +289,13 @@ local function enter_labeling()
     state.label_input = ""
 end
 
-local function enter_jumping(label)
-    state.mode = STATE.JUMPING
+local function enter_jumping(label, change_state)
+    if change_state then
+        state.mode = STATE.JUMPING
+    end
 
     vim.api.nvim_win_set_cursor(0, { label.match.lnum, label.match.col_end })
-    reset_state()
+    -- reset_state()
 end
 
 ------------------------------------------------------------
@@ -303,7 +309,7 @@ local function on_cmdline_changed()
 
 
     print("on_cmdline_changed" .. state.mode)
-    print("on_cmdline_changed " .. vim.fn.getcmdline())
+    -- print("on_cmdline_changed " .. vim.f.getcmdline())
 
     local pattern = vim.fn.getcmdline()
     state.pattern = pattern
@@ -331,32 +337,6 @@ local function on_cmdline_changed()
         --
     elseif state.mode == STATE.LABELING then
 
-        local filtered = filter_labels_by_prefix(state.labels, state.label_input)
-        if #filtered == 1 then
-            exit_cmdline()
-        end
-        -- scheduling to allow it to exit cmdline, else the cmdline input pollutes it and 
-        -- cursor is put back to the starting position
-        vim.schedule(function ()
-            print("on_cmdline_changed " .. vim.json.encode(state.labels))
-            print("on_cmdline_changed state.label_input " .. state.label_input)
-            print("on_cmdline_changed " .. vim.json.encode(filtered))
-
-            if #filtered == 0 then
-                -- ambiguity resolved in favor of search
-                -- state.mode = STATE.SEARCHING
-                -- vim.api.nvim_buf_clear_namespace(0, NS, 0, -1)
-                return
-            end
-
-            if #filtered == 1 then
-                print("jumping")
-                enter_jumping(filtered[1])
-                return
-            end
-
-            render_labels(filtered, state.label_input)
-        end)
     end
 end
 
@@ -378,14 +358,14 @@ local function on_char_pre(c)
     then
         -- scheduling since we need to jump first
         vim.schedule(function ()
-            reset_state()
+            -- reset_state()
         end)
         return
     end
 
     local pattern = vim.fn.getcmdline() .. c
     state.pattern = pattern
-    print("on_char_pre " .. pattern)
+    print("on_char_pre " .. state.mode)
     if state.mode == STATE.SEARCHING then
 
         -------------------old------------
@@ -405,11 +385,9 @@ local function on_char_pre(c)
             end
 
             state.matches = matches
-            state.forbidden = compute_forbidden(matches)
+            state.frbidden = compute_forbidden(matches)
             state.labels = assign_labels(matches, state.forbidden)
-            print("on_cmdline_changed " .. vim.json.encode(state.labels))
 
-            print(#state.labels)
             if #state.labels > 0 then
                 -- enter_labeling()
                 render_labels(state.labels, "")
@@ -417,9 +395,39 @@ local function on_char_pre(c)
         end
     end
 
+    print("on_char_pre after " .. state.mode)
+
     if state.mode == STATE.LABELING then
         state.label_input = state.label_input .. c
         vim.opt.incsearch = false
+
+        print("on_char_pre here")
+        local filtered = filter_labels_by_prefix(state.labels, state.label_input)
+        print("on_char_pre " .. vim.json.encode(filtered))
+        if #filtered >= 1 then
+            exit_cmdline()
+        end
+        -- scheduling to allow it to exit cmdline, else the cmdline input pollutes it and 
+        -- cursor is put back to the starting position
+        -- moved here from on_cmdline_changed, as we exit the cmdline mode even for multi char labels and after doing that on_cmdline_changed is not fired
+        vim.schedule(function ()
+
+            if#filtered == 0 then
+                -- ambiguity resolved in favor of search
+                -- state.mode = STATE.SEARCHING
+                -- vim.api.nvim_buf_clear_namespace(0, NS, 0, -1)
+                return
+            end
+
+            if #filtered >= 1 then
+                enter_jumping(filtered[1], false)
+            elseif #filtered == 1 then
+                enter_jumping(filtered[1], true)
+                return
+            end
+
+            render_labels(filtered, state.label_input)
+        end)
     end
 
 end

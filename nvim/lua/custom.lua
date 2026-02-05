@@ -49,14 +49,23 @@ local state = {
 -- Utilities
 ------------------------------------------------------------
 
-local function enter_jumping()
-    state.mode = STATE.JUMPING
+local function enter_jumping(skip_change_state)
+    if skip_change_state ~= true then
+        state.mode = STATE.JUMPING
+    end
 
     local label = state.jump_target
+    if label == nil then
+        return
+    end
     vim.api.nvim_win_set_cursor(0, { label.match.lnum, label.match.col_end })
 end
 
 local function exit_cmdline()
+    if vim.fn.getcmdtype() ~= "/" then
+        return
+    end
+
     state.mode = STATE.IDLE
     if vim.fn.getcmdtype() == '/' or vim.fn.getcmdtype() == '?' then
         local pattern = vim.fn.getcmdline()
@@ -225,13 +234,12 @@ end
 ------------------------------------------------------------
 
 local function render_labels(labels, active_prefix)
-    -- print(debug.traceback())
     vim.api.nvim_buf_clear_namespace(0, NS, 0, -1)
 
     for _, l in ipairs(labels) do
         local virt = l.text
         if active_prefix ~= "" and l.text:sub(1, #active_prefix) == active_prefix then
-            virt = l.text
+            virt = l.text:sub(#active_prefix+1, #l.text)
         end
 
 
@@ -255,7 +263,6 @@ end
 ------------------------------------------------------------
 
 local function filter_labels_by_prefix(labels, prefix)
-    -- print("filter_labels " .. vim.json.encode(labels))
     local out = {}
     for _, l in ipairs(labels) do
         if l.text == prefix then
@@ -264,8 +271,6 @@ local function filter_labels_by_prefix(labels, prefix)
             table.insert(out, l)
         end
     end
-    print("filter_labels " .. vim.json.encode(out))
-    print(debug.traceback())
     return out
 end
 
@@ -279,6 +284,21 @@ end
 
 
 local function enter_labeling()
+
+    -- Pressing Enter after typing the label should make it jump to target
+    -- If mapping is not present it just searches the text in the buffer
+    vim.keymap.set('c', '<CR>', function()
+        local cmd_type = vim.fn.getcmdtype()
+
+        if cmd_type == '/' or cmd_type == '?' then
+            -- Delete this mapping immediately so it only works once
+            vim.keymap.del('c', '<CR>')
+            return '<C-c>'
+        end
+
+        return '<CR>'
+    end, { expr = true })
+
     state.mode = STATE.LABELING
     state.label_input = ""
 end
@@ -307,17 +327,18 @@ local function on_cmdline_changed()
             return
         end
 
+        render_labels(filtered, state.label_input)
+        -- redraw to show updated labels
         if #filtered >= 1 then
             state.jump_target = filtered[1]
             if #filtered == 1 then
                 exit_cmdline()
             end
-            -- print("jumping")
-            -- enter_jumping(filtered[1])
-            return
         end
 
-        render_labels(filtered, state.label_input)
+        -- Jumping works fine when redraw is used
+        enter_jumping(true)
+        vim.cmd("redraw")
     end
 end
 
@@ -336,10 +357,12 @@ local function on_char_pre(c)
 
     if byte == 3  -- <C-c>
         or byte == 27 -- <Esc>
+        or byte == 13
     then
         -- scheduling since we need to jump first
         vim.schedule(function ()
-            reset_state()
+            -- reset_state()
+            exit_cmdline()
         end)
         return
     end
@@ -397,7 +420,6 @@ function M.setup()
                 reset_state()
                 state.winid = vim.api.nvim_get_current_win()
                 state.bufnr = vim.api.nvim_get_current_buf()
-                print("entering cmdline")
                 enter_searching()
             end
         end,

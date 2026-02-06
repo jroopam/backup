@@ -42,23 +42,36 @@ local state = {
     label_input = "",
     winid = nil,
     bufnr = nil,
-    jump_target = nil,
 }
 
 ------------------------------------------------------------
 -- Utilities
 ------------------------------------------------------------
 
-local function enter_jumping(skip_change_state)
+local function enter_jumping(label, skip_change_state)
     if skip_change_state ~= true then
         state.mode = STATE.JUMPING
     end
 
-    local label = state.jump_target
     if label == nil then
         return
     end
     vim.api.nvim_win_set_cursor(0, { label.match.lnum, label.match.col_end })
+end
+
+local function reset_state()
+    vim.api.nvim_buf_clear_namespace(0, NS, 0, -1)
+    state = {
+        mode = STATE.IDLE,
+        pattern = "",
+        matches = {},
+        labels = {},
+        forbidden = {},
+        label_input = "",
+        winid = nil,
+        bufnr = nil,
+    }
+    vim.opt.incsearch = true
 end
 
 local function exit_cmdline()
@@ -70,7 +83,6 @@ local function exit_cmdline()
     if vim.fn.getcmdtype() == '/' or vim.fn.getcmdtype() == '?' then
         local pattern = vim.fn.getcmdline()
         vim.fn.setreg('/', '\n')
-        vim.cmd('nohlsearch')
     end
 
     vim.api.nvim_feedkeys(
@@ -78,23 +90,7 @@ local function exit_cmdline()
         "n",
         false
     )
-    vim.cmd('nohlsearch')
-    enter_jumping()
-end
-
-local function reset_state()
-        vim.api.nvim_buf_clear_namespace(0, NS, 0, -1)
-        state = {
-            mode = STATE.IDLE,
-            pattern = "",
-            matches = {},
-            labels = {},
-            forbidden = {},
-            label_input = "",
-            winid = nil,
-            bufnr = nil,
-        }
-        vim.opt.incsearch = true
+    reset_state()
 end
 
 local function visible_range(winid)
@@ -309,37 +305,48 @@ end
 ------------------------------------------------------------
 
 local function on_cmdline_changed()
-    if vim.fn.getcmdtype() ~= "/" then
+    if vim.fn.getcmdtype() ~= "/" and vim.fn.getcmdtype() ~= "?" then
         return
     end
 
     local pattern = vim.fn.getcmdline()
     state.pattern = pattern
+    local filtered = filter_labels_by_prefix(state.labels, state.label_input)
 
+    if state.mode == STATE.SEARCHING then
+        if #pattern < MIN_PATTERN_LEN then
+            return
+        end
+
+        local matches = collect_matches(pattern)
+        if #matches <= 1 then
+            return
+        end
+
+        state.matches = matches
+        state.forbidden = compute_forbidden(matches)
+        state.labels = assign_labels(matches, state.forbidden)
+
+        if #state.labels > 0 then
+            render_labels(state.labels, "")
+        end
+    end
     if state.mode == STATE.LABELING then
-
-        local filtered = filter_labels_by_prefix(state.labels, state.label_input)
-
         if #filtered == 0 then
-            -- ambiguity resolved in favor of search
-            -- state.mode = STATE.SEARCHING
-            -- vim.api.nvim_buf_clear_namespace(0, NS, 0, -1)
             return
         end
 
         render_labels(filtered, state.label_input)
-        -- redraw to show updated labels
         if #filtered >= 1 then
-            state.jump_target = filtered[1]
             if #filtered == 1 then
                 exit_cmdline()
             end
         end
 
-        -- Jumping works fine when redraw is used
-        enter_jumping(true)
-        vim.cmd("redraw")
+        enter_jumping(filtered[1], true)
     end
+    -- redraw to show updated labels and jump
+    vim.cmd("redraw")
 end
 
 ------------------------------------------------------------
@@ -359,49 +366,23 @@ local function on_char_pre(c)
         or byte == 27 -- <Esc>
         or byte == 13
     then
-        -- scheduling since we need to jump first
-        vim.schedule(function ()
-            -- reset_state()
-            exit_cmdline()
-        end)
+        exit_cmdline()
         return
     end
 
-    local pattern = vim.fn.getcmdline() .. c
-    state.pattern = pattern
     if state.mode == STATE.SEARCHING then
-
-        -------------------old------------
-        local labels_filtered = filter_labels_by_prefix(state.labels, c)
-        if #labels_filtered > 0 then
+        state.label_input = c
+        -- The following line is required so that we can turn incsearch off
+        -- State change to labeling is also done using this, this can also be done in on_cmdline_changed when the state is SEARCHING
+        local filtered = filter_labels_by_prefix(state.labels, state.label_input)
+        if #filtered > 0 then
             enter_labeling()
-            ---new----
-        else
-
-            if #pattern < MIN_PATTERN_LEN then
-                return
-            end
-
-            local matches = collect_matches(pattern)
-            if #matches <= 1 then
-                return
-            end
-
-            state.matches = matches
-            state.forbidden = compute_forbidden(matches)
-            state.labels = assign_labels(matches, state.forbidden)
-
-            if #state.labels > 0 then
-                -- enter_labeling()
-                render_labels(state.labels, "")
-            end
+            vim.opt.incsearch = false
         end
     end
 
     if state.mode == STATE.LABELING then
         state.label_input = state.label_input .. c
-        vim.opt.incsearch = false
-        vim.opt.hlsearch = false
     end
 
 end

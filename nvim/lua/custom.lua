@@ -346,7 +346,13 @@ local function on_cmdline_changed()
         enter_jumping(filtered[1], true)
     end
     -- redraw to show updated labels and jump
-    vim.cmd("redraw")
+    -- Earlier we need not use redraw inside schedule to make it work
+    -- Currently if we remove schedule the issue occurs while searching and
+    -- earlier the labels while searching was handled in on_char_pre(without schedule) which handles
+    -- UI updates more gracefully while this causes issues such as label not being rendered
+    vim.schedule(function ()
+        vim.cmd("redraw")
+    end)
 end
 
 ------------------------------------------------------------
@@ -373,7 +379,7 @@ local function on_char_pre(c)
     if state.mode == STATE.SEARCHING then
         state.label_input = c
         -- The following line is required so that we can turn incsearch off
-        -- State change to labeling is also done using this, this can also be done in on_cmdline_changed when the state is SEARCHING
+        -- State change to labeling is also done using this, this can also be done in on_cmdline_changed when the state is SEARCHING, moved here for clear structure
         local filtered = filter_labels_by_prefix(state.labels, state.label_input)
         if #filtered > 0 then
             enter_labeling()

@@ -20,13 +20,15 @@ do
     end
 end
 
-vim.api.nvim_set_hl(0, 'MyFlashLabel', {
-  fg = 'White',
-  bg = 'Red',
-  bold = true,
-})
+local function set_my_flash_label()
+    vim.api.nvim_set_hl(0, "MyFlashLabel", {
+        fg = "White",
+        bg = "Red",
+        bold = true,
+    })
+end
 
-local MIN_PATTERN_LEN = 1
+local MIN_PATTERN_LEN = 2
 local NS = vim.api.nvim_create_namespace("searchlabels")
 
 ------------------------------------------------------------
@@ -309,7 +311,14 @@ local function on_cmdline_changed()
         return
     end
 
+    -- This only works when the user has typed '//'
+    if vim.fn.getcmdline() == "/" then
+        enter_searching()
+        return
+    end
+
     local pattern = vim.fn.getcmdline()
+    pattern = pattern:sub(2)
     state.pattern = pattern
     local filtered = filter_labels_by_prefix(state.labels, state.label_input)
 
@@ -368,9 +377,11 @@ local function on_char_pre(c)
     end
     local byte = c:byte()
 
-    if byte == 3  -- <C-c>
+    if (
+        byte == 3  -- <C-c>
         or byte == 27 -- <Esc>
         or byte == 13
+    ) and state.mode ~= STATE.IDLE -- When we have not entered any mode we don't exit_cmdline
     then
         exit_cmdline()
         return
@@ -407,7 +418,7 @@ function M.setup()
                 reset_state()
                 state.winid = vim.api.nvim_get_current_win()
                 state.bufnr = vim.api.nvim_get_current_buf()
-                enter_searching()
+                -- enter_searching()
             end
         end,
     })
@@ -423,6 +434,14 @@ function M.setup()
     })
 
     vim.on_key(on_char_pre, NS)
+
+    -- Apply immediately (for current colorscheme)
+    set_my_flash_label()
+
+    -- Reapply whenever colorscheme changes
+    vim.api.nvim_create_autocmd("ColorScheme", {
+        callback = set_my_flash_label,
+    })
 end
 
 M.setup()

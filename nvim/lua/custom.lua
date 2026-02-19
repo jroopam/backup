@@ -77,7 +77,9 @@ local function reset_state()
 end
 
 local function exit_cmdline()
-    if vim.fn.getcmdtype() ~= "/" then
+    if vim.fn.getcmdtype() ~= "/"
+        or state.mode == STATE.IDLE -- If we have not changed the state we don't need to clear it
+    then
         return
     end
 
@@ -328,7 +330,7 @@ local function on_cmdline_changed()
         end
 
         local matches = collect_matches(pattern)
-        if #matches <= 1 then
+        if #matches < 1 then
             return
         end
 

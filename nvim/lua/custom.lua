@@ -74,6 +74,7 @@ local function reset_state()
         bufnr = nil,
     }
     vim.opt.incsearch = true
+    vim.on_key(nil, NS)
 end
 
 local function exit_cmdline()
@@ -307,6 +308,7 @@ end
 ------------------------------------------------------------
 -- Cmdline Handling
 ------------------------------------------------------------
+local on_char_pre
 
 local function on_cmdline_changed()
     if vim.fn.getcmdtype() ~= "/" and vim.fn.getcmdtype() ~= "?" then
@@ -316,6 +318,7 @@ local function on_cmdline_changed()
     -- This only works when the user has typed '//'
     if vim.fn.getcmdline() == "/" then
         enter_searching()
+        vim.on_key(on_char_pre, NS)
         return
     end
 
@@ -370,7 +373,7 @@ end
 -- Input Interception (Label Typing)
 ------------------------------------------------------------
 
-local function on_char_pre(c)
+on_char_pre = function (c)
     -- Need to keep the below code here and not in on_cmdline_changed,
     -- as the cmdline text(vim.fn.getcmdline()) is not updated till 
     -- on_cmdline_changed is executed
@@ -434,8 +437,6 @@ function M.setup()
         group = group,
         callback = exit_cmdline,
     })
-
-    vim.on_key(on_char_pre, NS)
 
     -- Apply immediately (for current colorscheme)
     set_my_flash_label()

@@ -357,7 +357,9 @@ local function on_cmdline_changed()
             end
         end
 
-        enter_jumping(filtered[1], true)
+        vim.schedule(function ()
+            enter_jumping(filtered[1], true)
+        end)
     end
     -- redraw to show updated labels and jump
     -- Earlier we need not use redraw inside schedule to make it work

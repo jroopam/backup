@@ -394,6 +394,10 @@ on_char_pre = function (c)
         return
     end
 
+    if byte == 3 and #state.label_input then
+        state.label_input = state.label_input:sub(2)
+    end
+
     if state.mode == STATE.SEARCHING then
         state.label_input = c
         -- The following line is required so that we can turn incsearch off
@@ -435,10 +439,10 @@ function M.setup()
         callback = on_cmdline_changed,
     })
 
-    vim.api.nvim_create_autocmd("CmdlineLeave", {
-        group = group,
-        callback = exit_cmdline,
-    })
+    -- vim.api.nvim_create_autocmd("CmdlineLeave", {
+    --     group = group,
+    --     callback = exit_cmdline,
+    -- })
 
     -- Apply immediately (for current colorscheme)
     set_my_flash_label()

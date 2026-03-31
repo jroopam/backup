@@ -75,6 +75,8 @@ local function reset_state()
     }
     vim.opt.incsearch = true
     vim.on_key(nil, NS)
+    -- Fix bug using Claude where, using search(/) after // does not execute searches
+    pcall(vim.keymap.del, 'c', '<CR>')
 end
 
 local function exit_cmdline()
@@ -319,6 +321,10 @@ local function on_cmdline_changed()
     if vim.fn.getcmdline() == "/" then
         enter_searching()
         vim.on_key(on_char_pre, NS)
+        return
+    end
+
+    if state.mode == STATE.IDLE then
         return
     end
 

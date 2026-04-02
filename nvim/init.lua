@@ -224,3 +224,131 @@ vim.api.nvim_create_autocmd("VimEnter", {
         schedule_finish()
     end
 })
+
+local ns = vim.api.nvim_create_namespace("relative_eol_numbers")
+local num_enabled = false
+
+local function update_relative_numbers()
+    if not num_enabled then return end
+
+    local buf = vim.api.nvim_get_current_buf()
+    if not vim.api.nvim_buf_is_loaded(buf) then return end
+
+    vim.api.nvim_buf_clear_namespace(buf, ns, 0, -1)
+
+    local cursor = vim.api.nvim_win_get_cursor(0)[1] - 1
+    local cursorCol = vim.api.nvim_win_get_cursor(0)[2] - 1
+    local topline = vim.fn.line("w0") - 1
+    local botline = vim.fn.line("w$") - 1
+
+    -- for lnum = topline, botline do
+    --     local rel = math.abs(lnum - cursor)
+    --
+    --     vim.api.nvim_buf_set_extmark(buf, ns, lnum, -1, {
+    --         virt_text = { { string.format("|%3d", rel), "LineNr" } },
+    --         virt_text_pos = "eol",
+    --         hl_mode = "combine",
+    --     })
+    -- end
+
+    -- local maxLen = 0
+    -- for lnum = topline, botline do
+    --     local line = vim.api.nvim_buf_get_lines(buf, lnum, lnum + 1, false)[1]
+    --     if line then
+    --         local width = vim.fn.strdisplaywidth(line)
+    --         if width > maxLen then
+    --             maxLen = width
+    --         end
+    --     end
+    -- end
+    -- maxLen = maxLen + 2
+    -- for lnum = topline, botline do
+    --     local line = vim.api.nvim_buf_get_lines(buf, lnum, lnum + 1, false)[1]
+    --     local width = 0
+    --     if line then
+    --         width = vim.fn.strdisplaywidth(line)
+    --     end
+    --     local rel = math.abs(lnum - cursor)
+    --
+    --     rel = string.rep(" ", (maxLen-width)) .. rel
+    --     local formatString = string.format("%%%dd", (maxLen-width))
+    --     vim.api.nvim_buf_set_extmark(buf, ns, lnum, -1, {
+    --         -- virt_text = { { string.format(formatString, rel), "LineNr" } },
+    --         virt_text = { { rel, "LineNr" } },
+    --         virt_text_pos = "eol",
+    --         hl_mode = "combine",
+    --     })
+    --     ::continue::
+    -- end
+
+    for lnum = topline, botline do
+        if lnum % 2 == 0 then
+            goto continue
+        end
+        local line = vim.api.nvim_buf_get_lines(buf, lnum, lnum + 1, false)[1]
+        local width = 0
+        local rel = math.abs(lnum - cursor)
+
+        -- if rel % 2 ~= 0 then
+        --     goto continue
+        -- end
+        --
+        local modifier = ""
+        if line then
+            width = vim.fn.strdisplaywidth(line)
+            if lnum < cursor then
+                modifier = "↑"
+                -- modifier = "k"
+            else
+                modifier = "↓"
+                -- modifier = "j"
+            end
+            if cursorCol > width then
+                rel = string.rep(" ", (cursorCol-width+1)) .. rel .. modifier
+            else
+                rel = rel .. modifier
+            end
+        end
+
+        vim.api.nvim_buf_set_extmark(buf, ns, lnum, -1, {
+            virt_text = { { rel, "LineNr" } },
+            virt_text_pos = "eol",
+            hl_mode = "combine",
+        })
+        ::continue::
+    end
+
+end
+
+
+vim.api.nvim_create_autocmd(
+  { "CursorMoved", "CursorMovedI", "WinScrolled", "BufEnter" },
+  {
+    callback = update_relative_numbers,
+  }
+)
+
+local function toggle_relative_numbers()
+  num_enabled = not num_enabled
+
+  if not num_enabled then
+    vim.api.nvim_buf_clear_namespace(0, ns, 0, -1)
+  else
+    update_relative_numbers()
+  end
+end
+
+vim.api.nvim_create_user_command(
+  "ToggleRelVirt",
+  toggle_relative_numbers,
+  {}
+)
+
+vim.keymap.set(
+  "n",
+  "<leader>rn",
+  toggle_relative_numbers,
+  { desc = "Toggle virtual relative line numbers" }
+)
+
+require("custom")

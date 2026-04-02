@@ -30,6 +30,13 @@ return {
             autoread = true,
         }
     },
+--    { 'nvim-mini/mini.bufremove', version = false, config = true },
+    {
+        'johnpmitsch/vai.nvim',
+        config = function()
+            require('vai').setup()
+        end,
+    },
     {
         'Pocco81/auto-save.nvim',
         event = "VeryLazy",

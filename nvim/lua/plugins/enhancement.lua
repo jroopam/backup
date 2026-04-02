@@ -38,6 +38,28 @@ return {
         end,
     },
     {
+        'nvim-mini/mini.files',
+        event = "VeryLazy",
+        version = false,
+        config = function ()
+            require('mini.files').setup({
+                mappings = {
+                    -- go_in       = '<CR>',
+                    -- go_out      = '<BS>',
+                    reset       = '',
+                },
+                options = {
+                    -- Whether to use for editing directories
+                    use_as_default_explorer = true,
+                },
+                windows = {
+                    preview = true,
+                    width_preview = 50
+                }
+            })
+        end
+    },
+    {
         'Pocco81/auto-save.nvim',
         event = "VeryLazy",
         config = function()

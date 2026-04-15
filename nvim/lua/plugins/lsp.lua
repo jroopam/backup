@@ -18,7 +18,16 @@ return {
                 ['<C-b>'] = { 'snippet_backward', 'fallback' },
                 ['<S-Tab>'] = { 'select_prev', 'fallback_to_mappings' },
                 ['<Tab>'] = { 'select_next', 'fallback_to_mappings' },
-                ['<CR>'] = { 'accept', 'fallback' },
+                ['<CR>'] = {
+                    -- https://github.com/windwp/nvim-autopairs/issues/477
+                    function(cmp)
+                        if cmp.is_visible() then
+                            return cmp.accept()
+                        else
+                            return require("nvim-autopairs").autopairs_cr()
+                        end
+                    end,
+                },
             },
 
             appearance = {

@@ -94,7 +94,7 @@ vim.cmd('cnoreab ss Telescope')
 -- vim.keymap.set('c', '<tab>', '<C-z>', { silent = false }) -- to fix cmp
 
 -- Colorscheme
-vim.cmd('colorscheme vaporwave')
+vim.cmd('colorscheme oxocarbon')
 
 vim.lsp.enable({
     'lua',
@@ -169,7 +169,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
         nmap("dN", function()
             vim.diagnostic.jump({ count = -1, float = true })
         end, "Goto prev diagnostic")
-        nmap("<leader>q", vim.diagnostic.setloclist, "Open diagnostics list")
         nmap("<leader>e", vim.diagnostic.open_float, "Open diagnostic float")
 
         vim.keymap.set("i", "<M-t>", vim.lsp.buf.signature_help, { buffer = args.buf })
@@ -454,3 +453,6 @@ vim.keymap.set(
 --- Block End ---
 
 require("custom")
+vim.keymap.set('n', '<leader>o', function()
+  vim.cmd('lua MiniSessions.restart()')
+end, { desc = 'Restart Neovim' })

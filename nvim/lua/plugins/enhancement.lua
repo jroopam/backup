@@ -28,6 +28,7 @@ return {
                 post = { read = readScope, write = nil, delete = nil },
             },
             autoread = true,
+            autowrite = true,
         }
     },
 --    { 'nvim-mini/mini.bufremove', version = false, config = true },
@@ -80,7 +81,8 @@ return {
         'windwp/nvim-autopairs',
         lazy = true,
         event = "InsertEnter",
-        config = true
+        config = true,
+        map_cr = false
         -- use opts = {} for passing setup options
         -- this is equivalent to setup({}) function
     },
@@ -118,7 +120,7 @@ return {
     },
     {
         "OXY2DEV/markview.nvim",
-        lazy = true,      -- Recommended
+        lazy = false,      -- Recommended
         -- ft = "markdown" -- If you decide to lazy-load anyway
 
         dependencies = {

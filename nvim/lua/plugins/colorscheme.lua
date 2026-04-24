@@ -1,4 +1,5 @@
 return {
+    {'nyoom-engineering/oxocarbon.nvim'},
     {
         'catppuccin/nvim',
         lazy = true,
@@ -20,13 +21,13 @@ return {
                     properties = {},
                     types = {},
                 },
-                color_overrides = {
-                    mocha = {
-                        base = "#141414",
-                        mantle = "#141414",
-                        crust = "#141414",
-                    },
-                },
+                -- color_overrides = {
+                --     mocha = {
+                --         base = "#141414",
+                --         mantle = "#141414",
+                --         crust = "#141414",
+                --     },
+                -- },
                 integrations = {
                     telescope = {
                         enabled = true,

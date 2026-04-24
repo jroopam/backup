@@ -6,7 +6,7 @@ tabline.setup({
   options = {
     icons_enabled = true,
     tabs_enabled = true,
-    theme = "Grayscale Dark (base16)",
+    --theme = "Grayscale Dark (base16)",
     theme_overrides = {},
     section_separators = {
       left = wezterm.nerdfonts.pl_left_hard_divider,
@@ -22,8 +22,8 @@ tabline.setup({
     },
   },
   sections = {
-    tabline_a = { 'mode' },
-    tabline_b = { 'workspace' },
+    --tabline_a = { 'mode' },
+    --tabline_b = { 'workspace' },
     tabline_c = { ' ' },
     tab_active = {
       'index',
@@ -42,16 +42,28 @@ tabline.setup({
 tabline.get_config()
 tabline.apply_to_config(config)
 
-config.color_scheme = 'GruvboxDarkHard'
+--config.color_scheme = 'GruvboxDarkHard'
 
-config.font_size = 11.9
+config.font_size = 9.0
+--config.font = wezterm.font("CommitMono")
 config.automatically_reload_config = true
 config.window_decorations = "NONE"
+config.tab_bar_at_bottom = true
 config.window_padding = {
   left = 0,
   right = 0,
   top = 0,
   bottom = 0,
 }
-
+config.max_fps = 120
+config.keys = {
+  {
+    key = 'w',
+    mods = 'CMD',
+    action = wezterm.action.CloseCurrentTab { confirm = true },
+  },
+}
+config.keys = {
+  { key = 'p', mods = 'ALT', action = wezterm.action.ShowTabNavigator },
+}
 return config

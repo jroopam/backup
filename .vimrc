@@ -5,9 +5,9 @@ filetype indent on
 syntax on
 set autoindent
 set number
-"set cursorline
+set cursorline
 
-"set cursorcolumn
+set cursorcolumn
 set shiftwidth=4
 set tabstop=4
 set expandtab
@@ -27,6 +27,7 @@ set number relativenumber
 set whichwrap=lh
 let mapleader = " "
 
+set signcolumn=yes:1
 " Forward jump wasn't working: https://github.com/neovim/neovim/issues/20126
 nnoremap <C-I> <C-I>
 
@@ -82,8 +83,8 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 "set ttymouse=xterm2
 
 "netrw
-noremap <silent> <C-p> :Explore<CR>
-let g:netrw_liststyle = 3
+noremap <silent> <C-p> :lua MiniFiles.open()<CR>
+"let g:netrw_liststyle = 3
 " gn is the mapping to make the directory you're on the current directory
 
 "" Terminal Function
@@ -139,12 +140,12 @@ noremap <silent> <C-s-tab> :bprevious<CR>
 map gn :bnext<cr>
 map gp :bprevious<cr>
 "map gd :bdelete<cr>  
-map <leader>n :bnext<cr>
+"map <leader>n :bnext<cr>
 map <leader>p :bprevious<cr>
-map <leader>d :bdelete<cr>
+"map <leader>d :bdelete<cr>
 nnoremap <leader><tab> :b#<cr>
 nmap <leader>q :bp <BAR> bd #<CR>
-nmap <leader><leader>d :bp <BAR> bd #<CR>
+nmap <leader>d :bp <BAR> bd #<CR>
 
 "New tmp buffer
 nnoremap <C-a> :enew<CR>

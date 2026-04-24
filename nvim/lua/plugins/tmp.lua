@@ -1,12 +1,18 @@
 -- lazy.nvim
 return {
     {
-        "m4xshen/hardtime.nvim",
-        dependencies = { "MunifTanjim/nui.nvim" },
-        event = "VimEnter",
-        opts = {
-            max_time = 1200,
-            max_count = 2;
-        }
+        -- "m4xshen/hardtime.nvim",
+        -- dependencies = { "MunifTanjim/nui.nvim" },
+        -- event = "VimEnter",
+        -- opts = {
+        --     max_time = 1200,
+        --     max_count = 2;
+           -- }
     },
+    {
+        "Cannon07/code-preview.nvim",
+        config = function()
+            require("code-preview").setup()
+        end,
+    }
 }

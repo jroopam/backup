@@ -149,7 +149,10 @@ local function collect_matches(pattern)
                     lnum = lnum,
                     col_start = col_start,
                     col_end = col_end,
-                    next_char = next_char,
+                    -- When the next_char is upper cased(our search is case-insensitive), then next_char(lower-cased) is not marked forbidden
+                    -- For e.g., onClick and we type "on" but as the next_char "C" is upper-cased, "c" is not marked as forbidden
+                    -- And pressing "c" changes the mode to labelling which can trigger exit_cmdline or lead to wrong search
+                    next_char = next_char and next_char:lower() or next_char,
                 })
 
                 start = col_end

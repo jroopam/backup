@@ -58,6 +58,8 @@ local function enter_jumping(label, skip_change_state)
     if label == nil then
         return
     end
+
+    vim.cmd("normal! m'")
     vim.api.nvim_win_set_cursor(0, { label.match.lnum, label.match.col_end })
 end
 

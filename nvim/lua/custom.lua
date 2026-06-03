@@ -97,6 +97,7 @@ local function exit_cmdline()
         "n",
         false
     )
+    vim.fn.setreg('/', state.pattern:sub(0, #state.pattern - #state.label_input))
     reset_state()
 end
 

@@ -106,7 +106,7 @@ local function visible_range(winid)
 end
 
 local function get_regex(pattern)
-    local ok, rx = pcall(vim.regex, pattern)
+    local ok, rx = pcall(vim.regex, [[\c]] .. pattern)
     if not ok then
         return nil
     end

@@ -6,6 +6,9 @@ ln -s $HOME/backup/.vimrc ~/.vimrc
 ln -s $HOME/backup/.vim ~/.vim
 ln -s $HOME/backup/nvim ~/.config/nvim
 
+# Install node
+sudo apt install build-essential
+npm install -g tree-sitter-cli
 
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
@@ -50,5 +53,7 @@ ln -s ~/backup/kitty.conf ~/.config/kitty/kitty.conf
 ln -s ~/backup/.wezterm.lua ~/.wezterm.lua
 ln -s ~/backup/config ~/.config/ghostty/config
 
+# For niri
+ln -s ~/backup/niri.config.kdl ~/.config/niri/config.kdl
 # Useful Links:
 # Make blluetooth devices connect faster: https://superuser.com/questions/1558381/ubuntu-bluetooth-slow-to-connect

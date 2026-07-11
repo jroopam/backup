@@ -347,6 +347,20 @@ window-rule {
     clip-to-geometry true
 }
 
+workspace "read"
+window-rule {
+    match app-id="obsidian"
+    match app-id="org.kde.okular"
+
+    open-on-workspace "read"
+}
+
+workspace "scratch"
+window-rule {
+    match app-id="org.keepassxc.KeePassXC"
+    open-on-workspace "scratch"
+}
+
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
     // in the end. To find an XKB name for a particular key, you may use a program

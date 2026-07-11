@@ -53,7 +53,18 @@ ln -s ~/backup/kitty.conf ~/.config/kitty/kitty.conf
 ln -s ~/backup/.wezterm.lua ~/.wezterm.lua
 ln -s ~/backup/config ~/.config/ghostty/config
 
+#---------------------------------------------------------
+# omz
+# https://ohmyz.sh/#install -> Find the sh script for installing
+# zsh-autosuggestions for suggestions while typing command
+# git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# zsh-defer for deferring loading plugins
+# git clone https://github.com/romkatv/zsh-defer.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-defer
+#---------------------------------------------------------
+
 # For niri
+# Check before installing
+# curl -fsSL https://vicinae.com/install | bash
 ln -s ~/backup/niri.config.kdl ~/.config/niri/config.kdl
 # Useful Links:
 # Make blluetooth devices connect faster: https://superuser.com/questions/1558381/ubuntu-bluetooth-slow-to-connect
